@@ -3,7 +3,7 @@
 }
 
 html{
-    background-color: #AAFFAA;
+    background-color: #FFFFD4;
 }
 
 body{
@@ -17,12 +17,21 @@ body{
 }
 
 #main-content{
-    margin: auto;
+    margin: 0 auto;
     width: 70%;
-    border: 1px solid brown;
+    border: 2px solid brown;
     background-color: white;
-    color: #333;
+    color: #555;
 }
+
+/*HEADER START*/
+.header-img{
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+/*HEADER END*/
 
 /*NAVIGATION START*/
 #navigation{   
@@ -32,9 +41,10 @@ body{
 #navigation ul {
     list-style-type: none;
     padding: 0;
-    background-color: rgb(127, 170, 255);
+    background-color: #FF7F2A;
     text-align: center;
 }
+
 
 #navigation li {
     display:inline-block;
@@ -47,18 +57,14 @@ body{
     text-decoration: none;
     text-align: center;
     color: white;
-    padding: 20px 20px;
+    padding: 15px 15px;
     text-transform: uppercase;
     font-weight: bold;
     justify-content: center;
 }
 
 #navigation li a:hover {
-    color: black;
-}
-
-.clearfix{
-    overflow: auto;
+    color: #BF153F;
 }
 /*NAVIGATION END*/
 
@@ -71,16 +77,12 @@ body{
 h2{
     font-size: 30px;
     font-style: bold;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
-.img{
-    height:300px;
-}
-
 hr{
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 30px;
 }
 
@@ -88,72 +90,45 @@ hr{
     background-color: white; 
     width: 100%;
     height: auto;
-    margin: 0 10 10 10;
-    display:block;
+    margin: 0 auto;
+    display:inline-block;
 }
 
-#dogType1 .img{
-   float:left;
-   display: inline;
-   margin-right: 20px;
-   margin-bottom: 20px;
-}
-
-#dogType2 .img{
+figure{
     float:right;
     display: inline;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin-left: 10px;
 }
 
-#dogType3 .img{
-    float:left;
-    display: inline;
-    margin-right: 20px;
-    margin-bottom: 20px;
- }
- 
- #dogType4 .img{
-     float:right;
-     display: inline;
-     margin-left: 20px;
-     margin-bottom: 20px;
- }
+figure.img{
+    width: 30%;
+}
 
+figcaption{
+    font-weight: bold;
+    text-align: center;
+}
 
 .section-text{
     text-align:justify;
-    width: auto; 
+    font-size: 18px;
 }
 
 p{
-    margin: 7px;
+    margin: 12px;
 }
 
 /*SECTION END*/
-
-#divToTop{
-    display:block;
-    text-align: center;
-}
-
-#toTop{
-    display:block;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
-    margin: 10px;
-    list-style-type: none;
-}
 
 /*BREAKPOINTS*/
 
 @media (max-width: 1280px){
     #main-content{
-        width: 75%;
+        width: 70%;
     }
-    .white-frame{background-color: white;
+    
+    .white-frame{
+        background-color: white;
         text-align: center;
         width: 100%;
         height: inherit;
@@ -182,28 +157,7 @@ p{
         text-align:center;
     }
 
-    #dogType1 .img{
-        float: none;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    #dogType2 .img{
-        float: none;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #dogType3 .img{
-        float: none;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #dogType4 .img{
+    figure{
         float: none;
         display: block;
         margin-left: auto;
