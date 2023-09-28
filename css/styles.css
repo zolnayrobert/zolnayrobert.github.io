@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+}
+
+html{
+    background-color: #AAFFAA;
+}
+
+body{
+    font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;   
+}
+
+#site-title{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+#main-content{
+    margin: auto;
+    width: 70%;
+    border: 1px solid brown;
+    background-color: white;
+    color: #333;
+}
+
+/*NAVIGATION START*/
+#navigation{   
+    width: auto;
+}
+
+#navigation ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: rgb(127, 170, 255);
+    text-align: center;
+}
+
+#navigation li {
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+#navigation li a {
+    display:block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    justify-content: center;
+}
+
+#navigation li a:hover {
+    color: black;
+}
+
+.clearfix{
+    overflow: auto;
+}
+/*NAVIGATION END*/
+
+/*SECTION START*/
+.section{
+    margin: 20px;
+    padding: 0px 0px 20px 5px;
+}
+
+h2{
+    font-size: 30px;
+    font-style: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.img{
+    height:300px;
+}
+
+hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.white-frame{
+    background-color: white; 
+    width: 100%;
+    height: auto;
+    margin: 0 10 10 10;
+    display:block;
+}
+
+#dogType1 .img{
+   float:left;
+   display: inline;
+   margin-right: 20px;
+   margin-bottom: 20px;
+}
+
+#dogType2 .img{
+    float:right;
+    display: inline;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#dogType3 .img{
+    float:left;
+    display: inline;
+    margin-right: 20px;
+    margin-bottom: 20px;
+ }
+ 
+ #dogType4 .img{
+     float:right;
+     display: inline;
+     margin-left: 20px;
+     margin-bottom: 20px;
+ }
+
+
+.section-text{
+    text-align:justify;
+    width: auto; 
+}
+
+p{
+    margin: 7px;
+}
+
+/*SECTION END*/
+
+#divToTop{
+    display:block;
+    text-align: center;
+}
+
+#toTop{
+    display:block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+    list-style-type: none;
+}
+
+/*BREAKPOINTS*/
+
+@media (max-width: 1280px){
+    #main-content{
+        width: 75%;
+    }
+    .white-frame{background-color: white;
+        text-align: center;
+        width: 100%;
+        height: inherit;
+        margin: 10px;
+        display:inline-block;
+    }
+}
+
+@media (max-width: 1024px){
+    #main-content{
+        width: 100%;
+    }
+    .white-frame{background-color: white;
+        text-align: center;
+        width: 100%;
+        height: inherit;
+        margin: 10px;
+        display:inline-block;
+    }
+}
+
+@media (max-width: 800px){
+    
+    #site-title{
+        font-size: 24px;
+        text-align:center;
+    }
+
+    #dogType1 .img{
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #dogType2 .img{
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #dogType3 .img{
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #dogType4 .img{
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-text{
+        display: block;
+        float: left;
+    }
+
+    #navigation li {
+        width: 100%;
+    }
+}
