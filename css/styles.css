@@ -164,6 +164,10 @@ p{
         margin-right: auto;
     }
 
+    figure .img{
+        max-width: 80%;
+    }
+
     .section-text{
         display: block;
         float: left;
