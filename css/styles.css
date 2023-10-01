@@ -84,6 +84,8 @@ h2{
 hr{
     margin-top: 40px;
     margin-bottom: 30px;
+    size:1px;
+    color:#D3D3D3;
 }
 
 .white-frame{
