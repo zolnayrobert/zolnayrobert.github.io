@@ -45,12 +45,12 @@
 					Elektronikus úton az alábbi űrlap kitöltésével írhat nekünk. <br>
 					A kategória kiválasztásakor megjelenő információk segítségére lesznek a gyorsabb és gördülékenyebb ügyintézésben.
 				</p>
-				<form method="POST" action="https://formsubmit.co/zolnayrobert@gmail.com" enctype="text/plain">
+				<form action="https://formsubmit.co/520a354098799bbb56777753e910654f" method="POST" />
 					<label for="name">Teljes név</label>
 					<input type="text" id="fname" name="name" placeholder="pl: Kiss István" required>
 
 					<label for="email">E-mail cím</label>
-					<input type="text" id="email" name="email" placeholder="pl: vezetek.nev@gmail.com" required>
+					<input type="email" id="email" name="email" placeholder="pl: vezetek.nev@gmail.com" required>
 
 					<label for="_subject">Téma</label>
 					<select id="_subject" name="_subject" required>
@@ -62,7 +62,7 @@
 
 					<label for="message">Üzenet</label>
 					<textarea id="message" name="message" placeholder="Írjon nekünk.." required></textarea>
-
+					<input type="hidden" name="_captcha" value="false">
 					<input type="submit" value="Küldés">
 				</form>
 			</div>
