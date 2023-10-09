@@ -47,13 +47,13 @@
 				</p>
 				<form method="POST" action="https://formsubmit.co/zolnayrobert@gmail.com" enctype="text/plain">
 					<label for="name">Teljes név</label>
-					<input type="text" id="fname" name="name" placeholder="pl: Kiss István">
+					<input type="text" id="fname" name="name" placeholder="pl: Kiss István" required>
 
 					<label for="email">E-mail cím</label>
-					<input type="text" id="email" name="email" placeholder="pl: vezetek.nev@gmail.com">
+					<input type="text" id="email" name="email" placeholder="pl: vezetek.nev@gmail.com" required>
 
 					<label for="_subject">Téma</label>
-					<select id="_subject" name="_subject">
+					<select id="_subject" name="_subject" required>
 						<option value="interest">Érdeklődés</option>
 						<option value="want-an-offer">Árajánlat kérése</option>
 						<option value="job-search">Állást keresek</option>
@@ -61,7 +61,7 @@
 					</select>
 
 					<label for="message">Üzenet</label>
-					<textarea id="message" name="message" placeholder="Írjon nekünk.."></textarea>
+					<textarea id="message" name="message" placeholder="Írjon nekünk.." required></textarea>
 
 					<input type="submit" value="Küldés">
 				</form>
