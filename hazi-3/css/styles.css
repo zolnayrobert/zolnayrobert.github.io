@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+}
+
+html{
+    background-color: #FFFFD4;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;  
+}
+
+#site-title{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+#main-content{
+    margin: 0 auto;
+    width: 70%;
+    border: 2px solid brown;
+    background-color: white;
+    color: #555;
+}
+
+/*HEADER START*/
+.header-img{
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+/*HEADER END*/
+
+/*NAVIGATION START*/
+#navigation{   
+    width: auto;
+}
+
+#navigation ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #FF7F2A;
+    text-align: center;
+}
+
+
+#navigation li {
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+#navigation li a {
+    display:block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 15px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    justify-content: center;
+}
+
+#navigation li a:hover {
+    color: #BF153F;
+}
+/*NAVIGATION END*/
+
+/*SECTION START*/
+.section{
+    margin: 20px;
+    padding: 0px 0px 20px 5px;
+}
+
+h2{
+    font-size: 30px;
+    font-style: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+hr{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    size:1px;
+    color:#D3D3D3;
+}
+
+.white-frame{
+    background-color: white; 
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display:inline-block;
+}
+
+figure{
+    float:right;
+    display: inline;
+    margin-left: 10px;
+}
+
+figure.img{
+    width: 30%;
+}
+
+figcaption{
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-text{
+    text-align:justify;
+    font-size: 18px;
+}
+
+p{
+    margin: 12px;
+}
+
+/*SECTION END*/
+
+/*BREAKPOINTS*/
+
+@media (max-width: 1280px){
+    #main-content{
+        width: 70%;
+    }
+    
+    .white-frame{
+        background-color: white;
+        text-align: center;
+        width: 100%;
+        height: inherit;
+        margin: 10px;
+        display:inline-block;
+    }
+}
+
+@media (max-width: 1024px){
+    #main-content{
+        width: 100%;
+    }
+    .white-frame{background-color: white;
+        text-align: center;
+        width: 100%;
+        height: inherit;
+        margin: 10px;
+        display:inline-block;
+    }
+}
+
+@media (max-width: 800px){
+    
+    #site-title{
+        font-size: 24px;
+        text-align:center;
+    }
+
+    figure{
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    figure .img{
+        max-width: 80%;
+    }
+
+    .section-text{
+        display: block;
+        float: left;
+    }
+
+    #navigation li {
+        width: 100%;
+    }
+}
