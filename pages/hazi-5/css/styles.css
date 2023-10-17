@@ -251,7 +251,7 @@ figcaption{
 /*FOOTER START*/
 footer {
     background-color: #e7e6e6;
-    color: white;
+    color: black;
     text-align: center;
     padding: 10px;
     grid-area: footer;
