@@ -312,4 +312,16 @@ footer {
         font-size: 1.2rem;
         padding: 15px;
     }
+
+    figure{
+        float:none;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    figcaption{
+        display: none;
+    }
 }
