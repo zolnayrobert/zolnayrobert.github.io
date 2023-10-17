@@ -135,11 +135,6 @@ select{
     border-radius: 4px;
 }
 
-input[type="text"],
-input[type="email"]::placeholder {
-    margin-left: 10px;
-}
-
 textarea{
     width: 100%;
     height: 100px;
