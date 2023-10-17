@@ -33,6 +33,7 @@ header {
     text-align: center;
     grid-area: header;
     margin: 12px 12px 0 12px;
+    background-color: #e7e6e6;
 }
 
 .header-img{
@@ -230,7 +231,7 @@ figcaption{
 }
 
 #section-2{
-    background: #fff1cc;
+    background: #fff2cc;
 }
 
 #section-3{
@@ -249,7 +250,7 @@ figcaption{
 
 /*FOOTER START*/
 footer {
-    background-color: #333;
+    background-color: #e7e6e6;
     color: white;
     text-align: center;
     padding: 10px;
