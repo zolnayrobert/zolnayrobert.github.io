@@ -199,6 +199,8 @@ main {
     padding: 0px 10px 0px 10px;
     margin-bottom: 12px;
     margin-right: 10px; 
+    overflow: auto;
+    clear: both;
 }
 
 .section h2{
@@ -303,8 +305,6 @@ footer {
 
     .section{
         margin-right: 0;
-        overflow: auto;
-        clear: both;
     }
 
     #navigation li {
