@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Utazz úgy, ahogy szeretnél">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <title>Zolnay Tours</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="main-head">
+            <img class="header-img" src="img/header.png" alt="travel clipart around the world"></img>
+            <h1>Zolnay</h1>
+            <h2>Tours</h2>
+            <q>TRAVEL LIKE THE LOCALS</q>
+        </header>
+
+        <nav class="main-nav" id="navigation">
+            <section class="social">
+                <a href="#" class="fa-brands fa-facebook-f"></a>
+                <a href="#" class="fa-brands fa-twitter"></a>
+                <a href="#" class="fa-brands fa-youtube"></a>
+                <a href="#" class="fa-brands fa-tiktok"></a>
+            </section>
+            <ul class="mainmenu">
+                <input type='checkbox' id='check'>
+				<span class="menu">
+                <li class="mainmenu-li"><a href="#navigation">KEZDŐLAP</a></li>
+                <li class="mainmenu-li"><a href="#blog">BLOG</a></li>
+                <li class="mainmenu-li dropdown"><a href="">ORSZÁGOK <i class="fa fa-caret-down"></i></a>
+                    <ul class="submenu">
+                        <li class="submenu-li"><a href="#bulgaria">BULGÁRIA</a></li>
+                        <li class="submenu-li"><a href="#indonesia">INDONÉZIA</a></li>
+                        <li class="submenu-li"><a href="#italy">OLASZORSZÁG</a></li>
+                        <li class="submenu-li"><a href="#caboverde">ZÖLD-FOKI SZIGETEK</a></li>
+                    </ul>
+                </li>
+                <!--        <li class="mainmenu-li"><a href="">KÉPEK</a></li> -->
+                <li class="mainmenu-li"><a href="#contact">KAPCSOLAT</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                
+				</span>
+				<label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+
+        <section class="left-side">
+            <div class="form-container">
+                <h2>Ajánatkérés</h2>
+                <form action="https://formsubmit.co/520a354098799bbb56777753e910654f" method="POST" />
+                <input class="subscribe-input" type="text" id="name" name="name" placeholder="Név" required>
+                <input class="subscribe-input" type="email" id="email" name="email" placeholder="Email cím"
+                    maxlength="40" required>
+                <input class="subscribe-input" type="text" id="mobile" name="mobile" placeholder="Telefonszám"
+                    maxlength="12" required>
+
+                <label class="label" for="_subject">Melyik ország érdekel?</label>
+                <select class="subscribe-input" id="_subject" name="_subject" required>
+                    <option value="choose">-válassz-</option>
+                    <option value="bulgaria">Bulgária</option>
+                    <option value="indonesia">Indonézia</option>
+                    <option value="italy">Olaszország</option>
+                    <option value="caboverde">Zöld-foki Köztársaság</option>
+                </select>
+
+                <p class="label">Milyen típusú utazást szeretsz?</p>
+                <section class="checkbox">
+                    <input type="checkbox" id="type1" name="type" value="tengerpart">
+                    <label class="label2" for="type1">Tenger part</label>
+                </section>
+                <section class="checkbox">
+                    <input type="checkbox" id="type2" name="type" value="kaland">
+                    <label class="label2" for="type2">Kaland</label>
+                </section>
+                <section class="checkbox">
+                    <input type="checkbox" id="type3" name="type" value="kultura">
+                    <label class="label2" for="type3">Kúltúra</label>
+                </section>
+
+                <textarea class="subscribe-input" id="message" name="message" cols="20" rows="5"
+                    placeholder="Írj nekünk magadról kicsit részletesebben" maxlength="160"></textarea>
+
+                <input class="subscribe-button" type="submit" value="Küldés">
+                </form>
+            </div>
+            <section class="subscribe-container">
+                <h2>Ötletek a<br> postaládádba</h2>
+                <p>Íratkozz fel a hírlevelünkre, ingyenes <br> utazási tippekért és trükkökért.</p>
+                <input class="subscribe-input" type="email" placeholder="Email cím" required>
+                <button class="subscribe-button" type="submit">Feliratkozom</button>
+                <span>100% garantált tartalom</span>
+            </section>
+        </section>
+
+        <aside class="side" id="blog">
+            <h2>Legfrissebb blogok</h2>
+            <article>
+                <img class="blog-img" src="img/underwater.jpg" alt="underwater"></img>
+                <h3 class="side-date">2019 Szeptember 12.</h3>
+                <!--                <span class="side-title">BALI</span>                    -->
+                <h3 class="side-h3">Fedezd fel Bali tengeralatti világát</h3>
+                <p>A sziget körül számos kiváló búvár- és snorkelhely található, ahol lenyűgöző korallzátonyok,
+                    színpompás halak és egyedi tengeri élőlények várnak felfedezésre. A kristálytiszta víz és a meleg
+                    tengeri áramlatok ideálisak a vízalatti kalandokhoz. Bali tengeralatti világa valóban lenyűgöző, és
+                    azoknak ajánlom,
+                    akik az óceán mélyének varázslatos világát szeretnék felfedezni.
+                </p>
+            </article>
+
+            <article>
+                <img class="blog-img" src="img/desert.jpg" alt="underwater"></img>
+                <h3 class="side-date">2017 December 10.</h3>
+                <!--            <span class="side-title">BOA VISTA</span>               -->
+                <h3 class="side-h3">Quadozz Boa Vista homokdűnéi között</h3>
+                <p> Boa Vista homokdűnéi különleges élményt nyújtanak minden utazónak. Az itteni
+                    dűnék lenyűgöző méretükkel és formáikkal azonnal magukba szippantják az embert. A homokdűnék
+                    közötti sivatagi táj varázslatos és kihagyhatatlan fotózási lehetőségeket kínál. Emellett a
+                    naplemente és napkelte itt különösen lenyűgöző, így egy romantikus környezetet is biztosít azok
+                    számára, akik itt látogatást tesznek.
+                </p>
+            </article>
+        </aside>
+
+        <main class="content">
+            <h1>A Világ felfedezése csak Rád vár!</h1>
+            <p>
+                Tengerparti utazás, városlátogatás, netán egzotikus utazás?! Legyen szó bármilyen
+                jellegű utazásról nálunk évszaktól és típustól függetlenül könnyedén megtalálhatod. Tekintsd át a
+                legnépszerűbb úti céljainkból összeállított rövid útikalauzokat, majd válaszd ki a számodra
+                legmegfelelőbb ajánlatot! Rajtunk keresztül könnyedén tervezheted meg és foglalhatod le életed utazását,
+                hogy a világ minden szegletét felfedezhesd. Ne habozz, válaszd ki álmaid úti célját és indulj el a
+                kalandra!
+            </p>
+            <div class="main-row" id="offers">
+                <section class="main-box" id="bulgaria">
+                    <a class="main-box-link">
+                        <h2>Bulgária</h2>
+                        <p>
+                            Bulgária lenyűgöző természeti szépségei közé tartoznak a Rodope-hegység varázslatos erdei,
+                            amelyek kristálytiszta patakok és tavak, vadregényes túraútvonalak sokaságát kínálják. A
+                            hegységben található barlangok pedig egyedülállóak és magukban foglalják a Balkán-félsziget
+                            vadregényes szépségét.
+                        </p>
+                        <p class="main-box-img-cont">
+                            <img class="main-box-img" src="img/_bulgaria.jpg" alt="bulgaria main picture"></img>
+                        </p>
+                        <a>
+                            <section class="main-box" id="indonesia">
+                                <a class="main-box-link">
+                                    <h2>Indonézia</h2>
+                                    <p>
+                                        Bali varázslatos természeti szépségei közé tartoznak a türkizkék tengerpartok és
+                                        homokos strandok, valamint a buja rizsteraszok, amelyek lélegzetelállítóan szép
+                                        tájat festenek a szigeten. A trópusi dzsungel és vulkáni tájak pedig Bali gazdag
+                                        és sokszínű természeti kincseinek részét képezik.
+                                    </p>
+                                    <p class="main-box-img-cont">
+                                        <img class="main-box-img" src="img/_bali.JPG"
+                                            alt="bali templom egy to szelen"></img>
+                                    </p>
+                                    <a>
+                            </section>
+                            <section class="main-box" id="italy">
+                                <a class="main-box-link">
+                                    <h2>Olaszország</h2>
+                                    <p>
+                                        Olaszország egyedülálló élményeket kínál az utazóknak.
+                                        Az elbűvölő történelmi városok, a gazdag kulturális örökség és az ínycsiklandó
+                                        olasz konyha mind az igazi mediterrán életérzés megtestesítője. A Toszkán vidék
+                                        gyönyörű szőlőültetvényei, Szicília tengerparti panorámája és a
+                                        Dolomitok hegyei mind az utazókat vonzzák.
+                                    </p>
+                                    <p class="main-box-img-cont">
+                                        <img class="main-box-img" src="img/_sicily.jpg"
+                                            alt="Taormina látkép háttérben az Etna"></img>
+                                    </p>
+                                    <a>
+                            </section>
+                            <section class="main-box" id="caboverde">
+                                <a class="main-box-link">
+                                    <h2>Zöld-foki Köztársaság</h2>
+                                    <p>
+                                        Zöld-foki-szigetek lenyűgöző természeti szépségei között szerepelnek a homokos
+                                        strandok, amelyek kristálytiszta vízzel és lenyűgöző tengeri élettel
+                                        büszkélkednek. Az egzotikus esőerdők, holdbéli tájak és az elbűvölő hegycsúcsok is hozzájárulnak
+                                        a szigetek változatos természetéhez.
+                                    </p>
+                                    <p class="main-box-img-cont">
+                                        <img class="main-box-img" src="img/_cabo.jpg"
+                                            alt="kilatas Mindelo beachre"></img>
+                                    </p>
+                                    <a>
+                            </section>
+            </div>
+        </main>
+
+        <footer class="main-footer" id="contact">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="about" id="footer-left">
+                        <div class="about-left">
+                            <div class="about-img-div"><img class="about-img" src="img/main_pic2.jpg"
+                                    alt="bemutatkozó kép zolnay tours"></img></div>
+                            <div class="about-text">
+                                <h6>Rólunk</h6>
+                                <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Mollitia sapiente tempore beatae laboriosam cupiditate. Debitis ad ipsum unde magnam
+                                    mollitia, quas provident ratione alias velit quaerat rerum nostrum dolorem
+                                    praesentium. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Mollitia sapiente tempore beatae laboriosam cupiditate. Debitis ad ipsum unde magnam
+                                    mollitia, quas provident ratione alias velit quaerat rerum nostrum dolorem
+                                    praesentium.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about" id="footer-right">
+                        <h6>Navigáció</h6>
+                        <ul class="footer-links">
+                            <li><a href="#navigation">Kezdőlap</a></li>
+                            <li><a href="#offers">Országok</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact">Kapcsolat</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="footer-container">
+                <div class="row">
+                    <div class="copy">
+                        <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                            <a href="#">Zolnay Tours</a>.
+                        </p>
+                    </div>
+
+                    <div class="footer-social">
+                        <ul class="social-icons">
+                            <li><a class="facebook" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a class="tiktok" href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
