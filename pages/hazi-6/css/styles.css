@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Montserrat:wght@300;600&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+/* justify-self-start és end a float helyett...*/
 * {
     margin: 0;
     padding: 0;
