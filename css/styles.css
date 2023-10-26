@@ -47,11 +47,14 @@ a {
   }
 
 /*BOX SECTION*/
+main{
+    display: flex;
+    flex-flow: row wrap;         
+    justify-content: center;
+    align-items: center;
+}
 
-.container{
-    position: relative;
-    width:1300px;
-    height: auto;
+.container{ 
     margin: 100px auto;
     text-align:center;
 }
@@ -138,7 +141,6 @@ a {
 
 @media (max-width: 1024px){
     .container{
-        width: 100%;
         clear: both;
         top: 50%;
         margin: 0 auto;
