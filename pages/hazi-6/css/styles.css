@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Montserrat:wght@300;600&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-/* justify-self-start és end a float helyett...*/
 * {
     margin: 0;
     padding: 0;
@@ -414,10 +413,13 @@ h1 {
 }
 
 .main-row {
-    position: relative;
+/*    position: relative; */
     margin: 0 5px 0 5px;
     padding: 0;
     text-align: center;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 .main-row::before,
@@ -430,7 +432,7 @@ h1 {
 .main-box {
     text-align: left;
     font-family: 'Roboto', sans-serif;
-    width: 100%;
+    width: 49%;
 }
 
 .main-box-link {
@@ -438,8 +440,8 @@ h1 {
     color: #1f1f1f;
     text-decoration: none;
     margin-bottom: 40px;
-/*    cursor: pointer; */
-    width: 45%;
+    cursor: pointer;
+    width: 95%;
     float: left;
     margin: 0 auto;
     padding: 10px;
@@ -759,6 +761,10 @@ div.row {
         margin: 0 auto;
         box-sizing:border-box;
         padding-left: 0;
+    }
+
+    .main-box {
+        width: 100%;
     }
 
     .main-footer [class^=col-] {
