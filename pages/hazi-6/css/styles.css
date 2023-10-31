@@ -772,6 +772,10 @@ div.row {
         width: 100%;
     }
 
+    .main-intro {
+        padding: 0 10px 0 10px;
+    }
+
     .main-footer [class^=col-] {
         margin-bottom: 30px;
     }
