@@ -773,7 +773,7 @@ div.row {
     }
 
     .main-intro {
-        padding: 0 10px 0 10px;
+        padding: 0 10px 0 5px;
     }
 
     .main-footer [class^=col-] {
