@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webfejlesztés gyakorlása</title>
+    <script>
+        //Hozz létre két változót, az egyik a te neved, a másik egy barátod neve.
+        //Jelenítsd meg a változókat a konzolban.
+        let me = "Robi";
+        let friend = "Friend";
+        console.log('me változó tartalma: '+me);                
+        console.log('friend változó tartalma: '+friend);    
+        
+        //Hozz létre egy konstanst PI értékkel és jelenítsd meg.
+        const PI = Math.PI;
+    //    PI = 3.14159;       //Próbáld meg megváltoztatni a PI értékét (nevezd meg a kódot, hogy később ne okozzon hibát).
+        console.log('Konstans - PI értéke Math függvénnyel: '+PI);    
+
+        //Hozz létre több változót különböző adattípusokkal, például sztringekkel, számokkal és logikai értékekkel.
+        let open = true;
+        let number = (5+3)*2;
+        console.log('Különböző adattípusok kiíratása:');
+        console.log(typeof number);
+        console.log(typeof me);
+        console.log(typeof open);
+
+        //Hozz létre egy person objektumot, amely tartalmazza a következő információkat: név, életkor és város.
+        let personObject = {
+        name: 'Robi',
+        age: 38,
+        city: 'Kerepes'
+        };
+        console.log(personObject);
+
+        //Hozz létre két változót, az egyiket inicializáld, a másikat hagyjad üresen.
+        let inicializaltValtozo = 1;
+        let uresValtozo;
+        console.log(inicializaltValtozo);
+        console.log(uresValtozo);
+
+        //Hozz létre néhány változót számértékekkel.
+        //Végezz el rajtuk alapvető aritmetikai műveleteket (összeadás, kivonás, szorzás, osztás, maradékos osztás).
+        //Kísérletezz a műveleti sorrenddel és használj zárójeleket a kívánt sorrend beállításához.
+        let a = 3;
+        let b = 2;
+        let c = 6;
+
+        let res1 = (a+b)*c;
+        let res2 = c/(a+b);
+        let res3 = (a*b)/c;
+        console.log('Első számítás eredménye:' +res1);
+        console.log('Második számítás eredménye:' +res2);
+        console.log('Harmadik számítás eredménye:' +res3);
+
+        //Jeleníts meg egy üzenetet az alert() függvénnyel, amely üdvözli a felhasználót.
+        //Kérdezd meg a felhasználó nevét a prompt() függvénnyel, majd üdvözöld a megadott névvel.
+        //Jeleníts meg egy üzenetet a konzolban.
+        let userName = prompt('Kérlek a továbblépés előtt add meg a neved!');
+        if(userName.length == 0){
+            alert('Kérlek vedd komolyan a házi feladatot! :-) ');
+            let userName = prompt('Kérlek a továbblépés előtt add meg a neved!');
+        } else {
+            alert('Üdvözlünk oldalukon '+userName+ '!');
+            console.log(userName+' nevű felhasználó belépett az oldalra');  
+        } 
+
+        //Kérdezd meg a felhasználó életkorát.
+        //Ha a felhasználó 18 évnél idősebb, akkor írd ki, hogy hozzáférhet egy bizonyos tartalomhoz, egyébként jelezd, hogy nem.
+        let userAge = prompt('Kérlek a továbblépés előtt add meg az életkorod!');
+        if(userAge < 18){
+            alert('Sajnáljuk, oldalunkat csak 18 éves kor feltt látogathatod.');  
+        } else {
+            alert('Üdvözlünk oldalukon kedves '+userName+ '! Mostantól korlátlanul hozzáférhetsz oldalunk tartalmához.');
+        }
+
+        //Készíts egy egyszerű összeadás műveletet két szám között, és az eredményt jelenítsd meg a konzolban.
+        console.log(a+b);
+    </script>
+</head>
+<body>
+    <h1>A házi feladat lényege a konzolban jelenik meg, melyet az F12 billentyű segítségével tudsz előhívni.</h1>
+</body>
+</html>

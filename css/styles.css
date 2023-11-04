@@ -133,8 +133,12 @@ main{
     background-color: rgb(85, 211, 169);
 }
 
-#vizsgamunka{
+#hazi-js{
     background-color: rgb(255, 127, 187);
+}
+
+#vizsgamunka{
+    background-color: rgb(253, 255, 127);
 }
 
 /*BREAKPOINTS*/
