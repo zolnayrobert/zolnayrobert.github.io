@@ -74,7 +74,7 @@
         //Kérdezd meg a felhasználó életkorát.
         //Ha a felhasználó 18 évnél idősebb, akkor írd ki, hogy hozzáférhet egy bizonyos tartalomhoz, egyébként jelezd, hogy nem.
         let userAge = prompt('Kérlek a továbblépés előtt add meg az életkorod!');
-        if(userAge < 18){
+        if(parseInt(userAge) < 18){
             alert('Sajnáljuk, oldalunkat csak 18 éves kor feltt látogathatod.');  
         } else {
             alert('Üdvözlünk oldalukon kedves '+userName+ '! Mostantól korlátlanul hozzáférhetsz oldalunk tartalmához.');
