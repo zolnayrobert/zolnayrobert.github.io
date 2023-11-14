@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Képgaléria aloldal sok képpel">
+    <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/gallery.js"></script>
+    <title>Képgaléria oldal</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="main-head">
+            <img class="header-img" src="../img/header.png" alt="travel clipart around the world"></img>
+            <h1>Zolnay</h1>
+            <h2>Tours</h2>
+            <q>TRAVEL LIKE THE LOCALS</q>
+        </header>
+
+        <nav class="main-nav" id="navigation">
+            <section class="social">
+                <a href="#" class="fa-brands fa-facebook-f"></a>
+                <a href="#" class="fa-brands fa-twitter"></a>
+                <a href="#" class="fa-brands fa-youtube"></a>
+                <a href="#" class="fa-brands fa-tiktok"></a>
+            </section>
+            <ul class="mainmenu">
+                <input type='checkbox' id='check'>
+                <span class="menu">
+                    <li class="mainmenu-li"><a href="../index.html">KEZDŐLAP</a></li>
+                    <li class="mainmenu-li"><a href="../index.html#blog">BLOG</a></li>
+                    <li class="mainmenu-li dropdown"><a href="">ORSZÁGOK <i class="fa fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu-li"><a href="../index.html#bulgaria">BULGÁRIA</a></li>
+                            <li class="submenu-li"><a href="../index.html#indonesia">INDONÉZIA</a></li>
+                            <li class="submenu-li"><a href="../index.html#italy">OLASZORSZÁG</a></li>
+                            <li class="submenu-li"><a href="../index.html#caboverde">ZÖLD-FOKI SZIGETEK</a></li>
+                        </ul>
+                    </li>
+                    <!--        <li class="mainmenu-li"><a href="">KÉPEK</a></li> -->
+                    <li class="mainmenu-li"><a href="#contact">KAPCSOLAT</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+        
+        <div class="gallery-wrapper">          
+                <p>
+                    <section class="img-gallery">
+                    <div class="gallery-image">
+                        <a class="popup-img" title="1.jpg">
+                            <img src="https://unsplash.it/888/?random" alt="1.jpg" id="1"/>
+                            <article class="content">
+                                <h3>Kép1 címe jön ide</h3>
+                                <p>Rövid kép1 leírás 1-2 mondatban</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="2.jpg">
+                            <img src="https://unsplash.it/931/?random" alt="2.jpg" id="2"/>
+                            <article class="content">
+                                <h3>Kép2 címe jön ide</h3>
+                                <p>Rövid kép2 leírás 1-2 mondatban</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="3.jpg">
+                            <img src="https://unsplash.it/902/?random" alt="3.jpg" id="3"/>
+                            <article class="content">
+                                <h3>Kép3 címe jön ide</h3>
+                                <p>Rövid kép3 leírás 1-2 mondatban</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="4.jpg">
+                            <img src="https://unsplash.it/901?random" alt="4.jpg" id="4"/>
+                            <article class="content">
+                                <h3>Kép4 címe jön ide</h3>
+                                <p>Rövid kép4 leírás 1-2 mondatban</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="5.jpg">
+                            <img src="https://unsplash.it/908/?random" alt="5.jpg" id="5"/>
+                            <article class="content">
+                                <h3>Kép5 címe jön ide</h3>
+                                <p>Rövid kép5 leírás 1-2 mondatban</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="6.jpg">
+                            <img src="https://unsplash.it/978/?random" alt="6.jpg" id="6"/>
+                            <article class="content">
+                                <h3>Kép6 címe jön ide</h3>
+                                <p>Rövid kép6 leírás 1-2 mondatban</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="7.jpg">
+                            <img src="https://unsplash.it/857/?random" alt="7.jpg" id="7"/>
+                            <article class="content">
+                                <h3>Kép7 címe jön ide</h3>
+                                <p>Rövid kép7 leírás 1-2 mondatban</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="8.jpg">
+                            <img src="https://unsplash.it/905/?random" alt="8.jpg" id="8"/>
+                            <article class="content">
+                                <h3>Kép8 címe jön ide</h3>
+                                <p>Rövid kép8 leírás 1-2 mondatban</p>
+                            </article>
+                        </a>
+                    </div><div class="gallery-image">
+                        <a class="popup-img" title="9.jpg">
+                            <img src="https://unsplash.it/974/?random" alt="9.jpg" id="9"/> 
+                            <article class="content">
+                                <h3>Kép9 címe jön ide</h3>
+                                <p>Rövid kép9 leírás 1-2 mondatban</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="10.jpg">
+                            <img src="https://unsplash.it/900/?random" alt="10.jpg" id="10"/>
+                            <article class="content">
+                                <h3>Kép10 címe jön ide</h3>
+                                <p>Rövid kép10 leírás 1-2 mondatban</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="11.jpg">
+                            <img src="https://unsplash.it/1230/?random" alt="11.jpg" id="11"/>
+                            <article class="content">
+                                <h3>Kép11 címe jön ide</h3>
+                                <p>Rövid kép11 leírás 1-2 mondatban</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="12.jpg">
+                            <img src="https://unsplash.it/800/?random" alt="12.jpg" id="12"/>
+                            <article class="content">
+                                <h3>Kép12 címe jön ide</h3>
+                                <p>Rövid kép12 leírás 1-2 mondatban</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="13.jpg">
+                            <img src="https://unsplash.it/930/?random" alt="13.jpg" id="13"/>
+                            <article class="content">
+                                <h3>Kép13 címe jön ide</h3>
+                                <p>Rövid kép13 leírás 1-2 mondatban</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="14.jpg">
+                            <img src="https://unsplash.it/999/?random" alt="14.jpg" id="14"/>
+                            <article class="content">
+                                <h3>Kép14 címe jön ide</h3>
+                                <p>Rövid kép14 leírás 1-2 mondatban</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="15.jpg">
+                            <img src="https://unsplash.it/785/?random" alt="15.jpg" id="15"/>
+                            <article class="content">
+                                <h3>Kép15 címe jön ide</h3>
+                                <p>Rövid kép15 leírás 1-2 mondatban</p>
+                            </article>
+                        </a>
+                    </div>
+                </section>
+                <div class="clear"></div>
+            </p>      
+        </div>
+
+        <div id="gallery-popup" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <a class="prev" id="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <div class="slides">
+                <img class="img-popup" src="" alt="" id="">
+                <article class="content-popup">
+                    <h3 id="h3-popup"></h3>
+                    <p id="p-popup"></p>
+                </article>
+            </div>
+            <a class="next" id="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+        <footer class="main-footer" id="contact">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="about" id="footer-left">
+                        <div class="about-left">
+                            <div class="about-img-div"><img class="about-img" src="../img/main_pic2.jpg"
+                                    alt="bemutatkozó kép zolnay tours"></img></div>
+                            <div class="about-text">
+                                <h6>Rólunk</h6>
+                                <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Mollitia sapiente tempore beatae laboriosam cupiditate. Debitis ad ipsum unde magnam
+                                    mollitia, quas provident ratione alias velit quaerat rerum nostrum dolorem
+                                    praesentium. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Mollitia sapiente tempore beatae laboriosam cupiditate. Debitis ad ipsum unde magnam
+                                    mollitia, quas provident ratione alias velit quaerat rerum nostrum dolorem
+                                    praesentium.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about" id="footer-right">
+                        <h6>Navigáció</h6>
+                        <ul class="footer-links">
+                            <li><a href="../index.html">Kezdőlap</a></li>
+                            <li><a href="../index.html#offers">Országok</a></li>
+                            <li><a href="../index.html#blog">Blog</a></li>
+                            <li><a href="#contact">Kapcsolat</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="footer-container">
+                <div class="row">
+                    <div class="copy">
+                        <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                            <a href="#">Zolnay Tours</a>.
+                        </p>
+                    </div>
+
+                    <div class="footer-social">
+                        <ul class="social-icons">
+                            <li><a class="facebook" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a class="tiktok" href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
