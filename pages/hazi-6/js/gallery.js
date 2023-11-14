@@ -41,13 +41,15 @@ function pickTextColorBasedOnBgColorSimple(bgColor) {
 
 //galéria nyitása
 function openModal(e) {
-    document.getElementById("gallery-popup").style.display = "block"; //galéria látható
+//    document.getElementById("gallery-popup").style.display = "block"; //galéria látható
+    $('#gallery-popup').fadeIn();  
     currentSlide(e);
 }
 
 //galéria zárása
 function closeModal() {
-    document.getElementById("gallery-popup").style.display = "none"; //galéria hideolva    
+//    document.getElementById("gallery-popup").style.display = "none"; //galéria hideolva
+    $('#gallery-popup').fadeOut();      
     $("#h3-popup").html(""); //képcím ürítése
     $("#p-popup").html(""); //kép leírás ürítése
 }
