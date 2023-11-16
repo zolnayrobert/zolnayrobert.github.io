@@ -154,7 +154,8 @@ nav .submenu {
 }
 
 li .submenu-li {
-    display: block;
+    display: flex;    
+    align-items: center;
     padding: 0 0 0 10px;
     position: relative;
     text-align: left;
