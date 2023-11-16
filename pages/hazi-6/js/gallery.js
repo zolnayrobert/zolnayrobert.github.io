@@ -55,7 +55,8 @@ function closeModal() {
 //aktuális kép betöltése
 function currentSlide(n) { 
     //kép betöltés
-    $('.img-popup').attr('src', n[0].childNodes[1].src);
+//  $('.img-popup').attr('src', n[0].childNodes[1].src);
+    $('.img-popup').attr('src', $(n[0].childNodes[1]).attr('data-large'));
     $('.img-popup').attr('alt', n[0].childNodes[1].alt); 
     $('.img-popup').attr('id', n[0].childNodes[1].id);
     
@@ -86,7 +87,8 @@ function plusSlides(n) {
   
     //Új ID adatit lekérjük és betöltjük az .img-popupba
     let nextImageProp = document.getElementById(nextNumber);
-    $('.img-popup').attr('src', nextImageProp.src);
+    //  $('.img-popup').attr('src', nextImageProp.src);
+    $('.img-popup').attr('src', $(nextImageProp).attr('data-large'));
     $('.img-popup').attr('alt', nextImageProp.alt);
     $('.img-popup').attr('id', nextNumber);
 
