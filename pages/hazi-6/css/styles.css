@@ -55,6 +55,16 @@ header q {
     text-align: center;
 }
 
+header a {
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+}
+
+header a:visited{
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+}
+
 header h1 {
     top: 8%;
     left: 47%;
@@ -340,6 +350,7 @@ aside h2 {
 
 aside article img {
     width: 100%;
+    border-radius: 1%;
 }
 
 .side-title {
@@ -472,6 +483,7 @@ h1 {
     margin-bottom: 0;
     overflow: hidden;
     position: relative;
+    border-radius: 1%;
 }
 
 .main-box .main-box-img-cont:before {
