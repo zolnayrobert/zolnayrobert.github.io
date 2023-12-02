@@ -7,14 +7,12 @@
     <meta property="og:type" content="website" />
     <meta property="og:URL" content="https://www.zolnaytours.hu" />
     <meta property="og:image" content="img/underwater.jpg" />
-    <meta property="og:description"
-        content="Kérdésed, észrevételed van? Neked mi a történeted? Írd meg nekünk! ✈️🌍 #Utazás #Képek #Kalandok" />
-    <meta name="description"
-        content="Kérdésed, észrevételed van? Neked mi a történeted? Írd meg nekünk! ✈️🌍 #Utazás #Képek #Kalandok">
+    <meta property="og:description" content="Kérdésed, észrevételed van? Neked mi a történeted? Írd meg nekünk! ✈️🌍 #Utazás #Képek #Kalandok" />
+    <meta name="description" content="Kérdésed, észrevételed van? Neked mi a történeted? Írd meg nekünk! ✈️🌍 #Utazás #Képek #Kalandok">
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/contact.js"></script>
     <title>Vedd fel velünk a kapcsolatot | ZolnayTours</title>
@@ -57,57 +55,46 @@
                 <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
             </ul>
         </nav>
-
+        
         <div class="contact-wrapper">
             <div class="contact-content">
                 <div class="contact-left">
                     <div class="contact-form">
                         <h3>Írj nekünk!</h3>
                         <form id="contactForm" name="contactForm">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for class="form-label">Név *</label>
-                                    <input type="text" class="form-control" name="name" id="name"
-                                        placeholder="Add meg a neved" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for class="form-label">Email *</label>
-                                    <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="írd be az email címed" maxlength="40" required>
-                                    <input type="hidden" name="_autoresponse"
-                                        value="Köszönjük leveled, hamarosan válaszolunk!">
-                                </div>
-                                <div class="form-group" id="contact-message">
-                                    <label for class="form-label">Üzenet *</label>
-                                    <textarea class="form-control" name="message" id="message" cols="30" rows="5"
-                                        placeholder="Oszd meg velünk kalandjaid, élményeid!" required></textarea>
-                                </div>
-                                <input type="hidden" name="_captcha" value="false">
-                                <input type="text" name="_honey" style="display:none">
-                                <input type="hidden" name="_next" value="../contact-thanks.html">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for class="form-label">Név *</label>
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Add meg a neved" required>
                             </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <input class="subscribe-button" id="contact-submit" type="submit" value="Küldés">
-                                </div>
+                            <div class="form-group">
+                                <label for class="form-label">Email *</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="írd be az email címed" maxlength="40" required>
+                                <input type="hidden" name="_autoresponse" value="Köszönjük leveled, hamarosan válaszolunk!">
                             </div>
+                            <div class="form-group" id="contact-message">
+                                <label for class="form-label">Üzenet *</label>
+                                <textarea class="form-control" name="message" id="message" cols="30" rows="5" placeholder="Oszd meg velünk kalandjaid, élményeid!" required></textarea>
+                            </div>
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="text" name="_honey" style="display:none">
+                            <input type="hidden" name="_next" value="../contact-thanks.html">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input class="subscribe-button" id="contact-submit" type="submit" value="Küldés">
+                            </div>
+                        </div>
                         </form>
                         <div id="form-message-report"> Köszönjük leveled, hamarosan válaszoulnk!</div>
                     </div>
                 </div>
                 <div class="contact-right">
-                    <iframe
-                        width="600"
-                        height="400"
-                        frameborder="0" style="border:0"
-                        referrerpolicy="no-referrer-when-downgrade"
-                        src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyCKWf7d3BcLAMN6KjQZM7JA5ZWU9zuzaWQ&center=47.56513966554939,19.28485086138639&zoom=16&maptype=view&style=element:geometry%7Ccolor:0xf5f5f5&style=element:labels.icon%7Cvisibility:off&style=element:labels.text.fill%7Ccolor:0x616161&style=element:labels.text.stroke%7Ccolor:0xf5f5f5&style=feature:administrative.land_parcel%7Celement:labels.text.fill%7Ccolor:0xbdbdbd&style=feature:poi%7Celement:geometry%7Ccolor:0xeeeeee&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:poi.park%7Celement:geometry%7Ccolor:0xe5e5e5&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&style=feature:road%7Celement:geometry%7Ccolor:0xffffff&style=feature:road.arterial%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:road.highway%7Celement:geometry%7Ccolor:0xdadada&style=feature:road.highway%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&style=feature:transit.line%7Celement:geometry%7Ccolor:0xe5e5e5&style=feature:transit.station%7Celement:geometry%7Ccolor:0xeeeeee&style=feature:water%7Celement:geometry%7Ccolor:0xc9c9c9&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&output=embed"
-                        allowfullscreen>
-                    </iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17258.62504444707!2d19.29177671570738!3d47.56736489716944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741cf595dbd246d%3A0xbe98f098fda50031!2zS2VyZXBlcywgU3rDqXLFsXMgdS4gNCwgMjE0NA!5e0!3m2!1shu!2shu!4v1701558092601!5m2!1shu!2shu" width="600" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
-
+     
         <footer class="main-footer" id="contact">
             <div class="footer-container">
                 <div class="row">
@@ -164,5 +151,4 @@
         </footer>
     </div>
 </body>
-
 </html>
