@@ -285,6 +285,7 @@ input[type="checkbox"]:hover{
     padding-top: 20px;
 }
 
+.subscribe-container .label2,
 .subscribe-container p {
     font-size: 14px;
     color: #3B4169;
