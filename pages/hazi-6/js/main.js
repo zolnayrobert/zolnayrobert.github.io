@@ -1,6 +1,6 @@
 $(document).ready(function()
 { 
-console.log("v.1844");    //verzió szám
+console.log("v.1845");    //verzió szám
     //Kapcsolat űrlap
     $('#contactForm').submit(function (e)
     {
