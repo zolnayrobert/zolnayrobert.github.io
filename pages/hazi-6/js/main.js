@@ -53,7 +53,7 @@ console.log(inputs);
                 for (let i = 0; i < inputs.length; i++) {
 console.log(inputs[i]);                      
                     // Mezőtípus ellenőrzés
-                    if (inputs[i].type === "text" || inputs[i].tagName === "TEXTAREA") {
+                    if (inputs[i].type === "text" || inputs[i].tagName === "textarea") {
                       // A mező értékének törlése
                       inputs[i].value = "";
                     //selectre külön kell
