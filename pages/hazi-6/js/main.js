@@ -44,8 +44,16 @@ console.log(frm);
         success: function (response) {        
             //kiürítjük az űrlap mezőit
             $.each(frm,function(k,v){
-console.log(k);
-console.log(v);				
+//              let message = v.closest('.form').find('#form-message-report').val();
+                let inputs = v.getElementsByTagName('input');
+                for (let i = 0; i < inputs.length; i++) {
+                    // Mezőtípus ellenőrzés
+                    if (inputs[i].type === "text" || inputs[i].type === "checkbox" || inputs[i].tagName === "TEXTAREA") {
+                      // A mező értékének törlése
+                      inputs[i].value = "";
+                    //selectre külön kell
+                    } else if(inputs[i].type === "select") inputs[i].value = 0;
+                }
 			});
 
             //sikeres küldésről üzenet
