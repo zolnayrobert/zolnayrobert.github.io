@@ -41,11 +41,12 @@ console.log(frm);
         dataType: 'html',
         accepts: 'application/json',
         data: frm.serialize(),
-        success: function (response) {        
-            //kiürítjük az űrlap mezőit
-            clearInputs(frm);
+        success: function (response) {     
             //sikeres küldésről üzenet
             sMsg(response);
+               
+            //kiürítjük az űrlap mezőit
+            clearInputs(frm);
         },
         error: function (data) {                    
             eMsg(); //hibaüzenet válaszba
@@ -57,11 +58,10 @@ console.log(frm);
 function clearInputs(frm)
 {
     
-    $.each(frm,function(k,v){
-console.log(v);                        
+    $.each(frm,function(k,v)
+    {                     
         //  let message = v.closest('.form').find('#form-message-report').val();
         let form = document.getElementById(v.id);
-console.log(form);
         let inputs = form.getElementsByTagName('input');
 console.log(inputs);                
         for (let i = 0; i < inputs.length; i++) {
@@ -69,10 +69,14 @@ console.log(inputs[i]);
             // Mezőtípus ellenőrzés
             if (inputs[i].type === "text" || inputs[i].tagName === "textarea" || inputs[i].type === "select")
             {
+console.log(inputs[i].value);                
                 // A mező értékének törlése
                 inputs[i].value = "";
             //checkboxra külön kell
-            } else if(inputs[i].type === "checkbox"  && inputs[i].checked) inputs[i].checked = false;
+            } else if(inputs[i].type === "checkbox"  && inputs[i].checked) {
+console.log(inputs[i].checked);             
+                inputs[i].checked = false;
+            }
         }
     });
 }
