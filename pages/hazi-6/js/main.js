@@ -1,6 +1,6 @@
 $(document).ready(function()
 { 
-console.log("v.1831");    
+console.log("v.1841");    
     //Kapcsolat űrlap
     $('#contactForm').submit(function (e)
     {
@@ -62,10 +62,10 @@ function clearInputs(frm)
         //  let message = v.closest('.form').find('#form-message-report').val();
         let form = document.getElementById(v.id);
         let inputs = form.getElementsByTagName('input');
-        let textarea = form.getElementsByTagName('textarea');
-console.log(textarea);     
-console.log(textarea.value); 
-        textarea.value = "";
+        let textareas = form.getElementsByTagName('textarea');
+console.log(textareas);     
+console.log(textareas.value); 
+        textareas.value = "";
 console.log(inputs.type);                
         for (let i = 0; i < inputs.length; i++) {
 console.log(inputs[i]);                      
