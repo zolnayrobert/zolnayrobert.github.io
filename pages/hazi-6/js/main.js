@@ -1,7 +1,7 @@
 $(document).ready(function()
 { 
 
-console.log("v.1859");    //verzió szám
+console.log("v.1860");    //verzió szám
 
 
     //Kapcsolat űrlap
