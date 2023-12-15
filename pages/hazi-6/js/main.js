@@ -40,7 +40,13 @@ console.log(frm);
         accepts: 'application/json',
         data: frm.serialize(),
         success: function (response) {        
-            //sikerres küldés
+            //kiürítjük az űrlap mezőit
+            $.each(frm,function(k,v){
+console.log(k);
+console.log(v);				
+			});
+
+            //sikeres küldésről üzenet
             sMsg(response);
         },
         error: function (data) {                    
