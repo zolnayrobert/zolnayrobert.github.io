@@ -8,17 +8,17 @@ $(document).ready(function()
     }); 
 
     //Hírlevél feliratkozás
-    $('#subscribe2Newsletter').submit(function (e)
+    $('#newsletterForm').submit(function (e)
     {
-        const frm = $('#subscribe2Newsletter');
+        const frm = $('#newsletterForm');
 console.log(frm);    
         sendMessage(frm);
     }); 
 
     //Ajánlatkérés
-    $('#requestOffer').submit(function (e)
+    $('#offerForm').submit(function (e)
     {
-        const frm = $('#requestOffer');
+        const frm = $('#offerForm');
 console.log(frm);        
         sendMessage(frm);
     });

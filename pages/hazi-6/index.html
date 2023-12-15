@@ -62,7 +62,7 @@
         <section class="left-side">
             <div class="form-container">
                 <h2>Ajánatkérés</h2>
-<!--            <form id="offerForm" name="offerForm" action="https://formsubmit.co/520a354098799bbb56777753e910654f" method="POST" />   -->
+                <form id="offerForm" name="offerForm" action="https://formsubmit.co/520a354098799bbb56777753e910654f" method="POST" />
                 <input class="subscribe-input" type="text" id="name" name="name" placeholder="Név" required>
                 <input class="subscribe-input" type="email" id="email" name="email" placeholder="Email cím"
                     maxlength="40" required>
@@ -95,15 +95,17 @@
                 <textarea class="subscribe-input" id="message" name="message" cols="20" rows="5"
                     placeholder="Írj nekünk magadról kicsit részletesebben" maxlength="160"></textarea>
 
-                <input class="subscribe-button" id="requestOffer" type="submit" value="Küldés">
+                <input class="subscribe-button" onSubmit="return false" type="submit" value="Küldés">
                 </form>
             </div>
             <section class="subscribe-container">
                 <h2>Ötletek a<br> postaládádba</h2>
                 <p>Íratkozz fel a hírlevelünkre, ingyenes <br> utazási tippekért és trükkökért.</p>
-                <input class="subscribe-input" name="newsletter" id="newsletter" type="email" placeholder="Email cím" required>
-                <button class="subscribe-button" id="subscribe2Newsletter" type="submit">Feliratkozom</button>
+                <form id="newsletterForm" name="newsletterForm" action="https://formsubmit.co/520a354098799bbb56777753e910654f" method="POST" />
+                    <input class="subscribe-input" name="newsletter" id="newsletter" type="email" placeholder="Email cím" required>
+                    <button class="subscribe-button" onSubmit="return false" type="submit">Feliratkozom</button>
                 <span>100% garantált tartalom</span>
+                </form>
             </section>
         </section>
 
