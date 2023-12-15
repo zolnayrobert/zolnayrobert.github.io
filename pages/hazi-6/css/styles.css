@@ -883,6 +883,11 @@ div.row {
 }
 
 @media (max-width:888px) {
+    header h1,
+    header h2{
+        left: 25%;
+    }
+    
     header q {
         display: none;
     }
