@@ -30,7 +30,7 @@ function sendMessage(frm)
 console.log(frm);    
     //Spinner mutatása válaszig
     document.getElementById("loading-overlay").style.display = "flex";
-    frm.preventDefault();
+    e.preventDefault();
 
     $.ajax({
         type: frm.attr('method'),
