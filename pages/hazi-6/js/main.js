@@ -1,6 +1,6 @@
 $(document).ready(function()
 { 
-console.log("v.1850");    //verzió szám
+console.log("v.1851");    //verzió szám
     //Kapcsolat űrlap
     $('#contactForm').submit(function (e)
     {
@@ -89,24 +89,18 @@ console.log(frm[0].id);
         document.getElementById("loading-overlay").style.display = "none";
 
         //melyik űrlap lett elküldve?
-        if(frm[0].id == "newsletterForm"){
-            frm.closest('#'+frm[0].id).find('#form-message-report').text = "Sikeres feliratkozás";   
-console.log(frm.closest('#'+frm[0].id).find('#form-message-report').text);                     
-console.log(frm.closest('#'+frm[0].id).find('#form-message-report').value);                     
-            document.getElementById(frm[0].id).find('#form-message-report').text = "Sikeres feliratkozás";
-
-console.log(document.getElementById(frm[0].id).find('#form-message-report').text);                     
-console.log(document.getElementById(frm[0].id).find('#form-message-report').value);                                 
+        if(frm[0].id == "newsletterForm"){                   
+            document.getElementById('form-subscribe-report').text = "Sikeres feliratkozás"; //Válasz megadása
+            document.getElementById("form-subscribe-report").style.display = "block"; //Jelenítse meg az üzenetet a küldésről                               
         } else {
-            $("#form-message-report").text("Köszönjük leveled, hamarosan válaszolunk!");
-        }
-        
-        // Jelenítse meg az üzenetet a küldésről
-        document.getElementById("form-message-report").style.display = "block"; 
+            $("#form-message-report").text("Köszönjük leveled, hamarosan válaszolunk!"); //Válasz megadása
+            document.getElementById("form-message-report").style.display = "block"; //Jelenítse meg az üzenetet a küldésről
+        }       
 
         // 5 másodperc késleltetéssel
         setTimeout(function() {
             // Rejtse el az üzenetet
+            document.getElementById("form-subscribe-report").style.display = "none";
             document.getElementById("form-message-report").style.display = "none";
         }, 8000);
     }
