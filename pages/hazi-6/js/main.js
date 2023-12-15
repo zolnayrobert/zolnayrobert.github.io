@@ -4,6 +4,7 @@ $(document).ready(function()
     $('#contactForm').submit(function (e)
     {
         const frm = $('#contactForm');
+        e.preventDefault();
         sendMessage(frm);
     }); 
 
@@ -11,7 +12,8 @@ $(document).ready(function()
     $('#newsletterForm').submit(function (e)
     {
         const frm = $('#newsletterForm');
-console.log(frm);    
+console.log(frm); 
+        e.preventDefault();   
         sendMessage(frm);
     }); 
 
@@ -19,7 +21,8 @@ console.log(frm);
     $('#offerForm').submit(function (e)
     {
         const frm = $('#offerForm');
-console.log(frm);        
+console.log(frm);      
+        e.preventDefault();  
         sendMessage(frm);
     });
 });
@@ -30,7 +33,6 @@ function sendMessage(frm)
 console.log(frm);    
     //Spinner mutatása válaszig
     document.getElementById("loading-overlay").style.display = "flex";
-    e.preventDefault();
 
     $.ajax({
         type: frm.attr('method'),
