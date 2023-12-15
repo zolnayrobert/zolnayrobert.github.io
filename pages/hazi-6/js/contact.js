@@ -1,7 +1,10 @@
 $(document).ready(function()
 { 
 /*    //Küldés gomb megnyomására visszajelzés
-    $('#contact-submit').click(function(){
+    $('#contact-submit').submit(function(e){
+
+        e.preventDefault();
+
         //adatok összegyűjtése küldéshez
         let datas = {
             name: $("#name").val(),
@@ -37,13 +40,12 @@ console.log(datas);
 
    */ 
 
-var frm = $('#contactForm');
-var msg_res ='';
+const frm = $('#contactForm');
+const msg_res ='';
 
-frm.submit(function (e) {
-
+frm.submit(function (e)
+{
     e.preventDefault();
-
    
     $.ajax({
         type: frm.attr('method'),
@@ -54,10 +56,9 @@ frm.submit(function (e) {
         data: frm.serialize(),
         success: function (response) {
 console.log(response);          
-        $("#message").html(response);
+        $("#form-message-report").html(sendresponse(response));
             if(response != msg_res){
-                msg_res = response; //store new response          
-                alert('New message received');
+//                msg_res = response; //store new response
               }
         },
         error: function (data) {
@@ -71,7 +72,8 @@ console.log(response);
 
 function sendresponse(e){
 console.log(e);
-alert(e);
+console.log(e.success);
+
     // Jelenítse meg az üzenetet a küldésről
     document.getElementById("form-message-report").style.display = "block"; 
 
