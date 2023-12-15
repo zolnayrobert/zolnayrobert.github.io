@@ -70,7 +70,11 @@
         </nav>
 
         <section class="left-side">
-            <div class="form-container">
+            <div class="form-container">             
+                <!--spinner-->
+                <div id="loading-overlay">
+                    <div id="loading-spinner" class="fas fa-plane"></div>
+                </div>
                 <h2>Ajánatkérés</h2>
                 <form id="offerForm" name="offerForm" action="https://formsubmit.co/520a354098799bbb56777753e910654f" method="POST" />
                 <input class="subscribe-input" type="text" id="name" name="name" placeholder="Név" required>
@@ -105,15 +109,29 @@
                 <textarea class="subscribe-input" id="message" name="message" cols="20" rows="5"
                     placeholder="Írj nekünk magadról kicsit részletesebben" maxlength="160"></textarea>
 
-                <input class="subscribe-button" onSubmit="return false" type="submit" value="Küldés">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none">
+                <input class="subscribe-button" type="submit" onSubmit="return false" value="Küldés">
                 </form>
             </div>
-            <section class="subscribe-container">
+            <section class="subscribe-container">                
+                <!--spinner-->
+                <div id="loading-overlay">
+                    <div id="loading-spinner" class="fas fa-plane"></div>
+                </div>
                 <h2>Ötletek a<br> postaládádba</h2>
                 <p>Íratkozz fel a hírlevelünkre, ingyenes <br> utazási tippekért és trükkökért.</p>
                 <form id="newsletterForm" name="newsletterForm" action="https://formsubmit.co/520a354098799bbb56777753e910654f" method="POST" />
                     <input class="subscribe-input" name="newsletter" id="newsletter" type="email" placeholder="Email cím" required>
-                    <button class="subscribe-button" onSubmit="return false" type="submit">Feliratkozom</button>
+                    <section class="checkbox">
+                        <input type="checkbox" id="acceptDPR" name="acceptDPR" value="1" required>
+                        <label class="label2" for="acceptDPR">Az adatvédelmi tájékoztatót elolvastam, megértettem, és hozzájárulok ahhoz, hogy megadott adataimat a szolgáltató,
+                            mint adatkezelő a szabályzatban foglaltaknak megfelelően kezelje.</label>
+                    </section>              
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
+                    <button class="subscribe-button" type="submit" onSubmit="return false">Feliratkozom</button>
+                    <div id="form-message-report"></div>
                 <span>100% garantált tartalom</span>
                 </form>
             </section>
