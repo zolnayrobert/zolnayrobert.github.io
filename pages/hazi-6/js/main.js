@@ -1,6 +1,9 @@
 $(document).ready(function()
 { 
-console.log("v.1851");    //verzió szám
+
+console.log("v.1852");    //verzió szám
+
+
     //Kapcsolat űrlap
     $('#contactForm').submit(function (e)
     {
@@ -39,12 +42,13 @@ function sendMessage(frm)
         dataType: 'html',
         accepts: 'application/json',
         data: frm.serialize(),
-        success: function (response) {     
-            //sikeres küldésről üzenet
-            sMsg(response,frm);
-               
+        success: function (response) {               
+            
             //kiürítjük az űrlap mezőit
             clearInputs(frm);
+              
+            //sikeres küldésről üzenet
+            sMsg(response,frm);
         },
         error: function (data) {                    
             eMsg(); //hibaüzenet válaszba
@@ -53,9 +57,9 @@ function sendMessage(frm)
     return false; //ne frissítsen oldalt
 }
 
+//űrlapmezők ürítése
 function clearInputs(frm)
 {
-    
     $.each(frm,function(k,v)
     {                     
         document.getElementById("message").value = ""; //textarea reset
@@ -80,9 +84,7 @@ function clearInputs(frm)
 //sikeres válasz feldolgozása
 function sMsg(e,frm)
 {
-console.log(frm);
-    let from = frm.closest('.desktop_detailSubRowLeft').find('#form-message-report');    
-console.log(frm[0].id);    
+    let from = frm.closest('.desktop_detailSubRowLeft').find('#form-message-report');       
     let msg = JSON.parse(e);   
     if(msg.success) {
         //Spinner elrejtése
@@ -90,7 +92,7 @@ console.log(frm[0].id);
 
         //melyik űrlap lett elküldve?
         if(frm[0].id == "newsletterForm"){                   
-            document.getElementById('form-subscribe-report').text = "Sikeres feliratkozás"; //Válasz megadása
+            $("#form-subscribe-report").text = "Sikeres feliratkozás!"; //Válasz megadása
             document.getElementById("form-subscribe-report").style.display = "block"; //Jelenítse meg az üzenetet a küldésről                               
         } else {
             $("#form-message-report").text("Köszönjük leveled, hamarosan válaszolunk!"); //Válasz megadása
@@ -113,7 +115,7 @@ function eMsg()
     document.getElementById("loading-overlay").style.display = "none";
     
     //hibaüzenet szövege
-    $("#form-message-report").text("Sajnos valami hiba történt, kérjük próbálja meg később!");
+    $("#form-message-report").text("Sajnos valami hiba történt, kérjük próbálja meg később! :-(");
         
     // Jelenítse meg az üzenetet a küldésről
     document.getElementById("form-message-report").style.color = "red"; //piros színnel jelezzük a hibát
