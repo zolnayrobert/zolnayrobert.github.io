@@ -755,6 +755,39 @@ div.row {
 .social-icons a.youtube:hover {
     background-color: #e62323;
 }
+/*FOOTER END*/
+
+/*SPINNER START*/
+/* Az extra réteg, amely lefedi az oldalt a betöltés ideje alatt */
+#loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Átlátszó fehér háttér */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+  
+/* A spinner stílusai */
+#loading-spinner {
+    font-size: 40px; /* ikon méretének beállítása */
+    color: #3498db; /* ikon színének beállítása */
+    width: 200px; /* ikon körbeforgás mérete*/
+    height: 200px; /* ikon körbeforgás mérete*/
+    border-radius: 50%; /* ikon körbeforgásának sugara */
+    animation: spin 1s infinite linear; /* ikon körbeforgó animációja */
+}
+  
+/* A spinner animációja */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+/*SPINNER END*/
 
 @media (max-width:1320px) {
     nav {
