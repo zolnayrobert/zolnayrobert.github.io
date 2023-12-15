@@ -13,7 +13,6 @@ console.log("v.1831");
     $('#newsletterForm').submit(function (e)
     {
         const frm = $('#newsletterForm');
-console.log(frm); 
         e.preventDefault();   
         sendMessage(frm);
     }); 
@@ -22,7 +21,6 @@ console.log(frm);
     $('#offerForm').submit(function (e)
     {
         const frm = $('#offerForm');
-console.log(frm);      
         e.preventDefault();  
         sendMessage(frm);
     });
@@ -65,6 +63,8 @@ function clearInputs(frm)
         let form = document.getElementById(v.id);
         let inputs = form.getElementsByTagName('input');
         let textarea = form.getElementsByTagName('textarea');
+console.log(textarea);     
+console.log(textarea.value); 
         textarea.value = "";
 console.log(inputs.type);                
         for (let i = 0; i < inputs.length; i++) {
