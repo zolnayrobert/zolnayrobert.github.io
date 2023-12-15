@@ -20,6 +20,7 @@ $(document).ready(function()
                 sMsg(response);
             },
             error: function (data) {
+console.log("nincs küldés");                       
                 eMsg();
             }
         });
@@ -45,6 +46,7 @@ function sMsg(e)
             document.getElementById("form-message-report").style.display = "none";
         }, 5000);
     } else {
+console.log(e);        
         eMsg();
     }
 }
