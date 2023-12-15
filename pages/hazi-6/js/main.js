@@ -1,7 +1,7 @@
 $(document).ready(function()
 { 
 
-console.log("v.1852");    //verzió szám
+console.log("v.1853");    //verzió szám
 
 
     //Kapcsolat űrlap
@@ -102,7 +102,7 @@ function sMsg(e,frm)
         // 5 másodperc késleltetéssel
         setTimeout(function() {
             // Rejtse el az üzenetet
-            document.getElementById("form-subscribe-report").style.display = "none";
+            if(frm[0].id == "newsletterForm") document.getElementById("form-subscribe-report").style.display = "none";
             document.getElementById("form-message-report").style.display = "none";
         }, 8000);
     }
