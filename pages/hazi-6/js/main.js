@@ -3,29 +3,34 @@ $(document).ready(function()
     $('#contactForm').submit(function (e)
     {
         const frm = $('#contactForm');
-
-        //Spinner mutatása válaszig
-        document.getElementById("loading-overlay").style.display = "flex";
-        frm.preventDefault();
-    
-        $.ajax({
-            type: frm.attr('method'),
-            method: "POST",
-            url: "https://formsubmit.co/ajax/520a354098799bbb56777753e910654f",
-            dataType: 'html',
-            accepts: 'application/json',
-            data: frm.serialize(),
-            success: function (response) {        
-                //sikerres küldés
-                sMsg(response);
-            },
-            error: function (data) {                    
-                eMsg(); //hibaüzenet válaszba
-            }
-        });
-        return false; //ne frissítsen oldalt
+        sendMessage(frm);
     }); 
 });
+
+//Üzenet küldése
+function sendMessage(frm)
+{
+    //Spinner mutatása válaszig
+    document.getElementById("loading-overlay").style.display = "flex";
+    frm.preventDefault();
+
+    $.ajax({
+        type: frm.attr('method'),
+        method: "POST",
+        url: "https://formsubmit.co/ajax/520a354098799bbb56777753e910654f",
+        dataType: 'html',
+        accepts: 'application/json',
+        data: frm.serialize(),
+        success: function (response) {        
+            //sikerres küldés
+            sMsg(response);
+        },
+        error: function (data) {                    
+            eMsg(); //hibaüzenet válaszba
+        }
+    });
+    return false; //ne frissítsen oldalt
+}
 
 //sikeres válasz feldolgozása
 function sMsg(e)
