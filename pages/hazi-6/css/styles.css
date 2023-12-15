@@ -882,12 +882,7 @@ div.row {
     }
 }
 
-@media (max-width:888px) {
-    header h1,
-    header h2{
-        left: 25%;
-    }
-    
+@media (max-width:888px) {  
     header q {
         display: none;
     }
@@ -998,3 +993,10 @@ div.row {
         font-weight: 600;
     }
 }
+
+@media (max-width:500px) {
+    header h1,
+    header h2{
+        left: 25%;
+    }
+}    
