@@ -11,6 +11,7 @@ $(document).ready(function()
     $('#subscribe2Newsletter').submit(function (e)
     {
         const frm = $('#subscribe2Newsletter');
+console.log(frm);    
         sendMessage(frm);
     }); 
 
@@ -18,6 +19,7 @@ $(document).ready(function()
     $('#requestOffer').submit(function (e)
     {
         const frm = $('#requestOffer');
+console.log(frm);        
         sendMessage(frm);
     });
 });
