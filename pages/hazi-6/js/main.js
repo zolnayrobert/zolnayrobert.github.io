@@ -78,7 +78,7 @@ function sMsg(e)
 
         // Jelenítse meg az üzenetet a küldésről
         $("#form-message-report").text("Köszönjük leveled, hamarosan válaszolunk!");
-        document.getElementById("form-message-report").style.color = "green"; //zöld színnel, mert siekres a küldés
+//        document.getElementById("form-message-report").style.color = "green"; //zöld színnel, mert siekres a küldés
         document.getElementById("form-message-report").style.display = "block"; 
 
         // 5 másodperc késleltetéssel
