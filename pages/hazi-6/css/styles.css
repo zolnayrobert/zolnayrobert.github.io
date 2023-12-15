@@ -796,6 +796,16 @@ div.row {
 }
 /*SPINNER END*/
 
+/*FORM MESSAGE START*/
+#form-message-report{
+    display:none;
+    color: #55A44E;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 10px 20px 10px;
+}
+/*FORM MESSAGE END*/
+
 @media (max-width:1320px) {
     nav {
         grid-column: 1 / 13;

@@ -46,7 +46,9 @@ console.log(frm);
             $.each(frm,function(k,v){
 //              let message = v.closest('.form').find('#form-message-report').val();
                 let inputs = v.getElementsByTagName('input');
+console.log(inputs);                
                 for (let i = 0; i < inputs.length; i++) {
+console.log(inputs[i]);                      
                     // Mezőtípus ellenőrzés
                     if (inputs[i].type === "text" || inputs[i].type === "checkbox" || inputs[i].tagName === "TEXTAREA") {
                       // A mező értékének törlése
@@ -76,6 +78,7 @@ function sMsg(e)
 
         // Jelenítse meg az üzenetet a küldésről
         $("#form-message-report").text("Köszönjük leveled, hamarosan válaszolunk!");
+        document.getElementById("form-message-report").style.color = "green"; //zöld színnel, mert siekres a küldés
         document.getElementById("form-message-report").style.display = "block"; 
 
         // 5 másodperc késleltetéssel
