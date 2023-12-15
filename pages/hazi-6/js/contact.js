@@ -73,7 +73,7 @@ console.log(response);
 function sendresponse(e){
 console.log(e);
     let msg = JSON.parse(e);
-console.log(msg);    
+console.log(msg.success);    
     // Jelenítse meg az üzenetet a küldésről
     document.getElementById("form-message-report").style.display = "block"; 
 
