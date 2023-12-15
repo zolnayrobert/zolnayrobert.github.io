@@ -44,8 +44,11 @@ console.log(frm);
         success: function (response) {        
             //kiürítjük az űrlap mezőit
             $.each(frm,function(k,v){
+console.log(v);                        
 //              let message = v.closest('.form').find('#form-message-report').val();
-                let inputs = v.getElementsByTagName('input');
+                let form = document.getElementById(v.id);
+console.log(form);  
+                let inputs = form.getElementsByTagName('input');
 console.log(inputs);                
                 for (let i = 0; i < inputs.length; i++) {
 console.log(inputs[i]);                      
