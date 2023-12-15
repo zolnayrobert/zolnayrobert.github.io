@@ -33,7 +33,8 @@ console.log(data);
 function sMsg(e)
 {
     let msg = JSON.parse(e);
-    if(msg.success === true) {
+console.log(msg);    
+    if(msg.success) {
         //Spinner elrejtése
         document.getElementById("loading-overlay").style.display = "none";
 
