@@ -1,7 +1,7 @@
 $(document).ready(function()
 { 
 
-console.log("v.1854");    //verzió szám
+console.log("v.1855");    //verzió szám
 
 
     //Kapcsolat űrlap
@@ -62,8 +62,8 @@ function clearInputs(frm)
 {
     $.each(frm,function(k,v)
     {                     
-        document.getElementById("message").value = ""; //textarea reset
-        document.getElementById("_subject").value = "choose"; //select reset
+        if(document.getElementById("message")) document.getElementById("message").value = ""; //textarea reset
+        if(document.getElementById("_subject")) document.getElementById("_subject").value = "choose"; //select reset
         
         //minden más űrlap típus
         let form = document.getElementById(v.id);    
