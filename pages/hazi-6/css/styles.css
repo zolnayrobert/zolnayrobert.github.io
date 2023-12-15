@@ -779,7 +779,7 @@ div.row {
     width: 200px; /* ikon körbeforgás mérete*/
     height: 200px; /* ikon körbeforgás mérete*/
     border-radius: 50%; /* ikon körbeforgásának sugara */
-    animation: spin 2s infinite linear; /* ikon körbeforgó animációja */
+    animation: spin 1.4s infinite linear; /* ikon körbeforgó animációja */
 }
   
 /* A spinner animációja */
