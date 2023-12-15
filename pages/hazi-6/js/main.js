@@ -1,12 +1,12 @@
 $(document).ready(function()
 { 
-    const frm = $('#contactForm');
-
-    frm.submit(function (e)
+    $('#contactForm').submit(function (e)
     {
+        const frm = $('#contactForm');
+
         //Spinner mutatása válaszig
         document.getElementById("loading-overlay").style.display = "flex";
-        e.preventDefault();
+        frm.preventDefault();
     
         $.ajax({
             type: frm.attr('method'),
