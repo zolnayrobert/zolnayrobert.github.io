@@ -1,7 +1,7 @@
 $(document).ready(function()
 { 
 
-console.log("v.1853");    //verzió szám
+console.log("v.1854");    //verzió szám
 
 
     //Kapcsolat űrlap
@@ -92,7 +92,7 @@ function sMsg(e,frm)
 
         //melyik űrlap lett elküldve?
         if(frm[0].id == "newsletterForm"){                   
-            $("#form-subscribe-report").text = "Sikeres feliratkozás!"; //Válasz megadása
+            $("#form-subscribe-report").text("Sikeres feliratkozás!"); //Válasz megadása
             document.getElementById("form-subscribe-report").style.display = "block"; //Jelenítse meg az üzenetet a küldésről                               
         } else {
             $("#form-message-report").text("Köszönjük leveled, hamarosan válaszolunk!"); //Válasz megadása
