@@ -53,6 +53,9 @@ header q {
     position: absolute;
     overflow: auto;
     text-align: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 
 header a {
@@ -66,8 +69,6 @@ header a:visited{
 }
 
 header h1 {
-    top: 8%;
-    left: 47%;
     transform: rotate(-5deg);
     font-family: 'Fasthand', cursive;
     margin: -7px;
@@ -75,8 +76,6 @@ header h1 {
 }
 
 header h2 {
-    top: 22%;
-    left: 49%;
     transform: rotate(-5deg);
     font-family: 'Fasthand', cursive;
 }
