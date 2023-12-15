@@ -1,5 +1,6 @@
 $(document).ready(function()
 { 
+console.log("v.1750")    
     //Kapcsolat űrlap
     $('#contactForm').submit(function (e)
     {
