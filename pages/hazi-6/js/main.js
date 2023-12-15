@@ -1,6 +1,6 @@
 $(document).ready(function()
 { 
-console.log("v.1843");    
+console.log("v.1844");    //verzió szám
     //Kapcsolat űrlap
     $('#contactForm').submit(function (e)
     {
@@ -28,8 +28,7 @@ console.log("v.1843");
 
 //Üzenet küldése
 function sendMessage(frm)
-{
-console.log(frm);    
+{   
     //Spinner mutatása válaszig
     document.getElementById("loading-overlay").style.display = "flex";
 
@@ -59,29 +58,20 @@ function clearInputs(frm)
     
     $.each(frm,function(k,v)
     {                     
-        //  let message = v.closest('.form').find('#form-message-report').val();
-        let form = document.getElementById(v.id);
-console.log(form);        
+        document.getElementById("message").value = ""; //textarea reset
+        document.getElementById("_subject").value = "choose"; //select reset
+        
+        //minden más űrlap típus
+        let form = document.getElementById(v.id);    
         let inputs = form.getElementsByTagName('input');
-        let textareas = form.getElementsByTagName('textarea');
-console.log(textareas);     
-console.log(textareas.value); 
-        textareas.value = "";
-        document.getElementById("message").value = "";
-
-console.log(inputs.type);                
-        for (let i = 0; i < inputs.length; i++) {
-console.log(inputs[i]);                      
+        for (let i = 0; i < inputs.length; i++)
+        {              
             // Mezőtípus ellenőrzés
-            if (inputs[i].type === "text" || inputs[i].type === "email" || inputs[i].type === "select")
-            {
-console.log(inputs[i].value);                
-                // A mező értékének törlése
-                inputs[i].value = "";
-            //checkboxra külön kell
-            } else if(inputs[i].type === "checkbox"  && inputs[i].checked) {
-console.log(inputs[i].checked);             
-                inputs[i].checked = false;
+            if (inputs[i].type === "text" || inputs[i].type === "email")
+            {           
+                inputs[i].value = ""; // mező értékének törlése
+            } else if(inputs[i].type === "checkbox"  && inputs[i].checked) {           
+                inputs[i].checked = false; //checkboxra külön kell
             }
         }
     });
