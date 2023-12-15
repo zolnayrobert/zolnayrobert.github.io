@@ -89,8 +89,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.form-control #message{
-    height: 100px;
+#message{
+    height: 105px;
 }
 
 #contact-submit{
