@@ -1,6 +1,6 @@
 $(document).ready(function()
 { 
-console.log("v.1849");    //verzió szám
+console.log("v.1850");    //verzió szám
     //Kapcsolat űrlap
     $('#contactForm').submit(function (e)
     {
@@ -82,24 +82,33 @@ function sMsg(e,frm)
 {
 console.log(frm);
     let from = frm.closest('.desktop_detailSubRowLeft').find('#form-message-report');    
-console.log(from);    
+console.log(frm[0].id);    
     let msg = JSON.parse(e);   
     if(msg.success) {
         //Spinner elrejtése
         document.getElementById("loading-overlay").style.display = "none";
 
         //melyik űrlap lett elküldve?
+        if(frm[0].id == "newsletterForm"){
+            frm.closest('#'+frm[0].id).find('#form-message-report').text = "Sikeres feliratkozás";   
+console.log(frm.closest('#'+frm[0].id).find('#form-message-report').text);                     
+console.log(frm.closest('#'+frm[0].id).find('#form-message-report').value);                     
+            document.getElementById(frm[0].id).find('#form-message-report').text = "Sikeres feliratkozás";
 
+console.log(document.getElementById(frm[0].id).find('#form-message-report').text);                     
+console.log(document.getElementById(frm[0].id).find('#form-message-report').value);                                 
+        } else {
+            $("#form-message-report").text("Köszönjük leveled, hamarosan válaszolunk!");
+        }
         
         // Jelenítse meg az üzenetet a küldésről
-        $("#form-message-report").text("Köszönjük leveled, hamarosan válaszolunk!");
         document.getElementById("form-message-report").style.display = "block"; 
 
         // 5 másodperc késleltetéssel
         setTimeout(function() {
             // Rejtse el az üzenetet
             document.getElementById("form-message-report").style.display = "none";
-        }, 5000);
+        }, 8000);
     }
 }
 
