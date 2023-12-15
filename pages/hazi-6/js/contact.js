@@ -72,8 +72,10 @@ console.log(response);
 
 function sendresponse(e){
 console.log(e);
-console.log(e.success);
-
+        $.each(e,function(k,msg){
+console.log(k);
+console.log(msg);
+    });
     // Jelenítse meg az üzenetet a küldésről
     document.getElementById("form-message-report").style.display = "block"; 
 
