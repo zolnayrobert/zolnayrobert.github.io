@@ -1,6 +1,6 @@
 $(document).ready(function()
 { 
-console.log("v.1842");    
+console.log("v.1843");    
     //Kapcsolat űrlap
     $('#contactForm').submit(function (e)
     {
@@ -67,6 +67,8 @@ console.log(form);
 console.log(textareas);     
 console.log(textareas.value); 
         textareas.value = "";
+        document.getElementById("message").value = "";
+
 console.log(inputs.type);                
         for (let i = 0; i < inputs.length; i++) {
 console.log(inputs[i]);                      
