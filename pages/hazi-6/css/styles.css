@@ -780,20 +780,42 @@ div.row {
 }
   
 /* A spinner stílusai */
-#loading-spinner {
-    font-size: 36px; /* ikon méretének beállítása */
-    color: #3498db; /* ikon színének beállítása */
-    width: 200px; /* ikon körbeforgás mérete*/
-    height: 200px; /* ikon körbeforgás mérete*/
-    border-radius: 50%; /* ikon körbeforgásának sugara */
+.fas {    
+    font-size: 36px;
+    color: #3498db;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
     animation: spin 1.4s infinite linear; /* ikon körbeforgó animációja */
+    -webkit-animation: spin 1.4s infinite linear;
 }
-  
+
+.loader {
+    width: 190px;
+    height: 190px;
+    padding: 20px;
+    border-radius: 50%;
+    background: 
+      radial-gradient(farthest-side,#3498db 94%,#0000) top/8px 8px no-repeat,
+      conic-gradient(#0000 30%,#3498db);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 22px),#000 0);
+    animation: l13 1.4s infinite linear;
+}
+
 /* A spinner animációja */
+@keyframes l13{ 
+    100%{transform: rotate(1turn)}
+  }
+
 @keyframes spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
 /*SPINNER END*/
 
 /*FORM MESSAGE START*/
