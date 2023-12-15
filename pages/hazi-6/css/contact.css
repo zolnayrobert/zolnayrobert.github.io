@@ -98,7 +98,7 @@
 }
 
 #form-message-report{
-    display:block;
+    display:none;
     color: #55A44E;
     font-size: 18px;
     font-weight: bold;
