@@ -101,3 +101,43 @@
 .contact-right{
     width: 50%;
 }
+
+iframe {
+    width:600px;
+    height:500px;
+    border:0;
+}
+
+@media (max-width:1320px) {
+    .contact-wrapper{
+        grid-column: 2 / 12;
+    }
+    
+    .contact-left {
+        width: 100%;
+    }
+
+    .contact-right {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
+
+@media (max-width:1050px) {
+    .contact-wrapper{
+        grid-column: 1 / 13;
+    }
+}
+
+@media (max-width:888px) {
+    .form-group {
+        width: 100%;
+    }
+
+    #contact-submit{
+        width: 100%;
+    }
+}
