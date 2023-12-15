@@ -1,6 +1,6 @@
 $(document).ready(function()
 { 
-console.log("v.1750");    
+console.log("v.1805");    
     //Kapcsolat űrlap
     $('#contactForm').submit(function (e)
     {
@@ -64,11 +64,13 @@ function clearInputs(frm)
         //  let message = v.closest('.form').find('#form-message-report').val();
         let form = document.getElementById(v.id);
         let inputs = form.getElementsByTagName('input');
-console.log(inputs);                
+        textarea.value = "";
+        inputs[i].tagName === "textarea" || 
+console.log(inputs.type);                
         for (let i = 0; i < inputs.length; i++) {
 console.log(inputs[i]);                      
             // Mezőtípus ellenőrzés
-            if (inputs[i].type === "text" || inputs[i].tagName === "textarea" || inputs[i].type === "select")
+            if (inputs[i].type === "text" || inputs[i].type === "email" || inputs[i].type === "select")
             {
 console.log(inputs[i].value);                
                 // A mező értékének törlése
