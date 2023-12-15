@@ -1,6 +1,6 @@
 $(document).ready(function()
 { 
-    //Küldés gomb megnyomására visszajelzés
+/*    //Küldés gomb megnyomására visszajelzés
     $('#contact-submit').click(function(){
         //adatok összegyűjtése küldéshez
         let datas = {
@@ -32,8 +32,41 @@ console.log(datas);
             // Rejtse el az üzentet
             document.getElementById("form-message-report").style.display = "none";
         }, 2000);
-*/        
+       
     });
+
+   */ 
+
+var frm = $('#contactForm');
+var msg_res ='';
+
+frm.submit(function (e) {
+
+    e.preventDefault();
+
+   
+    $.ajax({
+        type: frm.attr('method'),
+        method: "POST",
+        url: "https://formsubmit.co/ajax/520a354098799bbb56777753e910654f",
+        dataType: 'html',
+        accepts: 'application/json',
+        data: frm.serialize(),
+        success: function (response) {
+console.log(response);          
+        $("#message").html(response);
+            if(response != msg_res){
+                msg_res = response; //store new response          
+                alert('New message received');
+              }
+        },
+        error: function (data) {
+            console.log('An error occurred.');
+            console.log(data);
+        }
+    });
+    return false; // here a change
+}); 
 });
 
 function sendresponse(e){
