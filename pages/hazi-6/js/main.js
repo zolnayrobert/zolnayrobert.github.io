@@ -43,24 +43,7 @@ console.log(frm);
         data: frm.serialize(),
         success: function (response) {        
             //kiürítjük az űrlap mezőit
-            $.each(frm,function(k,v){
-console.log(v);                        
-//              let message = v.closest('.form').find('#form-message-report').val();
-                let form = document.getElementById(v.id);
-console.log(form);  
-                let inputs = form.getElementsByTagName('input');
-console.log(inputs);                
-                for (let i = 0; i < inputs.length; i++) {
-console.log(inputs[i]);                      
-                    // Mezőtípus ellenőrzés
-                    if (inputs[i].type === "text" || inputs[i].tagName === "textarea") {
-                      // A mező értékének törlése
-                      inputs[i].value = "";
-                    //selectre külön kell
-                    } else if(inputs[i].type === "select" || inputs[i].type === "checkbox") inputs[i].value = 0;
-                }
-			});
-
+            clearInputs(frm);
             //sikeres küldésről üzenet
             sMsg(response);
         },
@@ -69,6 +52,29 @@ console.log(inputs[i]);
         }
     });
     return false; //ne frissítsen oldalt
+}
+
+function clearInputs(frm)
+{
+    
+    $.each(frm,function(k,v){
+console.log(v);                        
+        //  let message = v.closest('.form').find('#form-message-report').val();
+        let form = document.getElementById(v.id);
+console.log(form);
+        let inputs = form.getElementsByTagName('input');
+console.log(inputs);                
+        for (let i = 0; i < inputs.length; i++) {
+console.log(inputs[i]);                      
+            // Mezőtípus ellenőrzés
+            if (inputs[i].type === "text" || inputs[i].tagName === "textarea" || inputs[i].type === "select")
+            {
+                // A mező értékének törlése
+                inputs[i].value = "";
+            //checkboxra külön kell
+            } else if(inputs[i].type === "checkbox"  && inputs[i].checked) inputs[i].checked = false;
+        }
+    });
 }
 
 //sikeres válasz feldolgozása
