@@ -1,6 +1,6 @@
 $(document).ready(function()
 { 
-console.log("v.1841");    
+console.log("v.1842");    
     //Kapcsolat űrlap
     $('#contactForm').submit(function (e)
     {
@@ -61,6 +61,7 @@ function clearInputs(frm)
     {                     
         //  let message = v.closest('.form').find('#form-message-report').val();
         let form = document.getElementById(v.id);
+console.log(form);        
         let inputs = form.getElementsByTagName('input');
         let textareas = form.getElementsByTagName('textarea');
 console.log(textareas);     
