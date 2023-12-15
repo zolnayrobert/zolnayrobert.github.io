@@ -85,7 +85,8 @@
 #contact-message{
     width: 100% !important;
 }
-.form-control input[type=textarea]::placeholder{
+
+#message::placeholder{
     font-family: 'Roboto', sans-serif;
 }
 
