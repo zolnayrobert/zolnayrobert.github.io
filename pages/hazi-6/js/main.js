@@ -53,11 +53,11 @@ console.log(inputs);
                 for (let i = 0; i < inputs.length; i++) {
 console.log(inputs[i]);                      
                     // Mezőtípus ellenőrzés
-                    if (inputs[i].type === "text" || inputs[i].type === "checkbox" || inputs[i].tagName === "TEXTAREA") {
+                    if (inputs[i].type === "text" || inputs[i].tagName === "TEXTAREA") {
                       // A mező értékének törlése
                       inputs[i].value = "";
                     //selectre külön kell
-                    } else if(inputs[i].type === "select") inputs[i].value = 0;
+                    } else if(inputs[i].type === "select" || inputs[i].type === "checkbox") inputs[i].value = 0;
                 }
 			});
 
