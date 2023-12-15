@@ -1,15 +1,31 @@
 $(document).ready(function()
 { 
+    //Kapcsolat űrlap
     $('#contactForm').submit(function (e)
     {
         const frm = $('#contactForm');
         sendMessage(frm);
     }); 
+
+    //Hírlevél feliratkozás
+    $('#subscribe2Newsletter').submit(function (e)
+    {
+        const frm = $('#subscribe2Newsletter');
+        sendMessage(frm);
+    }); 
+
+    //Ajánlatkérés
+    $('#requestOffer').submit(function (e)
+    {
+        const frm = $('#requestOffer');
+        sendMessage(frm);
+    });
 });
 
 //Üzenet küldése
 function sendMessage(frm)
 {
+console.log(frm);    
     //Spinner mutatása válaszig
     document.getElementById("loading-overlay").style.display = "flex";
     frm.preventDefault();
