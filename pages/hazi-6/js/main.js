@@ -1,6 +1,6 @@
 $(document).ready(function()
 { 
-console.log("v.1848");    //verzió szám
+console.log("v.1849");    //verzió szám
     //Kapcsolat űrlap
     $('#contactForm').submit(function (e)
     {
@@ -41,7 +41,7 @@ function sendMessage(frm)
         data: frm.serialize(),
         success: function (response) {     
             //sikeres küldésről üzenet
-            sMsg(response);
+            sMsg(response,frm);
                
             //kiürítjük az űrlap mezőit
             clearInputs(frm);
@@ -78,16 +78,21 @@ function clearInputs(frm)
 }
 
 //sikeres válasz feldolgozása
-function sMsg(e)
+function sMsg(e,frm)
 {
+console.log(frm);
+    let from = frm.closest('.desktop_detailSubRowLeft').find('#form-message-report');    
+console.log(from);    
     let msg = JSON.parse(e);   
     if(msg.success) {
         //Spinner elrejtése
         document.getElementById("loading-overlay").style.display = "none";
 
+        //melyik űrlap lett elküldve?
+
+        
         // Jelenítse meg az üzenetet a küldésről
         $("#form-message-report").text("Köszönjük leveled, hamarosan válaszolunk!");
-//        document.getElementById("form-message-report").style.color = "green"; //zöld színnel, mert siekres a küldés
         document.getElementById("form-message-report").style.display = "block"; 
 
         // 5 másodperc késleltetéssel
