@@ -73,14 +73,27 @@ console.log(response);
 function sendresponse(e){
 console.log(e);
     let msg = JSON.parse(e);
-console.log(msg.success);    
-    // Jelenítse meg az üzenetet a küldésről
-    document.getElementById("form-message-report").style.display = "block"; 
+    if(msg.success === true) {
+        // Jelenítse meg az üzenetet a küldésről
+        document.getElementById("form-message-report").style.display = "block"; 
 
-    // 2 másodperc késleltetéssel
-    setTimeout(function() {
-        // Rejtse el az üzentet
-        document.getElementById("form-message-report").style.display = "none";
-    }, 2000);
+        // 2 másodperc késleltetéssel
+        setTimeout(function() {
+            // Rejtse el az üzentet
+            document.getElementById("form-message-report").style.display = "none";
+        }, 2000);
+    } else {
+        $("#form-message-report").text("Sajnos valami hiba történt, kérjük próbálja meg később!");
+        
+        // Jelenítse meg az üzenetet a küldésről
+        document.getElementById("form-message-report").style.color = "red"; 
+        document.getElementById("form-message-report").style.display = "block"; 
+
+        // 2 másodperc késleltetéssel
+        setTimeout(function() {
+            // Rejtse el az üzentet
+            document.getElementById("form-message-report").style.display = "none";
+        }, 2000);
+    }
 }
         
