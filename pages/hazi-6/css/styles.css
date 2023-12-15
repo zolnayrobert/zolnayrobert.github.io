@@ -110,6 +110,12 @@ section.social {
     display: inline-block;
 }
 
+/*YT ikon elcsúszik*/
+.fa-brands .fa-youtube {
+    margin-left: 4px;
+    margin-right: 25px;
+}
+
 nav ul li a:hover,
 .fa-brands:hover {
     opacity: 0.7;
