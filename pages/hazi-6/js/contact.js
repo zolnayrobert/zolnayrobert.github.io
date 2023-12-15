@@ -19,21 +19,18 @@ $(document).ready(function()
                 //sikerres küldés
                 sMsg(response);
             },
-            error: function (data) {
-console.log("nincs küldés");   
-console.log(data);                      
-                eMsg();
+            error: function (data) {                    
+                eMsg(); //hibaüzenet válaszba
             }
         });
-        return false; // here a change
+        return false; //ne frissítsen oldalt
     }); 
 });
 
 //sikeres válasz feldolgozása
 function sMsg(e)
 {
-    let msg = JSON.parse(e);
-console.log(msg);    
+    let msg = JSON.parse(e);   
     if(msg.success) {
         //Spinner elrejtése
         document.getElementById("loading-overlay").style.display = "none";
