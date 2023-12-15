@@ -774,12 +774,12 @@ div.row {
   
 /* A spinner stílusai */
 #loading-spinner {
-    font-size: 40px; /* ikon méretének beállítása */
+    font-size: 36px; /* ikon méretének beállítása */
     color: #3498db; /* ikon színének beállítása */
     width: 200px; /* ikon körbeforgás mérete*/
     height: 200px; /* ikon körbeforgás mérete*/
     border-radius: 50%; /* ikon körbeforgásának sugara */
-    animation: spin 1s infinite linear; /* ikon körbeforgó animációja */
+    animation: spin 2s infinite linear; /* ikon körbeforgó animációja */
 }
   
 /* A spinner animációja */
