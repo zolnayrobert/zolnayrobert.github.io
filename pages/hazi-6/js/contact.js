@@ -20,7 +20,8 @@ $(document).ready(function()
                 sMsg(response);
             },
             error: function (data) {
-console.log("nincs küldés");                       
+console.log("nincs küldés");   
+console.log(data);                      
                 eMsg();
             }
         });
