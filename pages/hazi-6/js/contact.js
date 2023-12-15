@@ -46,9 +46,6 @@ function sMsg(e)
             // Rejtse el az üzenetet
             document.getElementById("form-message-report").style.display = "none";
         }, 5000);
-    } else {
-console.log(e);        
-        eMsg();
     }
 }
 
