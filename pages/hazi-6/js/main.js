@@ -1,7 +1,7 @@
 $(document).ready(function()
 { 
 
-console.log("v.1868");    //verzió szám
+console.log("v.1869");    //verzió szám
 console.log(document.title); //oldal neve
 
     //Kapcsolat űrlap
@@ -26,6 +26,11 @@ console.log(document.title); //oldal neve
         const frm = $('#offerForm');
         e.preventDefault();  
         sendMessage(frm);
+    });
+
+    $('.icon-holder').hover(function()
+	{
+console.log($(this));        
     });
 });
 
