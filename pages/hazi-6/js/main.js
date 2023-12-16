@@ -1,7 +1,7 @@
 $(document).ready(function()
 { 
 
-console.log("v.1870");    //verzió szám
+console.log("v.1871");    //verzió szám
 console.log(document.title); //oldal neve
 
     //Kapcsolat űrlap
@@ -30,18 +30,9 @@ console.log(document.title); //oldal neve
 
     $('.icon-holder').hover(function()
 	{
-console.log($(this));  
-        // Osztály kiválasztása
-        var osztalyElem = document.querySelector($(this));
-console.log(osztalyElem); 
-        // i elem kiválasztása az osztályon belül
-        var iElem = osztalyElem.querySelector('i');
-console.log(iElem); 
-        // tooltip tulajdonság értékének lekérdezése
-        var tooltipErtek = iElem.getAttribute('tooltip');
+console.log($(this)); 
+console.log($($(this)).attr('tooltip'));
 
-// Az eredmény megjelenítése a konzolon
-console.log(tooltipErtek);      
     });
 });
 
