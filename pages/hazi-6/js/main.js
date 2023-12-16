@@ -1,7 +1,7 @@
 $(document).ready(function()
 { 
 
-console.log("v.1875");    //verzió szám
+console.log("v.1878");    //verzió szám
 console.log(document.title); //oldal neve
 
     //Kapcsolat űrlap
@@ -28,16 +28,35 @@ console.log(document.title); //oldal neve
         sendMessage(frm);
     });
 
+    //Képre húzva megjelenítjük az ország nevét
+    $('.pic-wrapper').hover(function()
+	{
+        let h2 = $(this)[0].parentNode.childNodes[3];
+        let h2Val = $(h2).text();
+
+        if (typeof h2Val !== 'undefined' && $("#overlay-h2").length) {   
+            $("#overlay-h2").text(h2Val); //országnév behelyezése a DIV-be
+            $("#tooltip-text").text(''); //töröljük a tooltipet
+        } else {
+            $("#overlay-h2").text(''); //különben töröljük, ha volt benne szöveg
+            $("#tooltip-text").text(''); //töröljük a tooltipet
+        }
+    });
+
     //ország aloldalak ikonokra húzva az egeret, megjelenítjük a tooltipet a képen
     $('.icon-holder i').hover(function()
 	{
-console.log($(this).closest('i').attr('tooltip'));
+        let tooltip_i = $(this).closest('i').attr('tooltip');
+        let tooltip_span = $(this).closest('span').attr('tooltip');
+        
+        //ha nem i-ben van, spanba is megnézni
+        let tooltip = tooltip_i;
+        if(typeof tooltip === 'undefined') tooltip = tooltip_span;
 
-console.log($("#tooltip-text").length);
-        let tooltip = $(this).closest('i').attr('tooltip');
-        if (typeof tooltip !== 'undefined') {   
-            $("#tooltip-text").text(tooltip); //Válasz megadása
-//            document.getElementById("tooltip-text").style.display = "block"; //Jelenítse meg az üzenetet a küldésről  
+        if (typeof tooltip !== 'undefined' && $("#tooltip-text").length) {   
+            $("#tooltip-text").text('"'+tooltip+'"'); //tooltip behelyezése a DIV-be
+        } else {
+            $("#tooltip-text").text(''); //különben töröljük, ha volt benne szöveg
         }
     });
 });

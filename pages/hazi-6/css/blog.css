@@ -6,7 +6,7 @@
     grid-auto-rows: minmax(auto);
 }
 
-.italy {
+.destinations {
     grid-column: 4 / 12;
 }
 
@@ -97,12 +97,12 @@
     background-color: whitesmoke;
 }
 
-/* oveerlaybe tartozó szöveg*/
+/* overlaybe tartozó szöveg*/
 .overlay-text {
     color: rgb(36, 36, 36);
-    font-size: 3.1em;
+    font-size: 3.4em;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -110,18 +110,43 @@
     text-align: center;
 }
 
+#tooltip-text{
+    position: absolute;
+    font-size: 1.2em !important;
+    top: 50%;
+    left: 50% !important;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center !important;
+    font-style: italic;
+    width: 95%;
+}
+
 .fa-solid:hover,
 .fa-regular:hover,
 .fa-stack:hover{
     transform: scale(1.1);
+    opacity: 100%;
+    color: orange;
 } 
 
 .pic-wrapper:hover .pic-overlay {
     opacity: 70%;
 }
 
+.destinations h2{
+    margin: 15px;
+}
+.destinations .main-intro{
+    text-align: left;
+}
+
+/*---------------------------------------------------------------*/
+
+/*TÖRÉSPONTOK*/
 @media (max-width:1320px) {
-    .italy{
+    .destinations{
         grid-column: 2 / 12;
     }
     
@@ -139,7 +164,7 @@
 }
 
 @media (max-width:1050px) {
-    .italy{
+    .destinations{
         grid-column: 1 / 13;
     }
 }

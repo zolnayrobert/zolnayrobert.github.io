@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="js/main.js"></script>
-    <title>Travel like the locals | Zolnay Tours</title>
+    <title>Fedezd fel a a napsütötte Itáliát | Zolnay Tours</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -71,14 +71,15 @@
         </nav>
 
         <section class="left-side">
-            <div class="form-container">             
+            <div class="form-container">
                 <!--spinner-->
                 <div id="loading-overlay">
                     <div id="loading-spinner" class="fas fa-plane"></div>
                     <div id="loading-spinner" class="loader"></div>
                 </div>
                 <h2>Ajánatkérés</h2>
-                <form id="offerForm" class= "form" name="offerForm" action="https://formsubmit.co/520a354098799bbb56777753e910654f" method="POST" />
+                <form id="offerForm" class="form" name="offerForm"
+                    action="https://formsubmit.co/520a354098799bbb56777753e910654f" method="POST" />
                 <input class="subscribe-input" type="text" id="name" name="name" placeholder="Név" required>
                 <input class="subscribe-input" type="email" id="email" name="email" placeholder="Email cím"
                     maxlength="40" required>
@@ -114,123 +115,134 @@
                 <input type="hidden" name="_captcha" value="false">
                 <input type="text" name="_honey" style="display:none">
                 <input class="subscribe-button" type="submit" onSubmit="return false" value="Küldés">
-                <div id="form-message-report"></div>    
+                <div id="form-message-report"></div>
                 </form>
             </div>
             <section class="subscribe-container">
                 <h2>Ötletek a<br> postaládádba</h2>
                 <p>Íratkozz fel a hírlevelünkre, ingyenes <br> utazási tippekért és trükkökért.</p>
-                <form id="newsletterForm" class= "form" name="newsletterForm" action="https://formsubmit.co/520a354098799bbb56777753e910654f" method="POST" />
-                    <input class="subscribe-input" name="newsletter" id="newsletter" type="email" placeholder="Email cím" required>
-                    <section class="checkbox">
-                        <input type="checkbox" id="acceptDPR" name="acceptDPR" value="1" required>
-                        <label class="label2" for="acceptDPR">Az adatvédelmi tájékoztatót elolvastam, megértettem, és hozzájárulok ahhoz, hogy megadott adataimat a szolgáltató,
-                            mint adatkezelő a szabályzatban foglaltaknak megfelelően kezelje.</label>
-                    </section>              
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="text" name="_honey" style="display:none">
-                    <button class="subscribe-button" type="submit" onSubmit="return false">Feliratkozom</button>
-                    <div id="form-subscribe-report"></div>
+                <form id="newsletterForm" class="form" name="newsletterForm"
+                    action="https://formsubmit.co/520a354098799bbb56777753e910654f" method="POST" />
+                <input class="subscribe-input" name="newsletter" id="newsletter" type="email" placeholder="Email cím"
+                    required>
+                <section class="checkbox">
+                    <input type="checkbox" id="acceptDPR" name="acceptDPR" value="1" required>
+                    <label class="label2" for="acceptDPR">Az adatvédelmi tájékoztatót elolvastam, megértettem, és
+                        hozzájárulok ahhoz, hogy megadott adataimat a szolgáltató,
+                        mint adatkezelő a szabályzatban foglaltaknak megfelelően kezelje.</label>
+                </section>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none">
+                <button class="subscribe-button" type="submit" onSubmit="return false">Feliratkozom</button>
+                <div id="form-subscribe-report"></div>
                 <span>100% garantált tartalom</span>
                 </form>
             </section>
         </section>
 
-        <main class="italy">
+        <main class="destinations">
             <div class="pic-wrapper">
                 <img class="blog-img" src="img/sicily_big.jpg" alt="Taormina látkép háttérben az Etna"></img>
                 <div class="pic-overlay">
-                    <div class="overlay-text">OLASZORSZÁG</div>
-                    <h3 id="tooltip-text" class="overlay-text"></h3>
+                    <div id="overlay-h2" class="overlay-text"></div>
+                    <h3 id="tooltip-text"></h3>
                 </div>
                 <div class="pic-frame">
                     <div class="icon-holder">
-                        <span class="fa-stack fa-1x">
+                        <span
+                            tooltip="Olaszország az UTC+1 időzónában található, ahol a helyi idő egy órával előbbre áll az egyezményes világidőhöz képest."
+                            class="fa-stack fa-1x">
                             <i class="fa-solid fa-u fa-stack-1x"></i>
                             <i class="fa-solid fa-t fa-stack-1x"></i>
                             <i class="fa-solid fa-c fa-stack-1x"></i>
                             <i class="fa-solid fa-plus fa-stack-1x"></i>
                             <i class="fa-solid fa-1 fa-stack-1x"></i>
                         </span>
-                        <i tooltip="Európa" class="margin-l-i fa-solid fa-earth-europe"></i>
-                        <i tooltip="Repülővel megközelíthető" class="fa-solid fa-plane-circle-check"></i>
-                        <i class="fa-solid fa-car"></i>
-                        <i class="fa-solid fa-van-shuttle"></i>
-                        <i class="fa-regular fa-sun"></i>
-                        <i class="fa-solid fa-umbrella-beach"></i>
-                        <i class="fa-solid fa-building-columns"></i>
-                        <i class="fa-solid fa-wine-glass"></i>
-                        <i class="fa-solid fa-pizza-slice"></i>
+                        <i tooltip="Olaszország Dél-Európában helyezkedik el, a Földközi-tenger partján, az Alpok déli lejtőin, ahol a gazdag történelem, a kulturális örökség és a csodálatos tájak találkoznak"
+                            class="margin-l-i fa-solid fa-earth-europe"></i>
+                        <i tooltip="Repülővel könnyen megközelíthető"
+                            class="fa-solid fa-plane-circle-check"></i>
+                        <i tooltip="Saját autóval könnyen megközelíthető"
+                            class="fa-solid fa-car"></i>
+                        <i tooltip="Buszos kirándulások keretében is foglalható utak, amelyek kényelmes és szervezett módja a különleges helyek felfedezésének"
+                            class="fa-solid fa-van-shuttle"></i>
+                        <i tooltip="A nap évente majdnem 300 napot süt az égen, amely gyönyörű napsütést és ragyogó időt kínál számunkra."
+                            class="fa-regular fa-sun"></i>
+                        <i tooltip="tengerpartokon minden homokszemcse mesél egy történetet a napfényről, a tenger hangjáról és a la dolce vita édes örömeiről, ahol az élet és a tenger találkoznak a tökéletes harmóniában"
+                            class="fa-solid fa-umbrella-beach"></i>
+                        <i tooltip="Az olasz kultúra gazdag öröksége minden tájegységben megtalálható"
+                            class="fa-solid fa-building-columns"></i>
+                        <i tooltip="Élvezze meg az Olaszországból származó borok eleganciáját és szenvedélyét"
+                            class="fa-solid fa-wine-glass"></i>
+                        <i tooltip="Csábító gasztronómiai élvezetei és szenvedélyes életstílusa egyedülálló élményt nyújtanak minden látogatónak"
+                            class="fa-solid fa-pizza-slice"></i>
                     </div>
                 </div>
             </div>
-            <h2>A Világ felfedezése csak Rád vár!</h2>
+            <h2>OLASZORSZÁG</h2>
             <p class="main-intro">
-                Tengerparti utazás, városlátogatás, netán egzotikus utazás?! Legyen szó bármilyen
-                jellegű utazásról nálunk évszaktól és típustól függetlenül könnyedén megtalálhatod. Tekintsd át a
-                legnépszerűbb úti céljainkból összeállított rövid útikalauzokat, majd válaszd ki a számodra
-                legmegfelelőbb ajánlatot! Rajtunk keresztül könnyedén tervezheted meg és foglalhatod le életed utazását,
-                hogy a világ minden szegletét felfedezhesd. Ne habozz, válaszd ki álmaid úti célját és indulj el a
-                kalandra!
+                Fedezze fel Olaszországot! Az ország lenyűgöző kultúrája, ízletes konyhája és gazdag
+                történelme mindenkit elvarázsol. Látogasson el Rómába, ahol az ókori csodák és a Vatikán
+                történelme várják vagy látogasson el Szicília és Toszkána varázslatos vidékeire.
             </p>
 
-            </div>
-        </main>
+    </div>
+    </main>
 
-        <footer class="main-footer" id="contact">
-            <div class="footer-container">
-                <div class="row">
-                    <div class="about" id="footer-left">
-                        <div class="about-left">
-                            <div class="about-img-div"><img class="about-img" src="img/main_pic2.jpg"
-                                    alt="bemutatkozó kép zolnay tours"></img></div>
-                            <div class="about-text">
-                                <h6>Rólunk</h6>
-                                <p class="text-justify">Fedezd fel velünk a rejtett kincseket, inspirálódj úti
-                                    tippeinkkel és trükkjeinkkel, hogy utazásaid még emlékezetesebbek legyenek! A
-                                    blogunkon interaktív leírások, helyi ízek és autentikus élmények várnak rád.
-                                    Vezetünk téged a kihagyhatatlan látnivalókhoz, és megosztjuk a titkos helyeket,
-                                    amikről mások talán még nem hallottak. Frissítéseinkben szállásajánlatokat,
-                                    költségoptimalizálási taktikákat és útleírásokat találsz, hogy minden utazásod simán
-                                    és örömteli legyen. Legyél részese a mi utazóközösségünknek, ahol tapasztalatokat
-                                    cserélhetsz, és inspirálódhatsz más utazók történeteiből. Zolnay Tours: ahol
-                                    a kalandok kezdődnek, és az emlékek örökké élnek!🗺️🌟
-                            </div>
+    <footer class="main-footer" id="contact">
+        <div class="footer-container">
+            <div class="row">
+                <div class="about" id="footer-left">
+                    <div class="about-left">
+                        <div class="about-img-div"><img class="about-img" src="img/main_pic2.jpg"
+                                alt="bemutatkozó kép zolnay tours"></img></div>
+                        <div class="about-text">
+                            <h6>Rólunk</h6>
+                            <p class="text-justify">Fedezd fel velünk a rejtett kincseket, inspirálódj úti
+                                tippeinkkel és trükkjeinkkel, hogy utazásaid még emlékezetesebbek legyenek! A
+                                blogunkon interaktív leírások, helyi ízek és autentikus élmények várnak rád.
+                                Vezetünk téged a kihagyhatatlan látnivalókhoz, és megosztjuk a titkos helyeket,
+                                amikről mások talán még nem hallottak. Frissítéseinkben szállásajánlatokat,
+                                költségoptimalizálási taktikákat és útleírásokat találsz, hogy minden utazásod simán
+                                és örömteli legyen. Legyél részese a mi utazóközösségünknek, ahol tapasztalatokat
+                                cserélhetsz, és inspirálódhatsz más utazók történeteiből. Zolnay Tours: ahol
+                                a kalandok kezdődnek, és az emlékek örökké élnek!🗺️🌟
                         </div>
                     </div>
-
-                    <div class="about" id="footer-right">
-                        <h6>Navigáció</h6>
-                        <ul class="footer-links">
-                            <li><a href="#navigation">Kezdőlap</a></li>
-                            <li><a href="#blog">Blog</a></li>
-                            <li><a href="#offers">Uticélok</a></li>
-                            <li><a href="../gallery.html">Képek</a></li>
-                            <li><a href="../contact.html">Kapcsolat</a></li>
-                        </ul>
-                    </div>
                 </div>
-                <hr>
-            </div>
-            <div class="footer-container">
-                <div class="row">
-                    <div class="copy">
-                        <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
-                            <a href="#">Zolnay Tours</a>.
-                        </p>
-                    </div>
 
-                    <div class="footer-social">
-                        <ul class="social-icons">
-                            <li><a class="facebook" href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                            <li><a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                            <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                            <li><a class="tiktok" href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-                        </ul>
-                    </div>
+                <div class="about" id="footer-right">
+                    <h6>Navigáció</h6>
+                    <ul class="footer-links">
+                        <li><a href="#navigation">Kezdőlap</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#offers">Uticélok</a></li>
+                        <li><a href="../gallery.html">Képek</a></li>
+                        <li><a href="../contact.html">Kapcsolat</a></li>
+                    </ul>
                 </div>
             </div>
-        </footer>
+            <hr>
+        </div>
+        <div class="footer-container">
+            <div class="row">
+                <div class="copy">
+                    <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                        <a href="#">Zolnay Tours</a>.
+                    </p>
+                </div>
+
+                <div class="footer-social">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a class="tiktok" href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     </div>
 </body>
 
