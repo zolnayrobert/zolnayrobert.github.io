@@ -1,7 +1,7 @@
 $(document).ready(function()
 { 
 
-console.log("v.1874");    //verzió szám
+console.log("v.1875");    //verzió szám
 console.log(document.title); //oldal neve
 
     //Kapcsolat űrlap
@@ -28,24 +28,17 @@ console.log(document.title); //oldal neve
         sendMessage(frm);
     });
 
-    $('.icon-holder').hover(function()
-	{
-console.log($(this)); 
-console.log($(this).find('i')); 
-console.log($(this).closest('i'));
-console.log($(this).find('i').attr('tooltip'));
-console.log($(this).closest('i').attr('tooltip'));
-
-    });
-
+    //ország aloldalak ikonokra húzva az egeret, megjelenítjük a tooltipet a képen
     $('.icon-holder i').hover(function()
 	{
-console.log($(this)); 
-console.log($(this).find('i')); 
-console.log($(this).closest('i'));
-console.log($(this).find('i').attr('tooltip'));
 console.log($(this).closest('i').attr('tooltip'));
 
+console.log($("#tooltip-text").length);
+        let tooltip = $(this).closest('i').attr('tooltip');
+        if (typeof tooltip !== 'undefined') {   
+            $("#tooltip-text").text(tooltip); //Válasz megadása
+//            document.getElementById("tooltip-text").style.display = "block"; //Jelenítse meg az üzenetet a küldésről  
+        }
     });
 });
 
