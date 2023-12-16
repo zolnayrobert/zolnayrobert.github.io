@@ -1,7 +1,7 @@
 $(document).ready(function()
 { 
 
-console.log("v.1872");    //verzió szám
+console.log("v.1873");    //verzió szám
 console.log(document.title); //oldal neve
 
     //Kapcsolat űrlap
@@ -31,7 +31,7 @@ console.log(document.title); //oldal neve
     $('.icon-holder').hover(function()
 	{
 console.log($(this)); 
-console.log($($(this)[0]).attr('tooltip'));
+console.log($(this).find('i').attr('tooltip'));
 
     });
 });
