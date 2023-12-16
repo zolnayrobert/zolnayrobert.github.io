@@ -1,7 +1,7 @@
 $(document).ready(function()
 { 
 
-console.log("v.1873");    //verzió szám
+console.log("v.1874");    //verzió szám
 console.log(document.title); //oldal neve
 
     //Kapcsolat űrlap
@@ -31,7 +31,20 @@ console.log(document.title); //oldal neve
     $('.icon-holder').hover(function()
 	{
 console.log($(this)); 
+console.log($(this).find('i')); 
+console.log($(this).closest('i'));
 console.log($(this).find('i').attr('tooltip'));
+console.log($(this).closest('i').attr('tooltip'));
+
+    });
+
+    $('.icon-holder i').hover(function()
+	{
+console.log($(this)); 
+console.log($(this).find('i')); 
+console.log($(this).closest('i'));
+console.log($(this).find('i').attr('tooltip'));
+console.log($(this).closest('i').attr('tooltip'));
 
     });
 });
