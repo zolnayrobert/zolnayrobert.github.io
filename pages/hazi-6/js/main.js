@@ -1,8 +1,8 @@
 $(document).ready(function()
 { 
 
-console.log("v.1867");    //verzió szám
-
+console.log("v.1868");    //verzió szám
+console.log(document.title); //oldal neve
 
     //Kapcsolat űrlap
     $('#contactForm').submit(function (e)
@@ -28,6 +28,8 @@ console.log("v.1867");    //verzió szám
         sendMessage(frm);
     });
 });
+
+
 
 //Üzenet küldése
 function sendMessage(frm)

@@ -14,6 +14,7 @@
         content="Készülj fel utazásaidra a legfrissebb tippekkel és trükkökkel! Fedezd fel a világot személyes leírásokkal és varázslatos képekkel, inspiráló kalandok várnak rád. ✈️🌍 #Utazás #Képek #Tippek #Kalandok">
     <meta name="robots" content="noindex, nofollow" />
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="js/main.js"></script>
@@ -32,7 +33,7 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper-blog">
         <header class="main-head">
             <img class="header-img" src="img/header.png" alt="travel clipart around the world"></img>
             <h1><a href="#navigation">Zolnay</a></h1>
@@ -50,8 +51,8 @@
             <ul class="mainmenu">
                 <input type='checkbox' id='check'>
                 <span class="menu">
-                    <li class="mainmenu-li"><a href="#navigation">KEZDŐLAP</a></li>
-                    <li class="mainmenu-li"><a href="#blog">BLOG</a></li>
+                    <li class="mainmenu-li"><a href="index.html">KEZDŐLAP</a></li>
+                    <li class="mainmenu-li"><a href="index.html#blog">BLOG</a></li>
                     <li class="mainmenu-li dropdown"><a href="">UTICÉLOK <i class="fa fa-caret-down"></i></a>
                         <ul class="submenu">
                             <li class="submenu-li"><a href="#bulgaria">BULGÁRIA</a></li>
@@ -135,37 +136,35 @@
             </section>
         </section>
 
-        <aside class="side" id="blog">
-            <h2>Legfrissebb blogok</h2>
-            <article>
-                <img class="blog-img" src="img/underwater.jpg" alt="underwater"></img>
-                <h3 class="side-date">2019 Szeptember 12.</h3>
-                <!--                <span class="side-title">BALI</span>                    -->
-                <h3 class="side-h3">Fedezd fel Bali tengeralatti világát</h3>
-                <p>A sziget körül számos kiváló búvár- és snorkelhely található, ahol lenyűgöző korallzátonyok,
-                    színpompás halak és egyedi tengeri élőlények várnak felfedezésre. A kristálytiszta víz és a meleg
-                    tengeri áramlatok ideálisak a vízalatti kalandokhoz. Bali tengeralatti világa valóban lenyűgöző, és
-                    azoknak ajánlom,
-                    akik az óceán mélyének varázslatos világát szeretnék felfedezni.
-                </p>
-            </article>
-
-            <article>
-                <img class="blog-img" src="img/desert.jpg" alt="underwater"></img>
-                <h3 class="side-date">2017 December 10.</h3>
-                <!--            <span class="side-title">BOA VISTA</span>               -->
-                <h3 class="side-h3">Quadozz Boa Vista homokdűnéi között</h3>
-                <p> Boa Vista homokdűnéi különleges élményt nyújtanak minden utazónak. Az itteni
-                    dűnék lenyűgöző méretükkel és formáikkal azonnal magukba szippantják az embert. A homokdűnék
-                    közötti sivatagi táj varázslatos és kihagyhatatlan fotózási lehetőségeket kínál. Emellett a
-                    naplemente és napkelte itt különösen lenyűgöző, így egy romantikus környezetet is biztosít azok
-                    számára, akik itt látogatást tesznek.
-                </p>
-            </article>
-        </aside>
-
-        <main class="content">
-            <h1>A Világ felfedezése csak Rád vár!</h1>
+        <main class="italy">
+            <div class="pic-wrapper">
+                <img class="blog-img" src="img/sicily_big.jpg" alt="Taormina látkép háttérben az Etna"></img>
+                <div class="pic-overlay">
+                    <div class="overlay-text">OLASZORSZÁG</div>
+                    <h3 class="overlay-text"></h3>
+                </div>
+                <div class="pic-frame">
+                    <div class="icon-holder">
+                        <span class="fa-stack fa-1x">
+                            <i class="fa-solid fa-u fa-stack-1x"></i>
+                            <i class="fa-solid fa-t fa-stack-1x"></i>
+                            <i class="fa-solid fa-c fa-stack-1x"></i>
+                            <i class="fa-solid fa-plus fa-stack-1x"></i>
+                            <i class="fa-solid fa-1 fa-stack-1x"></i>
+                        </span>
+                        <i tooltip="Európa" class="margin-l-i fa-solid fa-earth-europe"></i>
+                        <i tooltip="Repülővel megközelíthető" class="fa-solid fa-plane-circle-check"></i>
+                        <i class="fa-solid fa-car"></i>
+                        <i class="fa-solid fa-van-shuttle"></i>
+                        <i class="fa-regular fa-sun"></i>
+                        <i class="fa-solid fa-umbrella-beach"></i>
+                        <i class="fa-solid fa-building-columns"></i>
+                        <i class="fa-solid fa-wine-glass"></i>
+                        <i class="fa-solid fa-pizza-slice"></i>
+                    </div>
+                </div>
+            </div>
+            <h2>A Világ felfedezése csak Rád vár!</h2>
             <p class="main-intro">
                 Tengerparti utazás, városlátogatás, netán egzotikus utazás?! Legyen szó bármilyen
                 jellegű utazásról nálunk évszaktól és típustól függetlenül könnyedén megtalálhatod. Tekintsd át a
@@ -174,64 +173,7 @@
                 hogy a világ minden szegletét felfedezhesd. Ne habozz, válaszd ki álmaid úti célját és indulj el a
                 kalandra!
             </p>
-            <div class="main-row" id="offers">
-                <section class="main-box" id="bulgaria">
-                    <a class="main-box-link link-left">
-                        <h2>Bulgária</h2>
-                        <p>
-                            Bulgária lenyűgöző természeti szépségei közé tartoznak a Rodope-hegység varázslatos erdei,
-                            amelyek kristálytiszta patakok és tavak, vadregényes túraútvonalak sokaságát kínálják. A
-                            hegységben található barlangok pedig egyedülállóak és magukban foglalják a Balkán-félsziget
-                            vadregényes szépségét.
-                        </p>
-                        <p class="main-box-img-cont">
-                            <img class="main-box-img" src="img/bulgaria.jpg" alt="bulgaria main picture"></img>
-                        </p>
-                        <a>
-                </section>
-                <section class="main-box" id="indonesia">
-                    <a class="main-box-link link-right">
-                        <h2>Indonézia</h2>
-                        <p>
-                            Bali varázslatos természeti szépségei közé tartoznak a türkizkék tengerpartok és
-                            homokos strandok, valamint a buja rizsteraszok, amelyek lélegzetelállítóan szép
-                            tájat festenek a szigeten. A trópusi dzsungel és vulkáni tájak pedig Bali gazdag
-                            és sokszínű természeti kincseinek részét képezik.
-                        </p>
-                        <p class="main-box-img-cont">
-                            <img class="main-box-img" src="img/bali.jpg" alt="bali templom egy to szelen"></img>
-                        </p>
-                        <a>
-                </section>
-                <section class="main-box" id="italy">
-                    <a class="main-box-link link-left" href="italy.html">
-                        <h2>Olaszország</h2>
-                        <p>
-                            Fedezze fel Olaszországot! Az ország lenyűgöző kultúrája, ízletes konyhája és gazdag
-                            történelme mindenkit elvarázsol. Látogasson el Rómába, ahol az ókori csodák és a Vatikán
-                            történelme
-                            várják vagy látogasson el Szicília és Toszkána varázslatos vidékeire.
-                        </p>
-                        <p class="main-box-img-cont">
-                            <img class="main-box-img" src="img/sicily.jpg"
-                                alt="Taormina látkép háttérben az Etna"></img>
-                        </p>
-                        <a>
-                </section>
-                <section class="main-box" id="caboverde">
-                    <a class="main-box-link link-right">
-                        <h2>Zöld-foki Köztársaság</h2>
-                        <p>
-                            Zöld-foki-szigetek lenyűgöző természeti szépségei között szerepelnek a homokos
-                            strandok, amelyek kristálytiszta vízzel és lenyűgöző tengeri élettel
-                            büszkélkednek. A holdbéli tájak és az elbűvölő hegycsúcsok is
-                            hozzájárulnak a szigetek változatos természetéhez.
-                        </p>
-                        <p class="main-box-img-cont">
-                            <img class="main-box-img" src="img/cabo.jpg" alt="kilatas Mindelo beachre"></img>
-                        </p>
-                        <a>
-                </section>
+
             </div>
         </main>
 
