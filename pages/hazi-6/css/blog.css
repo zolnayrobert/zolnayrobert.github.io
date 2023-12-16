@@ -41,7 +41,7 @@
 
 .icon-holder{
     display: flex;
-    font-size: 26px;
+    font-size: 22px;
     color: #ffdf;
     flex-direction: row;
     flex-wrap: wrap;
@@ -63,7 +63,7 @@
 }
 
 .fa-c {
-    margin-left: 20px;
+    margin-left: 16px;
 }
 
 .fa-plus {
@@ -147,34 +147,60 @@
 /*TÖRÉSPONTOK*/
 @media (max-width:1320px) {
     .destinations{
-        grid-column: 2 / 12;
+        grid-column: 4 / 12;
     }
     
-    .contact-left {
-        width: 100%;
-    }
-
-    .contact-right {
-        width: 100%;
-    }
-
-    iframe {
-        width: 100%;
-    }
 }
 
 @media (max-width:1050px) {
     .destinations{
-        grid-column: 1 / 13;
+        grid-column: 2 / 12;
+        grid-row:3;
+    }
+
+    .left-side {
+        grid-column: 2 / 12;
+        grid-row:auto;
+        margin: 0 auto;
     }
 }
 
 @media (max-width:888px) {
-    .form-group {
-        width: 100%;
+    .destinations {
+        grid-column: 1 / 13;
+        margin: 0 auto;
+        padding: 15px;
     }
 
-    #contact-submit{
-        width: 100%;
+    .pic-frame{
+        position: relative;
+        background-color: white;
+        overflow:visible;
     }
+
+    .icon-holder {
+        color: black;
+        opacity: 100%;
+        margin: 15px auto;
+        flex-wrap: wrap;
+    }
+
+    .fa-1x{
+        display: block !important;
+        margin: 0 auto;
+    }
+
+    .icons {
+        flex: 1 0 18%; /* Rugalmas flex beállítás, az utolsó érték (30%) az elem szélességét szabályozza */
+        margin: 5px;
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+/*
+    .destinations h2{
+        overflow: auto;
+        margin-top: 70px;
+    }
+*/    
 }
