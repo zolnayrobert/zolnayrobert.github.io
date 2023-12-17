@@ -46,7 +46,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 15px 25px 15px 0;
+    margin: 15px 25px 15px 25px;
 }
 
 .fa-stack{
@@ -54,28 +54,12 @@
     line-height: 1em !important;
 }
 
-.fa-u {
-    margin-left: -20px;
-}
-
-.fa-t {
-    margin-left: 0px;
-}
-
-.fa-c {
-    margin-left: 16px;
-}
-
 .fa-plus {
-    margin-left: 45px;
+    margin-left: -10px;
 }
 
 .fa-1 {
-    margin-left: 65px;
-}
-
-.fa-c {
-    margin-left: 20px;
+    margin-left: 9px;
 }
 
 /* UTC utáni első ikont picit odébb toljuk, hogy arányosabb legyen*/
@@ -176,6 +160,7 @@
         position: relative;
         background-color: white;
         overflow:visible;
+        height: auto;
     }
 
     .icon-holder {
@@ -203,4 +188,22 @@
         margin-top: 70px;
     }
 */    
+}
+
+@media (max-width:530px) {
+    .fa-stack-1x{     
+        font-size: 16px;
+    }
+
+    .icons {
+        flex: 1 0 15%; /* Rugalmas flex beállítás, az utolsó érték (30%) az elem szélességét szabályozza */
+    }
+
+    .fa-plus {
+        margin-left: -5px;
+    }
+    
+    .fa-1 {
+        margin-left: 7px;
+    }
 }
