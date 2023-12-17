@@ -8,6 +8,7 @@
 
 .destinations {
     grid-column: 4 / 12;
+    margin: 10px;
 }
 
 /*MAIN PIC START*/
@@ -120,8 +121,9 @@
 .destinations h2{
     margin: 15px;
 }
-.destinations .main-intro{
+.destinations .main-box{
     text-align: left;
+    margin: 0 0 15px 0;
 }
 
 /*MAIN PIC END*/
@@ -133,6 +135,134 @@
     list-style-type: none;
     margin: 12px;
 }
+
+/*DETAILS SECTION START*/
+.country-details details{
+    padding-top: 1.3rem;
+    margin: auto;
+}
+
+.country-details details[open] summary ~ * {
+    animation: open 0.3s ease-in-out;
+}
+
+@keyframes open {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.country-details details summary::-webkit-details-marker {
+    display: none;
+}
+
+.country-details details summary {
+    width: 100%;
+    padding: 0.5rem 0;
+    border-top: 1px solid black;
+    position: relative;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 300;
+    list-style: none;
+}
+
+.country-details details summary:after {
+    content: "+";
+    color: black;
+    position: absolute;
+    font-size: 1.75rem;
+    line-height: 0;
+    margin-top: 0.75rem;
+    right: 0;
+    font-weight: 200;
+    transform-origin: center;
+    transition: 200ms linear;
+}
+
+.country-details details[open] summary:after {
+    transform: rotate(45deg);
+    font-size: 2rem;
+}
+
+.country-details details summary {
+    outline: 0;
+    font-weight: 700;
+    font-size: 0.95em;
+    text-align: left;
+    margin: 8px 0 0 0;
+}
+/*DETAILS SECTION END*/
+
+/*PRO TIPS CARD START*/
+.pro-tips-card{
+	border-radius: 10px;
+	background: white;
+	padding: 20px;
+    margin-top: 30px;
+	box-shadow: 4px 4px 12px 1px rgba(0, 0, 0, 0.2);
+	line-height: 1.5;
+}
+
+.card-title {
+	margin: 0 0 5px 0;
+	letter-spacing: 1px;
+    color: #05aff0;
+
+}
+
+.card-description{
+	font-style: italic;
+}
+/*PRO TIPS CARD END*/
+
+/*RÉGIÓK KÉP VÁLASZTÓ START*/
+.region-container {
+    width: 100%;
+    height: 4   00px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap);
+}
+  
+.region-pic-container {
+    transition: flex var(--transition), filter var(--transition);
+    filter: grayscale(var(--grayscale)) brightness(var(--brightness));
+    object-fit: cover;
+    overflow: hidden;
+    flex: 1;
+}
+
+.region-pic-container img {
+    --brightness: 0.75;
+    --grayscale: 1;
+    height: 350px;
+}
+  
+.region-pic-container:hover {
+    --brightness: 1.15;
+    --grayscale: 0;
+    flex: var(--magnifier);
+}
+
+.region-container h6 a{
+    text-decoration: none;
+    list-style-type: none;
+    position: absolute;
+    top: 80%;
+    left: 8%;
+    font-size: 1.2em;
+    color:#fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/*RÉGIÓK KÉP VÁLASZTÓ END*/
 
 /*DESCRIPTION END*/
 
