@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Montserrat:wght@300;600&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+/*ÁLTALNÁOS*/
 * {
     margin: 0;
     padding: 0;
@@ -32,6 +33,13 @@ body {
 
 .wrapper>* {
     padding: 0px;
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 1.1em;
+    text-align: left;
+    margin: 12px 0 12px 0;
 }
 
 /*HEADER START*/
@@ -866,7 +874,7 @@ div.row {
     }
 
     .main-intro {
-        padding: 0 10px 0 5px;
+        padding: 0;
         text-align: left;
     }
 
@@ -894,6 +902,11 @@ div.row {
     .left-side {
         grid-column: 1 / 4;
         grid-row:auto;
+    }
+
+    .form-container,
+    .subscribe-container {
+        margin: 0 auto;
     }
 
     .content {

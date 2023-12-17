@@ -10,6 +10,7 @@
     grid-column: 4 / 12;
 }
 
+/*MAIN PIC START*/
 .pic-wrapper{
     width: 100%;
     position: relative;
@@ -58,13 +59,9 @@
     margin-left: -10px;
 }
 
-.fa-1 {
+.fa-0, .fa-1, .fa-2, .fa-3, .fa-4,
+.fa-5, .fa-6, .fa-7, .fa-8, .fa-9 {
     margin-left: 9px;
-}
-
-/* UTC utáni első ikont picit odébb toljuk, hogy arányosabb legyen*/
-.margin-l-i{
-    margin-left: 25px;
 }
 
 /*header képre húzáskor extra réteg*/
@@ -105,6 +102,7 @@
     text-align: center !important;
     font-style: italic;
     width: 95%;
+    color: #1A2250;
 }
 
 .fa-solid:hover,
@@ -125,6 +123,18 @@
 .destinations .main-intro{
     text-align: left;
 }
+
+/*MAIN PIC END*/
+
+/*DESCRIPTION START*/
+.regions-li{
+    text-align: left;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 12px;
+}
+
+/*DESCRIPTION END*/
 
 /*---------------------------------------------------------------*/
 
@@ -156,6 +166,12 @@
         padding: 15px;
     }
 
+    .left-side {
+        grid-column: 1 / 13;
+        grid-row:auto;
+        padding: 15px;
+    }
+
     .pic-frame{
         position: relative;
         background-color: white;
@@ -182,15 +198,17 @@
         padding: 10px;
         box-sizing: border-box;
     }
-/*
-    .destinations h2{
-        overflow: auto;
-        margin-top: 70px;
+
+    .overlay-text {
+        top: 25%;  
     }
-*/    
+
+    #tooltip-text{
+        top: 40%;  
+    }
 }
 
-@media (max-width:530px) {
+@media (max-width:550px) {
     .fa-stack-1x{     
         font-size: 16px;
     }
@@ -203,7 +221,18 @@
         margin-left: -5px;
     }
     
-    .fa-1 {
+    .fa-0, .fa-1, .fa-2, .fa-3, .fa-4,
+    .fa-5, .fa-6, .fa-7, .fa-8, .fa-9 {
         margin-left: 7px;
+    }
+
+    .overlay-text {
+        top: 15%;  
+        font-size: 2.4em;  
+    }
+
+    #tooltip-text{
+        top: 38%;  
+        font-size: 0.85em !important;
     }
 }
