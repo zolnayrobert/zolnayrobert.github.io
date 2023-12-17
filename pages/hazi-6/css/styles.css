@@ -879,7 +879,7 @@ div.row {
         padding-left: 0;
     }
 
-    .main-box {
+    .main-row .main-box {
         width: 100%;
     }
 
