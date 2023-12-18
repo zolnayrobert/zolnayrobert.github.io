@@ -267,8 +267,18 @@
 }
 /*RÉGIÓK KÉP VÁLASZTÓ END*/
 
+/*DESCRITION EGYÉB BEÁLLÍTÁSOK*/
 figure img{
     width: 100%;
+    max-width: 680px;
+}
+
+figcaption{
+    margin-bottom: 15px;
+}
+
+.ol-list {
+    margin-left: 12px;
 }
 
 /*DESCRIPTION END*/
