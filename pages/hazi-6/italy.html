@@ -74,8 +74,8 @@
             <div class="form-container">
                 <!--spinner-->
                 <div id="loading-overlay">
-                    <div id="loading-spinner" class="fas fa-plane"></div>
-                    <div id="loading-spinner" class="loader"></div>
+                    <div class="fas fa-plane"></div>
+                    <div class="loader"></div>
                 </div>
                 <h2>Ajánatkérés</h2>
                 <form id="offerForm" class="form" name="offerForm"
@@ -96,18 +96,18 @@
                 </select>
 
                 <p class="label">Milyen típusú utazást szeretsz?</p>
-                <section class="checkbox">
+                <div class="checkbox">
                     <input type="checkbox" id="type1" name="type" value="tengerpart">
                     <label class="label2" for="type1">Tenger part</label>
-                </section>
-                <section class="checkbox">
+                </div>
+                <div class="checkbox">
                     <input type="checkbox" id="type2" name="type" value="kaland">
                     <label class="label2" for="type2">Kaland</label>
-                </section>
-                <section class="checkbox">
+                </div>
+                <div class="checkbox">
                     <input type="checkbox" id="type3" name="type" value="kultura">
                     <label class="label2" for="type3">Kultúra</label>
-                </section>
+                </div>
 
                 <textarea class="subscribe-input" id="message" name="message" cols="20" rows="5"
                     placeholder="Írj nekünk magadról kicsit részletesebben" maxlength="160"></textarea>
@@ -125,12 +125,12 @@
                     action="https://formsubmit.co/520a354098799bbb56777753e910654f" method="POST">
                 <input class="subscribe-input" name="newsletter" id="newsletter" type="email" placeholder="Email cím"
                     required>
-                <section class="checkbox">
+                <div class="checkbox">
                     <input type="checkbox" id="acceptDPR" name="acceptDPR" value="1" required>
                     <label class="label2" for="acceptDPR">Az adatvédelmi tájékoztatót elolvastam, megértettem, és
                         hozzájárulok ahhoz, hogy megadott adataimat a szolgáltató,
                         mint adatkezelő a szabályzatban foglaltaknak megfelelően kezelje.</label>
-                </section>
+                </div>
                 <input type="hidden" name="_captcha" value="false">
                 <input type="text" name="_honey" style="display:none">
                 <button class="subscribe-button" type="submit" onSubmit="return false">Feliratkozom</button>
