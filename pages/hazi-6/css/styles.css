@@ -945,6 +945,10 @@ div.row {
     header q {
         display: none;
     }
+
+    header h2 {
+        left: 45%;
+    }
     
     .menu {
         flex-direction: column;
@@ -1054,8 +1058,11 @@ div.row {
 }
 
 @media (max-width:500px) {
-    header h1,
-    header h2{
+    header h1 {
         left: 33%;
+    }
+
+    header h2 {
+        left: 38%;
     }
 }    
