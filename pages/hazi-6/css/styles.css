@@ -51,6 +51,8 @@ h6 {
 
 .video{
     width: 100%;
+    max-width: 680px;
+    height: 380px;
 }
 
 /*Nagyobb szünetet tartson a szekciók között*/
@@ -1029,7 +1031,6 @@ div.row {
         grid-row:auto;
         margin: 0 auto;
         padding-left: 15px;
-
     }
     
     .main-footer {
