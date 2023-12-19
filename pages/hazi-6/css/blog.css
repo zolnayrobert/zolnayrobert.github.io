@@ -58,7 +58,7 @@
     line-height: 1em !important;
 }
 
-.fa-plus {
+.fa-plus, .fa-minus {
     margin-left: -10px;
 }
 
@@ -379,7 +379,7 @@ figcaption{
         flex: 1 0 15%; /* Rugalmas flex beállítás, az utolsó érték (30%) az elem szélességét szabályozza */
     }
 
-    .fa-plus {
+    .fa-plus, .fa-minus {
         margin-left: -5px;
     }
     
