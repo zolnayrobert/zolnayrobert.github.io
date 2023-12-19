@@ -389,13 +389,13 @@ figcaption{
     }
 
     .overlay-text {
-        top: 15%;  
-        font-size: 2.4em;  
+        top: 18%;  
+        font-size: 2.1em;  
     }
 
     #tooltip-text{
-        top: 38%;  
-        font-size: 0.85em !important;
+        top: 43%;  
+        font-size: 0.7em !important;
     }
 
     .region-container {
