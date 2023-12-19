@@ -49,6 +49,10 @@ h6 {
     margin: 8px 0 5px 0;
 }
 
+.video{
+    width: 100%;
+}
+
 /*Nagyobb szünetet tartson a szekciók között*/
 .break{
     height: 1px;
