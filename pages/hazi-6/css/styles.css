@@ -49,12 +49,6 @@ h6 {
     margin: 8px 0 5px 0;
 }
 
-iframe .video {
-    width: 100%;
-    max-width: 680px;
-    height: 380px;
-}
-
 /*Nagyobb szünetet tartson a szekciók között*/
 .break{
     height: 1px;
@@ -1013,7 +1007,7 @@ div.row {
         grid-row:auto;
         margin: 0 auto;
         padding-left: 15px;
-        padding-right: 30px;
+        padding-right: 15px;
     }
 
     .content {
@@ -1027,10 +1021,10 @@ div.row {
     }
 
     aside{
-        grid-column: 2 / 12;
+        grid-column: 1 / 13;
         grid-row:auto;
-        margin: 0 auto;
-        padding-left: 15px;
+        margin-left: 15px;
+        margin-right: 5px;
     }
     
     .main-footer {
