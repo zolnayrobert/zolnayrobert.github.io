@@ -68,11 +68,16 @@
             </ul>
         </nav>
         
+        <!--spinner-->
+        <div id="loading-overlay">
+            <div id="loading-spinner" class="fas fa-plane"></div>
+            <div id="loading-spinner" class="loader"></div>
+        </div>
         <div class="gallery-wrapper">  
                 <section class="img-gallery">
                     <div class="gallery-image">
                         <a class="popup-img" title="Teknős úszik a tengerben">
-                            <img src="img/gallery-1-tn.jpg" alt="teknős úszik gili partjainál a tengerben" id="1" data-large="img/gallery-1.jpg"/>
+                            <img src="img/gallery-1-tn.jpg" alt="teknős úszik gili partjainál a tengerben" id="1" data-large="img/gallery-1.jpg" onload="onLoader(this)">
                             <article class="content">
                                 <h3>Gili-szigetek</h3>
                                 <p>Egy teknős úszkál a tengerben. 🐢🌊</p>
@@ -81,7 +86,7 @@
                     </div>
                     <div class="gallery-image">
                         <a class="popup-img" title="Monemvasia városkép a főtéren">
-                            <img src="img/gallery-2-tn.jpg" alt="Monemvasia városkép a főtéren" id="2" data-large="img/gallery-2.jpg"/>
+                            <img src="img/gallery-2-tn.jpg" alt="Monemvasia városkép a főtéren" id="2" data-large="img/gallery-2.jpg" onload="onLoader(this)">
                             <article class="content">
                                 <h3>Monemvasia</h3>
                                 <p>Monemvasia főterén, középkori városkép, kőépületek ölelésében.</p>
@@ -90,7 +95,7 @@
                     </div>
                     <div class="gallery-image">
                         <a class="popup-img" title="Bledi tó közepén egy templom">
-                            <img src="img/gallery-3-tn.jpg" alt="Bledi tó közepén egy templom" id="3" data-large="img/gallery-3.jpg"/>
+                            <img src="img/gallery-3-tn.jpg" alt="Bledi tó közepén egy templom" id="3" data-large="img/gallery-3.jpg" onload="onLoader(this)">
                             <article class="content">
                                 <h3>Bled</h3>
                                 <p>A tó kék vizén emelkedik ki a romantikus templom, mely idillikus szigeten áll. </p>
@@ -99,7 +104,7 @@
                     </div>
                     <div class="gallery-image">
                         <a class="popup-img" title="Karácsony Boa Vista szigetén">
-                            <img src="img/gallery-4-tn.jpg" alt="Karácsony Boa Vista szigetén" id="4" data-large="img/gallery-4.jpg"/>
+                            <img src="img/gallery-4-tn.jpg" alt="Karácsony Boa Vista szigetén" id="4" data-large="img/gallery-4.jpg" onload="onLoader(this)">
                             <article class="content">
                                 <h3>Boa Vista</h3>
                                 <p>Boa Vista szigetén karácsonykor a forró homok a hideg hó helyett🏝️🎄</p>
@@ -108,7 +113,7 @@
                     </div>
                     <div class="gallery-image">
                         <a class="popup-img" title="Látkép a Sete Cidades tavakra">
-                            <img src="img/gallery-5-tn.jpg" alt="Zöld és kék paletta öleli át ezt az Azori paradicsomot. 🏞️💙🌋" id="5" data-large="img/gallery-5.jpg"/>
+                            <img src="img/gallery-5-tn.jpg" alt="Zöld és kék paletta öleli át ezt az Azori paradicsomot. 🏞️💙🌋" id="5" data-large="img/gallery-5.jpg" onload="onLoader(this)">
                             <article class="content">
                                 <h3>Azori-szigetek</h3>
                                 <p>Zöld és kék paletta öleli át ezt az Azori paradicsomot. 🏞️💙🌋</p>
@@ -117,7 +122,7 @@
                     </div>
                     <div class="gallery-image">
                         <a class="popup-img" title="A Sacred Monkey Forest lakói.">
-                            <img src="img/gallery-6-tn.jpg" alt="Majmok játszanak a Sacred Monkey Forestben" id="6" data-large="img/gallery-6.jpg"/>
+                            <img src="img/gallery-6-tn.jpg" alt="Majmok játszanak a Sacred Monkey Forestben" id="6" data-large="img/gallery-6.jpg" onload="onLoader(this)">
                             <article class="content">
                                 <h3>Bali</h3>
                                 <p>A Sacred Monkey Forest lakói. 🐒🌳🌿</p>
@@ -126,7 +131,7 @@
                     </div>
                     <div class="gallery-image">
                         <a class="popup-img" title="Naplemente Gilin">
-                            <img src="img/gallery-7-tn.jpg" alt="Naplemente Gili Travanganon, háttérben az Agung vulkán" id="7" data-large="img/gallery-7.jpg"/>
+                            <img src="img/gallery-7-tn.jpg" alt="Naplemente Gili Travanganon, háttérben az Agung vulkán" id="7" data-large="img/gallery-7.jpg" onload="onLoader(this)">
                             <article class="content">
                                 <h3>Gili Travangan</h3>
                                 <p>Naplemente Gili Travanganon, háttérben az Agung vulkán 🌅🍹</p>
@@ -135,7 +140,7 @@
                     </div>
                     <div class="gallery-image">
                         <a class="popup-img" title="Santo Antao hegyei közt">
-                            <img src="img/gallery-8-tn.jpg" alt="A sziklás csúcsok és a zöld völgyek harmonikus tájat alkotnak."" id="8" data-large="img/gallery-8.jpg"/>
+                            <img src="img/gallery-8-tn.jpg" alt="A sziklás csúcsok és a zöld völgyek harmonikus tájat alkotnak."" id="8" data-large="img/gallery-8.jpg" onload="onLoader(this)">
                             <article class="content">
                                 <h3>Santo Antao</h3>
                                 <p>A sziklás csúcsok és a zöld völgyek harmonikus tájat alkotnak. 🏞️🏔️</p>
@@ -143,7 +148,7 @@
                         </a>
                     </div><div class="gallery-image">
                         <a class="popup-img" title="Gyerekek játszanak a kikötőben">
-                            <img src="img/gallery-9-tn.jpg" alt="A kikötőben gyerekek örömmel játszanak gumiabroncsokkal" id="9" data-large="img/gallery-9.jpg"/> 
+                            <img src="img/gallery-9-tn.jpg" alt="A kikötőben gyerekek örömmel játszanak gumiabroncsokkal" id="9" data-large="img/gallery-9.jpg" onload="onLoader(this)"> 
                             <article class="content">
                                 <h3>Zöld-foki szigetek</h3>
                                 <p>A kikötőben gyerekek örömmel játszanak gumiabroncsokkal.</p>
@@ -152,7 +157,7 @@
                     </div>
                     <div class="gallery-image">
                         <a class="popup-img" title="Tengerparti csendélet">
-                            <img src="img/gallery-10-tn.jpg" alt="A homok, a pálmafák és a lágy tengeri hullámok együtt teremtenek idillikus környezetet." id="10" data-large="img/gallery-10.jpg"/>
+                            <img src="img/gallery-10-tn.jpg" alt="A homok, a pálmafák és a lágy tengeri hullámok együtt teremtenek idillikus környezetet." id="10" data-large="img/gallery-10.jpg" onload="onLoader(this)">
                             <article class="content">
                                 <h3>Guadeloupe</h3>
                                 <p>A homok, a pálmafák és a lágy tengeri hullámok együtt teremtenek idillikus környezetet. 🏖️🌴🌊</p>
@@ -161,7 +166,7 @@
                     </div>
                     <div class="gallery-image">
                         <a class="popup-img" title="Eiffel torony a földről nézve">
-                            <img src="img/gallery-11-tn.jpg" alt="Az acél szerkezet büszkén emelkedik ki a város zajából, a kék égbolt háttérjével harmonizálva." id="11" data-large="img/gallery-11.jpg"/>
+                            <img src="img/gallery-11-tn.jpg" alt="Az acél szerkezet büszkén emelkedik ki a város zajából, a kék égbolt háttérjével harmonizálva." id="11" data-large="img/gallery-11.jpg" onload="onLoader(this)">
                             <article class="content">
                                 <h3>Párizs</h3>
                                 <p>Az acél szerkezet büszkén emelkedik ki a város zajából, a kék égbolt háttérjével harmonizálva.</p>
@@ -170,7 +175,7 @@
                     </div>
                     <div class="gallery-image">
                         <a class="popup-img" title="Séta egy ciprusi kanyonban">
-                            <img src="img/gallery-12-tn.jpg" alt="A sziklák közötti séta mélyebb betekintést nyújt a sziget sokszínűségébe és varázsába." id="12" data-large="img/gallery-12.jpg"/>
+                            <img src="img/gallery-12-tn.jpg" alt="A sziklák közötti séta mélyebb betekintést nyújt a sziget sokszínűségébe és varázsába." id="12" data-large="img/gallery-12.jpg" onload="onLoader(this)">
                             <article class="content">
                                 <h3>Ciprus</h3>
                                 <p>A sziklák közötti séta mélyebb betekintést nyújt a sziget sokszínűségébe és varázsába.</p>
@@ -180,7 +185,7 @@
                     <div class="gallery-image">
                         <a class="popup-img" title="Doha felhőkarcolói éjszaka">
                             <img src="img/gallery-13-tn.jpg" alt="
-                            Doha éjszakai felhőkarcolói fényárban pompáznak, lenyűgöző városi panorámát alkotva. 🌃🏙️✨" id="13" data-large="img/gallery-13.jpg"/>
+                            Doha éjszakai felhőkarcolói fényárban pompáznak, lenyűgöző városi panorámát alkotva. 🌃🏙️✨" id="13" data-large="img/gallery-13.jpg" onload="onLoader(this)">
                             <article class="content">
                                 <h3>Katar</h3>
                                 <p>Doha éjszakai felhőkarcolói fényárban pompáznak, lenyűgöző városi panorámát alkotva. 🌃🏙️✨</p>
@@ -189,7 +194,7 @@
                     </div>
                     <div class="gallery-image">
                         <a class="popup-img" title="Taverna életkép">
-                            <img src="img/gallery-14-tn.jpg" alt="Olümpia városában az étterem hangulata összefonódik a szőlőtőkék nyugtató árnyékával." id="14" data-large="img/gallery-14.jpg"/>
+                            <img src="img/gallery-14-tn.jpg" alt="Olümpia városában az étterem hangulata összefonódik a szőlőtőkék nyugtató árnyékával." id="14" data-large="img/gallery-14.jpg" onload="onLoader(this)">
                             <article class="content">
                                 <h3>Olümpia</h3>
                                 <p>Az étterem hangulata összefonódik a szőlőtőkék nyugtató árnyékával. 🍇🍽️🌿</p>
@@ -198,7 +203,7 @@
                     </div>
                     <div class="gallery-image">
                         <a class="popup-img" title="Wadi Rum tevegelés előkészületek">
-                            <img src="img/gallery-16-tn.jpg" alt="A tevék felkészítése a homokdűnék között, a sátrak felállítása a sivatagi csendben" id="15" data-large="img/gallery-16.jpg"/>
+                            <img src="img/gallery-16-tn.jpg" alt="A tevék felkészítése a homokdűnék között, a sátrak felállítása a sivatagi csendben" id="15" data-large="img/gallery-16.jpg" onload="onLoader(this)">
                             <article class="content">
                                 <h3>Jordánia</h3>
                                 <p>A tevék felkészítése a homokdűnék között, a sátrak felállítása a sivatagi csendben. 🐪🏜️🌄</p>

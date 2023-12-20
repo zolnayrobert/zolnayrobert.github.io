@@ -4,6 +4,9 @@ $(document).ready(function()
 console.log("v.1882");    //verzió szám
 console.log(document.title); //oldal neve
 
+    //Spinner elrejtése
+    document.getElementById("loading-overlay").style.display = "none";
+
     //Kapcsolat űrlap
     $('#contactForm').submit(function (e)
     {
@@ -160,6 +163,32 @@ function eMsg()
         // Rejtse el az üzenetet
         document.getElementById("form-message-report").style.display = "none"; //üzenet eltüntetése
     }, 5000);
+}
+
+function onLoader(e)
+{
+    //Spinner mutatása válaszig
+    document.getElementById("loading-overlay").style.display = "flex"; 
+console.log($(this));  
+console.log(e);  
+console.log(e.id);  
+
+    let observer = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+console.log(entry);            
+            if (entry.isIntersecting) {
+
+                // Az elem kijutott a látható tartományba, itt végrehajthatod a szükséges műveleteket
+                document.getElementById("loading-overlay").style.display = "none";
+
+                // Ne felejtsd el leállítani az observer-t, ha már nem szükséges
+                observer.disconnect();
+            }
+        });
+    }, { threshold: 0.5 }); // A threshold beállítja, hogy hány százaléka láthatónak kell lennie az elemnek
+    
+    // Az observer-t hozzárendeljük az adott elemhez
+    observer.observe(document.getElementById(e.id));
 }
 
         
