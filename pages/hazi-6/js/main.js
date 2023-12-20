@@ -1,7 +1,7 @@
 $(document).ready(function()
 { 
 
-console.log("v.1882");    //verzió szám
+console.log("v.1883");    //verzió szám
 console.log(document.title); //oldal neve
 
     //Spinner elrejtése
