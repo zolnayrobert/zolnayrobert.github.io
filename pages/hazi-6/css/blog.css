@@ -276,18 +276,7 @@
     gap: var(--gap);
 }
   
-.region-pic-container {
-    transition: flex var(--transition), filter var(--transition);
-    filter: grayscale(var(--grayscale)) brightness(var(--brightness));
-    object-fit: cover;
-    overflow: hidden;
-    flex: 1;
-    position: relative;
-}
-
 .region-pic-container img {
-    --brightness: 0.75;
-    --grayscale: 1;
     height: 350px;
     width: auto;
 }
@@ -302,12 +291,22 @@
     color:#fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 }
+
+.region-pic-container {
+    object-fit: cover;
+    overflow: hidden;
+    flex: 1;
+    position: relative;
+    filter: brightness(0.85) grayscale(1);
+}
   
 .region-pic-container:hover {
     --brightness: 1.15;
     --grayscale: 0;
+    filter: grayscale(0) brightness(1.15);
     flex: var(--magnifier);
-    transition: flex 0.25s ease;
+    transition: flex 0.3s ease-out, opacity 0.3s ease-in;
+    transition: filter 0.3s ease-out;
 }
 /*RÉGIÓK KÉP VÁLASZTÓ END*/
 
@@ -415,6 +414,10 @@ figcaption{
     .region-container {
         display: block;
         height: auto;
+    }
+
+    .region-pic-container {
+        filter: grayscale(0) brightness(1.00);
     }
 
     .region-pic-container img {

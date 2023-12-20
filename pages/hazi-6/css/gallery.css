@@ -63,7 +63,7 @@ a.popup-img img:hover {
 }
 
 .popup-img article{
-  opacity: 60%;
+  opacity: 70%;
 }
 
 .popup-img:hover article{
@@ -78,7 +78,8 @@ a.popup-img img:hover {
 
 .popup-img:hover .content h3{
   margin: 0 0 10px;
-  padding: 0; 
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 20px;
 }
 
@@ -182,6 +183,21 @@ a.popup-img img:hover {
       width: auto;
       margin-left: 40px;
       margin-right: 40px;
+    }
+
+    .dest-pic-container .popup-img .content{
+      top:-400%;
+      display:block;
+      opacity: 70%;
+    }
+
+    .dest-pic-container .popup-img article{
+      background-color: whitesmoke;
+      width: 100%;
+    }
+
+    .dest-pic-container .popup-img .content{
+      padding: 0; 
     }
 }
 
