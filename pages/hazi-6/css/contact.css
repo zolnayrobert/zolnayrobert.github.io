@@ -39,11 +39,11 @@
     color: #35477d;
 }
 
-.about-wrapper .about-text{
+.about-text{
     padding-left: 0px !important;
     line-height: 1.6em;
     text-align: justify;
-    width: 66%;
+    width: 80%;
 }
 
 /* Contact */
@@ -193,7 +193,7 @@ iframe {
         padding: 10px;
     }
 
-    .about-wrapper .about-text {
+    .about-text {
         width: 100%;
     }
 
