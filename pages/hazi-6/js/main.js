@@ -1,7 +1,7 @@
 $(document).ready(function()
 { 
 
-console.log("v.1884");    //verzió szám
+console.log("v.1885");    //verzió szám
 
     //Spinner elrejtése
     document.getElementById("loading-overlay").style.display = "none";
@@ -60,10 +60,6 @@ console.log("v.1884");    //verzió szám
         } else {
             $("#tooltip-text").text(''); //különben töröljük, ha volt benne szöveg
         }
-    });
-    
-    document.addEventListener('DOMContentLoaded', function() {
-        console.log('DOMContentLoaded esemény kiváltódott');
     });
 });
 
