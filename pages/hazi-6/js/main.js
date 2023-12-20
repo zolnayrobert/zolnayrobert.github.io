@@ -68,7 +68,9 @@ function sendMessage(frm)
 {   
     //Spinner mutatása válaszig
     document.getElementById("loading-overlay").style.display = "flex";
+    setTimeout(addLoaderText, 3000); //ha sokáig tart a küldés, akkor addig nyugtassuk meg a felhasználót
 
+    setTimeout(console.log("Ez a kód végrehajtódik 6 másodperc után."), 6000); //TESZT
     $.ajax({
         type: frm.attr('method'),
         method: "POST",
@@ -160,6 +162,20 @@ function eMsg()
         // Rejtse el az üzenetet
         document.getElementById("form-message-report").style.display = "none"; //üzenet eltüntetése
     }, 5000);
+}
+
+//ha sokáig tart a küldés, akkor addig nyugtassuk meg a felhasználót
+function addLoaderText()
+{
+    let newParagraph = document.createElement('p'); //létrehozunk egy új <p> elemet
+    newParagraph.classList.add('text-justify'); //class hozzáadása
+
+    let paragraphText = document.createTextNode('Úgy tűnik lassan megy át az üzenet, kérlek légy türelemmel!'); //<p> elem tartalma
+    newParagraph.appendChild(paragraphText); //hozzáadjuk a szöveget a <p> elemhez
+    
+    let container = document.getElementById('loading-overlay'); //kiválasztjuk a HTML-ben lévő elemet, amelybe beszúrjuk az új <p> elemet
+    container.appendChild(newParagraph); //Beszúrjuk az új <p> elemet a kiválasztott elembe
+
 }
 
         
