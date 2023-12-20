@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:URL" content="https://www.zolnaytours.hu">
+    <meta property="og:image" content="img/underwater.jpg">
+    <meta property="og:description" content="Fedezd fel a világot egyedi pillanatokon keresztül! Képgalériánkban varázslatos tájak és emlékezetes utazások várnak, inspirációval teli kalandokhoz. ✈️🌍 #Utazás #Képek #Kalandok">
+    <meta name="description" content="Fedezd fel a világot egyedi pillanatokon keresztül! Képgalériánkban varázslatos tájak és emlékezetes utazások várnak, inspirációval teli kalandokhoz. ✈️🌍 #Utazás #Képek #Kalandok">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+    <title>Fedezd fel a világot képekben | ZolnayTours</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#05aff0">
+    <meta name="apple-mobile-web-app-title" content="ZolnayTours">
+    <meta name="application-name" content="ZolnayTours">
+    <meta name="msapplication-TileColor" content="#ff0000">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="main-head">
+            <img class="header-img" src="img/header.png" alt="travel clipart around the world">
+            <h1><a href="index.html">Zolnay</a></h1>
+            <h2><a href="index.html">Tours</a></h2>
+            <q>TRAVEL LIKE THE LOCALS</q>
+        </header>
+
+        <nav class="main-nav" id="navigation">
+            <div class="social">
+                <a href="#" class="fa-brands fa-facebook-f"></a>
+                <a href="#" class="fa-brands fa-twitter"></a>
+                <a href="#" class="fa-brands fa-youtube"></a>
+                <a href="#" class="fa-brands fa-tiktok"></a>
+            </div>
+            <ul class="mainmenu">
+                <input type='checkbox' id='check'>
+                <span class="menu">
+                    <li class="mainmenu-li"><a href="index.html">KEZDŐLAP</a></li>
+                    <li class="mainmenu-li"><a href="contact.html#about-us">RÓLUNK</a></li>
+                    <li class="mainmenu-li dropdown"><a href="destinations.html">UTICÉLOK <i class="fa fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu-li"><a href="bulgaria.html">BULGÁRIA</a></li>
+                            <li class="submenu-li"><a href="indonesia.html">INDONÉZIA</a></li>
+                            <li class="submenu-li"><a href="italy.html">OLASZORSZÁG</a></li>
+                            <li class="submenu-li"><a href="caboverde.html">ZÖLD-FOKI SZIGETEK</a></li>
+                        </ul>
+                    </li>
+                    <li class="mainmenu-li"><a href="gallery.html">KÉPEK</a></li>
+                    <li class="mainmenu-li"><a href="contact.html#contact">KAPCSOLAT</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+        
+        <!--spinner-->
+        <div id="loading-overlay">
+            <div id="loading-spinner" class="fas fa-plane"></div>
+            <div id="loading-spinner" class="loader"></div>
+        </div>
+        <div class="gallery-wrapper">  
+                <section class="img-gallery">
+                    <div class="gallery-image">
+                        <a class="popup-img" title="Teknős úszik a tengerben">
+                            <img src="img/gallery-1-tn.jpg" alt="teknős úszik gili partjainál a tengerben" id="1" data-large="img/gallery-1.jpg">
+                            <article class="content">
+                                <h3>Gili-szigetek</h3>
+                                <p>Egy teknős úszkál a tengerben. 🐢🌊</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="Monemvasia városkép a főtéren">
+                            <img src="img/gallery-2-tn.jpg" alt="Monemvasia városkép a főtéren" id="2" data-large="img/gallery-2.jpg">
+                            <article class="content">
+                                <h3>Monemvasia</h3>
+                                <p>Monemvasia főterén, középkori városkép, kőépületek ölelésében.</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="Bledi tó közepén egy templom">
+                            <img src="img/gallery-3-tn.jpg" alt="Bledi tó közepén egy templom" id="3" data-large="img/gallery-3.jpg">
+                            <article class="content">
+                                <h3>Bled</h3>
+                                <p>A tó kék vizén emelkedik ki a romantikus templom, mely idillikus szigeten áll. </p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="Karácsony Boa Vista szigetén">
+                            <img src="img/gallery-4-tn.jpg" alt="Karácsony Boa Vista szigetén" id="4" data-large="img/gallery-4.jpg">
+                            <article class="content">
+                                <h3>Boa Vista</h3>
+                                <p>Boa Vista szigetén karácsonykor a forró homok a hideg hó helyett🏝️🎄</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="Látkép a Sete Cidades tavakra">
+                            <img src="img/gallery-5-tn.jpg" alt="Zöld és kék paletta öleli át ezt az Azori paradicsomot. 🏞️💙🌋" id="5" data-large="img/gallery-5.jpg">
+                            <article class="content">
+                                <h3>Azori-szigetek</h3>
+                                <p>Zöld és kék paletta öleli át ezt az Azori paradicsomot. 🏞️💙🌋</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="A Sacred Monkey Forest lakói.">
+                            <img src="img/gallery-6-tn.jpg" alt="Majmok játszanak a Sacred Monkey Forestben" id="6" data-large="img/gallery-6.jpg">
+                            <article class="content">
+                                <h3>Bali</h3>
+                                <p>A Sacred Monkey Forest lakói. 🐒🌳</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="Naplemente Gilin">
+                            <img src="img/gallery-7-tn.jpg" alt="Naplemente Gili Travanganon, háttérben az Agung vulkán" id="7" data-large="img/gallery-7.jpg">
+                            <article class="content">
+                                <h3>Gili Travangan</h3>
+                                <p>Naplemente Gili Travanganon, háttérben az Agung vulkán 🌅🍹</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="Santo Antao hegyei közt">
+                            <img src="img/gallery-8-tn.jpg" alt="A sziklás csúcsok és a zöld völgyek harmonikus tájat alkotnak."" id="8" data-large="img/gallery-8.jpg">
+                            <article class="content">
+                                <h3>Santo Antao</h3>
+                                <p>A sziklás csúcsok és a zöld völgyek harmonikus tájat alkotnak. 🏞️🏔️</p>
+                            </article>
+                        </a>
+                    </div><div class="gallery-image">
+                        <a class="popup-img" title="Gyerekek játszanak a kikötőben">
+                            <img src="img/gallery-9-tn.jpg" alt="A kikötőben gyerekek örömmel játszanak gumiabroncsokkal" id="9" data-large="img/gallery-9.jpg"> 
+                            <article class="content">
+                                <h3>Zöld-foki szigetek</h3>
+                                <p>A kikötőben gyerekek örömmel játszanak gumiabroncsokkal.</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="Tengerparti csendélet">
+                            <img src="img/gallery-10-tn.jpg" alt="A homok, a pálmafák és a lágy tengeri hullámok." id="10" data-large="img/gallery-10.jpg">
+                            <article class="content">
+                                <h3>Guadeloupe</h3>
+                                <p>A homok, a pálmafák és a lágy tengeri hullámok. 🏖️🌴🌊</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="Eiffel torony a földről nézve">
+                            <img src="img/gallery-11-tn.jpg" alt="Az acél szerkezet büszkén emelkedik ki a város zajából." id="11" data-large="img/gallery-11.jpg">
+                            <article class="content">
+                                <h3>Párizs</h3>
+                                <p>Az acél szerkezet büszkén emelkedik ki a város zajából.🗼</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="Séta egy ciprusi kanyonban">
+                            <img src="img/gallery-12-tn.jpg" alt="A sziklák közötti séta mélyebb betekintést nyújt a sziget sokszínűségébe és varázsába." id="12" data-large="img/gallery-12.jpg">
+                            <article class="content">
+                                <h3>Ciprus</h3>
+                                <p>A sziklák közötti séta mélyebb betekintést nyújt a sziget sokszínűségébe és varázsába.</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="Doha felhőkarcolói éjszaka">
+                            <img src="img/gallery-13-tn.jpg" alt="
+                            Doha éjszakai felhőkarcolói fényárban pompáznak. 🌃🏙️✨" id="13" data-large="img/gallery-13.jpg">
+                            <article class="content">
+                                <h3>Katar</h3>
+                                <p>Doha éjszakai felhőkarcolói fényárban pompáznak. 🌃🏙️✨</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="Taverna életkép">
+                            <img src="img/gallery-14-tn.jpg" alt="Olümpia városában az étterem hangulata összefonódik a szőlőtőkék nyugtató árnyékával." id="14" data-large="img/gallery-14.jpg">
+                            <article class="content">
+                                <h3>Olümpia</h3>
+                                <p>Az étterem hangulata összefonódik a szőlőtőkék nyugtató árnyékával. 🍇🍽️🌿</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="Pálmafa dől bele a Karib-tengerbe">
+                            <img src="img/gallery-15-tn.jpg" alt="Pálmafa dől bele a Karib-tengerbe" id="15" data-large="img/gallery-15.jpg">
+                            <article class="content">
+                                <h3>Guadeloupe</h3>
+                                <p>A hajlékony pálmafák lendületesen dőlnek a Karib-tenger szikrázó kékjébe. 🏝️</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="Wadi Rum tevegelés előkészületek">
+                            <img src="img/gallery-16-tn.jpg" alt="A tevék felkészítése a homokdűnék között, a sátrak felállítása a sivatagi csendben" id="16" data-large="img/gallery-16.jpg">
+                            <article class="content">
+                                <h3>Jordánia</h3>
+                                <p>A tevék felkészítése a homokdűnék között, a sátrak felállítása a sivatagi csendben. 🐪🏜️🌄</p>
+                            </article>
+                        </a>
+                    </div>
+                    
+                    <div class="gallery-image">
+                        <a class="popup-img" title="Adonis és Afrodité">
+                            <img src="img/gallery-17-tn.jpg" alt="Adonis és Afrodité szobra Afrodité medencéjében Cipruson" id="17" data-large="img/gallery-17.jpg">
+                            <article class="content">
+                                <h3>Ciprus</h3>
+                                <p>A gyönyörű Afrodité és Adonis szobra Cipruson, ahol a szerelem és a szépség találkozik. 🏛️💖</p>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="gallery-image">
+                        <a class="popup-img" title="Petra kincstára felülnézetből">
+                            <img src="img/gallery-18-tn.jpg" alt="Látkép a nakabeus város, Petra leghíresebb ikonikus épületéről, a Kincstárról" id="18" data-large="img/gallery-18.jpg">
+                            <article class="content">
+                                <h3>Jordánia</h3>
+                                <p>Látkép a nakabeus város, Petra leghíresebb épületéről, a Kincstárról. 🐪🏛️</p>
+                            </article>
+                        </a>
+                    </div>
+                </section>
+                <div class="clear"></div>
+            </p>      
+        </div>
+
+        <div id="gallery-popup" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <a class="prev" id="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <div class="slides">
+                <img class="img-popup" src="" alt="" id="">
+                <article class="content-popup">
+                    <h3 id="h3-popup"></h3>
+                    <p id="p-popup"></p>
+                </article>
+            </div>
+            <a class="next" id="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+        <footer class="main-footer" id="contact">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="about" id="footer-left">
+                        <div class="about-left">
+                            <div class="about-img-div"><img class="about-img" src="img/main_pic2.jpg"
+                                    alt="bemutatkozó kép zolnay tours"></div>
+                            <div class="about-text">
+                                <h6>Rólunk</h6>
+                                <p class="text-justify">Fedezd fel velünk a rejtett kincseket, inspirálódj úti
+                                    tippeinkkel és trükkjeinkkel, hogy utazásaid még emlékezetesebbek legyenek! A
+                                    blogunkon interaktív leírások, helyi ízek és autentikus élmények várnak rád.
+                                    Vezetünk téged a kihagyhatatlan látnivalókhoz, és megosztjuk a titkos helyeket,
+                                    amikről mások talán még nem hallottak. Frissítéseinkben szállásajánlatokat,
+                                    költségoptimalizálási taktikákat és útleírásokat találsz, hogy minden utazásod simán
+                                    és örömteli legyen. Legyél részese a mi utazóközösségünknek, ahol tapasztalatokat
+                                    cserélhetsz, és inspirálódhatsz más utazók történeteiből. Zolnay Tours: ahol
+                                    a kalandok kezdődnek, és az emlékek örökké élnek!🗺️🌟
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about" id="footer-right">
+                        <h6>Navigáció</h6>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Kezdőlap</a></li>
+                            <li><a href="contact.html#about-us">Rólunk</a></li>
+                            <li><a href="destinations.html">Uticélok</a></li>
+                            <li><a href="gallery.html">Képek</a></li>
+                            <li><a href="contact.html#contact">Kapcsolat</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="footer-container">
+                <div class="row">
+                    <div class="copy">
+                        <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                            <a href="#">Zolnay Tours</a>.
+                        </p>
+                    </div>
+
+                    <div class="footer-social">
+                        <ul class="social-icons">
+                            <li><a class="facebook" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a class="tiktok" href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

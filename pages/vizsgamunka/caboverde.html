@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Zolnay Tours">
+    <meta property="og:type" content="website">
+    <meta property="og:URL" content="https://www.zolnaytours.hu/caboverde.html">
+    <meta property="og:image" content="img/underwater.jpg">
+    <meta name="og:description"
+        content="Fedezd fel a Zöld-foki Köztársaságot, ahol az Atlanti-óceán szépsége és az afrikai kulturális örökség találkozik. Élvezd a trópusi klímát, sétálj a festői tengerpartokon, és merülj el a helyi gasztronómia és zene izgalmas világában. ✈️🌍 #Utazás #Képek #Tippek #Kalandok">
+    <meta name="description"
+        content="Utazz a Zöld-foki Köztársaságba, ahol lenyűgöző tájak, trópusi paradicsomok és gazdag kulturális élmények várják. Ismerd meg a szigetország sokszínűségét és élvezd a vendégszerető helyiek társaságát! ✈️🌍 #Utazás #Képek #Tippek #Kalandok">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>No Stress! Fedezzük fel a Zöld-foki Köztársaságot | Zolnay Tours</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#05aff0">
+    <meta name="apple-mobile-web-app-title" content="ZolnayTours">
+    <meta name="application-name" content="ZolnayTours">
+    <meta name="msapplication-TileColor" content="#ff0000">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div class="wrapper-blog">
+        <header class="main-head">
+            <img class="header-img" src="img/header.png" alt="travel clipart around the world">
+            <h1><a href="index.html">Zolnay</a></h1>
+            <h2><a href="index.html">Tours</a></h2>
+            <q>TRAVEL LIKE THE LOCALS</q>
+        </header>
+
+        <nav class="main-nav" id="navigation">
+            <div class="social">
+                <a href="#" class="fa-brands fa-facebook-f"></a>
+                <a href="#" class="fa-brands fa-twitter"></a>
+                <a href="#" class="fa-brands fa-youtube"></a>
+                <a href="#" class="fa-brands fa-tiktok"></a>
+            </div>
+            <ul class="mainmenu">
+                <input type='checkbox' id='check'>
+                <span class="menu">
+                    <li class="mainmenu-li"><a href="index.html">KEZDŐLAP</a></li>
+                    <li class="mainmenu-li"><a href="contact.html#about-us">RÓLUNK</a></li>
+                    <li class="mainmenu-li dropdown"><a href="destinations.html">UTICÉLOK <i class="fa fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu-li"><a href="bulgaria.html">BULGÁRIA</a></li>
+                            <li class="submenu-li"><a href="indonesia.html">INDONÉZIA</a></li>
+                            <li class="submenu-li"><a href="italy.html">OLASZORSZÁG</a></li>
+                            <li class="submenu-li"><a href="caboverde.html">ZÖLD-FOKI SZIGETEK</a></li>
+                        </ul>
+                    </li>
+                    <li class="mainmenu-li"><a href="gallery.html">KÉPEK</a></li>
+                    <li class="mainmenu-li"><a href="contact.html#contact">KAPCSOLAT</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+
+        <section class="left-side">
+            <div class="form-container">
+                <!--spinner-->
+                <div id="loading-overlay">
+                    <div class="fas fa-plane"></div>
+                    <div class="loader"></div>
+                </div>
+                <h2>Ajánlatkérés</h2>
+                <form id="offerForm" class="form" name="offerForm"
+                    action="https://formsubmit.co/520a354098799bbb56777753e910654f" method="POST">
+                    <input class="subscribe-input" type="text" id="name" name="name" placeholder="Név" required>
+                    <input class="subscribe-input" type="email" id="email" name="email" placeholder="Email cím"
+                        maxlength="40" required>
+                    <input class="subscribe-input" type="text" id="mobile" name="mobile" placeholder="Telefonszám"
+                        maxlength="12" required>
+
+                    <label class="label" for="_subject">Melyik ország érdekel?</label>
+                    <select class="subscribe-input" id="_subject" name="_subject" required>
+                        <option value="choose">-válassz-</option>
+                        <option value="bulgaria">Bulgária</option>
+                        <option value="indonesia">Indonézia</option>
+                        <option value="italy">Olaszország</option>
+                        <option value="caboverde">Zöld-foki Köztársaság</option>
+                    </select>
+
+                    <p class="label">Milyen típusú utazást szeretsz?</p>
+                    <div class="checkbox">
+                        <input type="checkbox" id="type1" name="type" value="tengerpart">
+                        <label class="label2" for="type1">Tenger part</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="type2" name="type" value="kaland">
+                        <label class="label2" for="type2">Kaland</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="type3" name="type" value="kultura">
+                        <label class="label2" for="type3">Kultúra</label>
+                    </div>
+
+                    <textarea class="subscribe-input" id="message" name="message" cols="20" rows="5"
+                        placeholder="Írj nekünk magadról kicsit részletesebben" maxlength="160"></textarea>
+
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
+                    <input class="subscribe-button" type="submit" onSubmit="return false" value="Küldés">
+                    <div id="form-message-report"></div>
+                </form>
+            </div>
+            <section class="subscribe-container">
+                <h2>Ötletek a<br> postaládádba</h2>
+                <p>Íratkozz fel a hírlevelünkre, ingyenes <br> utazási tippekért és trükkökért.</p>
+                <form id="newsletterForm" class="form" name="newsletterForm"
+                    action="https://formsubmit.co/520a354098799bbb56777753e910654f" method="POST">
+                    <input class="subscribe-input" name="newsletter" id="newsletter" type="email"
+                        placeholder="Email cím" required>
+                    <div class="checkbox">
+                        <input type="checkbox" id="acceptDPR" name="acceptDPR" value="1" required>
+                        <label class="label2" for="acceptDPR">Az adatvédelmi tájékoztatót elolvastam, megértettem, és
+                            hozzájárulok ahhoz, hogy megadott adataimat a szolgáltató,
+                            mint adatkezelő a szabályzatban foglaltaknak megfelelően kezelje.</label>
+                    </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
+                    <button class="subscribe-button" type="submit" onSubmit="return false">Feliratkozom</button>
+                    <div id="form-subscribe-report"></div>
+                    <span>100% garantált tartalom</span>
+                </form>
+            </section>
+        </section>
+
+        <main class="destinations">
+            <div class="pic-wrapper">
+                <img class="blog-img" src="img/caboverde_big.jpg" alt="Rizsföldek Indonéziában madártávlatból">
+                <div class="pic-overlay">
+                    <div id="overlay-h2" class="overlay-text"></div>
+                    <h3 id="tooltip-text"></h3>
+                </div>
+                <div class="pic-frame">
+                    <div class="icon-holder">
+                        <span
+                            tooltip="A Zöld-foki szigetek az UTC-1 időzónában találhatóak, ahol a helyi idő 2 órával korábbra áll a magyar időhöz képest."
+                            class="icons fa-stack fa-1x">
+                            <i class="fa-solid fa-minus fa-stack-1x"></i>
+                            <i class="fa-solid fa-2 fa-stack-1x"></i>
+                        </span>
+                        <i tooltip="Az Atlanti-óceánban a Nyugat-Afrikai partoknál, a Szenegáli-félsziget és a Karib-tenger között található."
+                            class="icons fa-solid fa-earth-africa"></i>
+                        <i tooltip="Repülővel könnyen megközelíthető" class="icons fa-solid fa-plane-circle-check"></i>
+                        <i tooltip="A nap évente majdnem 350 napot süt, amely ragyogó időt kínál számunkra."
+                            class="icons fa-regular fa-sun"></i>
+                        <i tooltip="A hőmérséklet egész évben kellemes 25 fok körül alakul"
+                            class="icons fa-solid fa-temperature-high"></i>
+                        <i tooltip="A kristálytiszta, enyhe hullámzású víze és a gyönyörű, homokos partjai teszi a strandokat ideálissá a napozáshoz és a tengerparti pihenéshez."
+                            class="icons fa-solid fa-umbrella-beach"></i>
+                        <i tooltip="A hegyekben való kirándulás során lélegzetelálló panorámákat élhetsz át, miközben felfedezed a természet varázsát és a magaslatok nyugtató csendjét."
+                            class="icons fa-solid fa-mountain-sun"></i>
+                        <i tooltip="Gazdag és sokszínű kulturális örökséggel büszkélkedik, melyet a különböző afrikai, európai és dél-amerikai hatásoknak köszönhet."
+                            class="icons fa-solid fa-building-columns"></i>
+                        <i tooltip="A friss tonhal, a homár és a tengeri herkentyűk kulináris élvezetet nyújtanak, melyeket a helyiek különféle fűszerekkel és helyi ízekkel párosítanak, így alkotva az autentikus Zöld-foki ízkavalkádot."
+                            class="icons fa-solid fa-fish-fins"></i>
+                    </div>
+                </div>
+            </div>
+            <h2>ZÖLD-FOKI KÖZTÁRSASÁG</h2>
+            <article>
+                <p class="main-box">
+                    A Zöld-foki szigetek az Atlanti-óceán gyöngyszeme, Afrikától mintegy 450 km-re, nyugatra fekszik.
+                    Egzotikus, érintetlen, turisták által alig felfedezett terület, ahol mindig meleg és napsütéses
+                    klíma és kristálytiszta, néhol smaragdzöld, néhol azúrkék tenger fogadja az ide látogatót. A
+                    szigeteket körülölelő Atlanti-óceán különleges világa kék bálnákkal, palackorrú delfinekkel és
+                    teknősökkel igazi kuriózum, szélfútta fehér homokos strandjai lenyűgözik a nyaralni vágyókat.
+                    Érdemes ellátogatni ide, ahol télen is nyár fogadja és ahol felfedezheti a búvárok, szörfösök
+                    paradicsomát!
+                </p>
+                <p class="main-box">
+                    A Nyugat-Afrika partjainál, a Zöld-fok és a szenegáli partok előterében fekvő tíz nagyobb és öt
+                    kisebb tagból álló vulkanikus szigetcsoport (4033 km2) évszázadokon át Portugália fennhatósága alá
+                    tartozott, jelenleg önálló köztársaság. A szigetcsoport fővárosa a mintegy 100.000 fős lakosú Praia,
+                    amely Santiago szigetén fekszik, ám idegenforgalmi szempontból legjelentősebb Sal szigete, ahova a
+                    charterjáratok közlekednek. A szigeteket keskeny síkság keretezi, a mögöttes fennsíkok vulkáni
+                    kúpokat hordoznak. Eső meglehetősen ritkán esik, viszont állandó szél fúj, amely ideális a vízi
+                    sportok szerelmeseinek, főként a szörfösöknek. A trópusi szavanna éghajlatú szigetek ültetvényein
+                    főleg banánt, datolyát, cukornádat valamint kávét termesztenek exportra. Az ország lakosainak száma
+                    mintegy 520.000 fő, kisebb része a behurcolt rabszolgák leszármazottaiból, nagyobb része mulattokból
+                    áll. A népesség főként az idegenforgalomból és a halászatból él.
+                </p>
+                <p class="main-box">
+                    A kis ország földrajzi helyzetének köszönhetően széttagolt, a szigetek között a legfőbb
+                    összeköttetést a kompok és hajók, valamint a kisebb repülőjáratok jelentik (Praia és Sal között
+                    naponta közlekedik repülőjárat).
+                </p>
+                <section class="country-details">
+                    <details>
+                        <summary>Pénznem</summary>
+                        <p class="main-box">Escudo (CVE), 1 euró = 110 CVE 2023-ban, de a minndennapokban 100 a
+                            váltószám</p>
+                    </details>
+                    <details>
+                        <summary>Időeltolódás</summary>
+                        <p class="main-box">Magyarországhoz képest -2 óra</p>
+                    </details>
+                    <details>
+                        <summary>Nyelv</summary>
+                        <p class="main-box">Kreol és portugál, de az angolt is egyre többen beszélik, főleg ahol a
+                            turizmus jelen
+                            van</p>
+                    </details>
+                    <details>
+                        <summary>Vízum</summary>
+                        <p class="main-box">30 napnál nem hosszabb, turizmus céljából történő látogatás esetén kb. 31
+                            EUR az EASE, amit "repülőtéri biztonsági adó" néven emlegetnek, de lényegében hívhatjuk
+                            vízumdíjnak is. Ezen felületen tudsz online regisztrálni: <a href="https://www.ease.gov.cv/"
+                                target="_blank">EASE REGISZTRÁCIÓ</a></p>
+                    </details>
+                    <details>
+                        <summary>Hol található?</summary>
+                        <iframe id="gmap" class="gmap"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1963439.1219167325!2d-25.308017343969908!3d16.02173654106573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9358f2159115131%3A0x6b1af236f918ea1f!2zWsO2bGQtZm9raSBLw7Z6dMOhcnNhc8OhZw!5e0!3m2!1shu!2shu!4v1703061161678!5m2!1shu!2shu"
+                            style="border:0;width:100%;height:380px;margin-bottom:15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            onload="onLoader(this)">
+                        </iframe>
+                    </details>
+                </section>
+                <h6>Utazás</h6>
+                <p class="main-box">
+                    Ex-portugál gyarmat lévén a közelmúltig a legegyszerűbb lehetőség Lisszabonon keresztül a
+                    TAPPortugal légitársasággal volt, de 2023-tól már Bécsből is indulnak közvetlen járatok, illetve
+                    Smartwings charterek Pozsony és Prága városokból is, attól függően, hogy melyik szigetre tervezel
+                    utazni. A Turisták körében Sal szigete a legnépszerűbb, így oda a legkönnyebb járatot találni.
+                </p>
+                <p class="main-box">
+                    Mi 2017 decemberében voltunk egy szerencsés véletlennek köszönhetően, ugyanis 15.000 Ft-nak
+                    megfelelő
+                    összegért elárazott repjegyet sikerült kifognunk Sao Vicente - Budapest útvonalra. Nem sokat
+                    gondolkodtunk, hogy mi tévők legyünk, azonnal le is foglaltuk. Több hétnyi keresgélés után
+                    Stuttgartból találtunk egy akciós TUI nyaralójáratot, ami Boa Vista szigetére repült, így végül
+                    retúr 60 ezer magyar forintból sikerült egy közel két hetes 3 szigetes kiruccanást csinálnunk.
+                </p>
+
+                <section class="pro-tips-card">
+                    <h3 class="card-title">UTAZÓS TIPP:</h3>
+                    <blockquote class="card-description">Foglalás előtt használj árösszehasonlító oldalakat, mint a
+                        <a href="https://www.google.com/travel/flights" target="_blank">Google Flights</a> vagy a <a
+                            href="https://www.skyscanner.hu/" target="_blank">Skyscanner</a>, hogy garantáltan a
+                        legjobb áron utazhass!
+                    </blockquote>
+                </section>
+
+                <h5>Meglátogatott régiók:</h5>
+                <section class="region-container">
+                    <div class="region-pic-container">
+                        <img src="img/region-vista-hor.jpg" alt="helyi beach bar boa vista szigetén">
+                        <h6><a href="#BoaVista">Boa Vista (2017)</a></h6>
+                    </div>
+                    <div class="region-pic-container">
+                        <img src="img/region-vicente-hor.jpg" alt="Mindelo látképe a város széléről">
+                        <h6><a href="#SaoVicente">Sao Vicente (2017)</a></h6>
+                    </div>
+                    <div class="region-pic-container">
+                        <img src="img/region-santo-hor.jpg" alt="Santo Antao hegycsúcsai között megbújó kis falu">
+                        <h6><a href="#SantoAntao">Santo Antao (2017)</a></h6>
+                    </div>
+                </section>
+
+                <section id="boa-vista-all">
+                    <h2 id="BoaVista">Boa Vista</h2>
+                    <p class="main-box">
+                        Boa Vista, a Zöld-foki Köztársaság északi részén található, ahol lenyűgöző trópusi tájak,
+                        kiterjedt homokdűnék és gyönyörű tengerpartok teszik egyedivé. A sziget neve portugálul "szép
+                        kilátás"-t jelent, és ez tökéletesen tükrözi az itteni mesés panorámát.
+                    </p>
+                    <p class="main-box">
+                        Éghajlata trópusi, ami azt jelenti, hogy egész évben kellemesen meleg. A sziget a
+                        szezonális szélnek köszönhetően ideális célpont a szörfösök és a kitesurfosok számára. A kék
+                        lagúnák és a fehér homokos partok a tengeri élővilágban gazdagok, így a búvárkodás és a
+                        snorkeling is népszerű tevékenységek.
+                    </p>
+                    <p class="main-box">
+                        A Viana sivatag, az egyik jellegzetes terület, lenyűgöző homokdűnéket kínál, ahol a
+                        sárga homok finoman érintkezik a kék éggel. A Santa Monica part, a sziget legnagyobb strandja,
+                        hosszú, finom homokjával a naplemente idején különösen lenyűgöző.
+                    </p>
+                    <figure>
+                        <img src="img/boa-vista-view.jpg" alt="közlekedési tábla a sivatagban">
+                        <figcaption>Közlekedési tábla a sivatagban - Boa Vista</figcaption>
+                    </figure>
+                    <p class="main-box">
+                        A szigeten található Sal Rei városka érintetlen, hagyományos charmjával vonzza a látogatókat. A
+                        városban a pastell színű házak és a helyi piac a kulturális gazdagság megnyilvánulása. Az ételek
+                        terén a friss tenger gyümölcsei és a helyi konyha specialitásai, például a Cachupa, a
+                        látogatókat kulináris utazásra hívják.
+                    </p>
+
+                    <h5>Legjobb programok Boa Vista szigetén:</h5>
+                    <section class="ol-list">
+                        <ol>
+                            <li>
+                                <h6>Quad túra a sivatagban</h6>
+                                <p class="main-box"> A Boa Vista-i sivatag felfedezése quad túrával izgalmas és
+                                    felejthetetlen kaland lehet minden kíváncsi utazónak. Utunkat a <a
+                                        href="https://www.quadzone-boavista.com/" target="_blank">Quad Zone</a>
+                                    csapatánál foglaltuk, mert a helyi szállásadónk nagyon ajánlotta őket.
+                                    Ami nagyon tetszett, hogy a meghírdetett program idejét bőven kihasználtuk, az út
+                                    végén nem maradt bennünk olyan érzés, hogy csak a pénzért csinálják. Szinte az egész
+                                    szigetet körbejártuk, olyan sivatagi dűnéken mentünk keresztül, amit eddig max a
+                                    TV-kben láttunk. Szpuer volt, hogy eljuthattunkk olyan területekre, amelyek gyalog
+                                    vagy más járművel nehezen
+                                    megközelíthetők, így valódi élményt szerezhettünk a Boa Vista-i
+                                    szárazság különleges természeti jelenségeiről. Utunk során érintettük a méltán híres
+                                    Santa Monica strandot is, melynek 2 métert meghaladó hullámai igazi felfrissülést
+                                    hoztak a sivatagi meleg után. Az út során végig fotóztak is minket, amely képeket a
+                                    végén megosztották a részt vevőkkel.
+                                <figure>
+                                    <img src="img/quad-tour-view.jpg" alt="Quad túra a homok  dűnék között">
+                                    <figcaption>Viana sivatag - Boa Vista</figcaption>
+                                </figure>
+                                </p>
+                            </li>
+                            <li>
+                                <h6>Afrika show a tengerparton</h6>
+                                <p class="main-box">Ezt a programot a <a
+                                        href="https://maps.app.goo.gl/eb9xLKxvUMNViYT46" target="_blank">Morabeza beach
+                                        bar</a>
+                                    tulajdonosa ajánlotta, akivel
+                                    hosszassan beszélgettünk, hogy milyen a szigeten élni. Mint kiderült heti egyszer
+                                    náluk rendezik meg ott élő, Szenegáli művészekkel. A turistáknak 80 eurós áron
+                                    adják - tartozik hozzá svéd asztalos vacsora is, italokkal - de mivel a hely
+                                    nyitott, mondta, hogy nyugodtan csatlakozzunk,
+                                    teljesen ingyen. A show végig ineraktív volt, mindenkit bevontak a táncosok a
+                                    különféle törzsi táncaikba.
+                                <figure>
+                                    <img src="img/africa-show.jpg" alt="Éjszakai show afrikai törzsi táncokkal">
+                                    <figcaption>Africa Show@<a href="https://maps.app.goo.gl/eb9xLKxvUMNViYT46"
+                                            target="_blank">Morabeza</a> - Boa Vista</figcaption>
+                                </figure>
+                                </p>
+                            </li>
+                            <li>
+                                <h6>Tengerpartok</h6>
+                                <p class="main-box">A Santa Monica part, Boa Vista legnagyobb strandja, hosszú,
+                                    aranyszínű homokjával és kékóceánjával a naplemente idején különlegesen varázslatos
+                                    látványt nyújt. A Chaves part szintén lenyűgöző, hatalmas homokos területtel és lágy
+                                    hullámokkal, ideális úszásra és pihenésre.
+                                </p>
+                                <p class="main-box">A sziget déli részén található Estoril part a kékóceán partján
+                                    húzódik, és a part menti pálmafákkal kísért homokpadok kényelmet kínálnak a napozás
+                                    és a tenger élvezetéhez. A Curral Velho part a partvidéki táj változatosságát
+                                    tükrözi, ahol a sziklák és homok ötvöződik, létrehozva egy fotogén környezetet.
+                                <figure>
+                                    <img src="img/ctree-at-beach.jpg"
+                                        alt="Feldíszített karácsonyfa a tenger partján decemberben">
+                                    <figcaption>Sokan képzeljük el így a Karácsonyt &#127876⛱️- Boa Vista</figcaption>
+                                </figure>
+                                </p>
+                            </li>
+                        </ol>
+                    </section>
+                    <p class="main-box">
+                        Ajánlott éttermek: <a href="https://elmiradorboavista.com/" target="_blank">El Mirador</a>, <a
+                            href="https://maps.app.goo.gl/jEE25LYTo6AN4FXh6" target="_blank">Cabo Cafè</a> (náluk a
+                        legfinomabb a Cathupa)
+                    </p>
+                    <section class="rating">
+                        Boa Vista értékelése:
+                        <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                            class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                            class="fa fa-star" aria-hidden="true"></i>
+                    </section>
+                    <div class="break"></div>
+                </section>
+
+                <section id="sao-vicente-all">
+                    <h2 id="SaoVicente">Sao Vicente</h2>
+                    <p class="main-box">
+                        6 nap Boa Vista után helyközi repülőjáratokkal indultunk tovább Sao Vicente szigetére.
+                        Járatokkal igen, mert nincs közvetlen repülő a 2 sziget között. Így először át kell repülni
+                        Sal szigetére, majd onnan indul tovább egy másik gép a végcélunk felé.
+                    </p>
+                    <figure>
+                        <img src="img/boavista-airport.jpg" alt="várakozás a reptéren">
+                        <figcaption>Reptéri várakozás - Boa Vista</figcaption>
+                    </figure>
+                    <p class="main-box">
+                        Sao Vicente, a Zöld-foki Köztársaság második legnagyobb szigete, gazdag kulturális élettel és
+                        lenyűgöző tájakkal büszkélkedik. Mindelo, a sziget fővárosa, egy élénk kikötőváros, mely a
+                        zenéjéről és kulturális rendezvényeiről ismert. A sziget partjait fehér homokos strandok
+                        díszítik, és a távoli hegyek festői látványa teszi Sao Vicente-t ideális úti céllá azok számára,
+                        akik a trópusi szépségekben és a vibráló helyi életben keresik az élményeket.
+                    </p>
+                    <p class="main-box">
+                        A szállásunk Mindeloban egy kedves helyi idősebb hölgynél volt, akinek a saját lakásában kaptunk
+                        egy szobát és egy fürdőt. Mindelo Sao Vicente szigetének kulturális központja, egy élénk város,
+                        amely gazdag
+                        és sokszínű kulturális élettel büszkélkedik. A város híres a kiváló zenei és művészeti
+                        rendezvényeiről, amelyek szorosan kapcsolódnak a helyi kultúrához és hagyományokhoz.
+                    </p>
+                    <p class="main-box">
+                        Mindelo otthona a hagyományos Zöld-foki zenének, például a morna és a coladeira stílusoknak. A
+                        helyi bárok és éttermek gyakran játszanak élőzenét, ahol a látogatók megismerhetik a sziget
+                        autentikus zenei színterét. Évente megrendezik a Mindelact Fesztivált, amely a színház és a
+                        művészetek iránt érdeklődőket vonzza a világ minden tájáról.
+                    </p>
+                    <figure>
+                        <img src="img/mindelo-view.jpg"
+                            alt="kilátás Mindelo közpoti strandjára a szállásunk erkélyéről">
+                        <figcaption>A helyi Copacabana beach - Sao Vicente</figcaption>
+                    </figure>
+                    <p class="main-box">
+                        Mindelon belül a szállásadó nénink vitt el mindkét ott töltött esténken vacsorázni. Első este az
+                        Ő ajánlására tértünk be egy hotel éttermébe. Általában nem szoktunk ilyen helyeken vacsorázni,
+                        de mivel Georgette mama ajánlotta, így kipróbáltuk és nagyon nem bántuk meg. Másnap csatlakozott
+                        hozzánk a szálláson egy angol pár is, így 5-en mentünk el este Georgette mama kedvenc helyi
+                        éttermébe. Álmunkban nem gondoltuk, hogy ilyen szuper esténk lesz, élő zene, tánc, minden volt,
+                        gyakorlatilag fejest ugorhattunk a valódi zöld-foki életérzésbe.
+                    </p>
+                    <figure>
+                        <img src="img/tapas-mindelo.jpg" alt="Tapasok helyi alapanyagokból">
+                        <figcaption>Tapasok helyi alapanyagokból - Sao Vicente</figcaption>
+                    </figure>
+                    <section class="rating">
+                        Sao Vicente értékelése:
+                        <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                            class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                            class="fa fa-star" aria-hidden="true"></i>
+                    </section>
+                    <div class="break"></div>
+                </section>
+
+                <section id="santo-antao-all">
+                    <h2 id="SantoAntao">Santo Antao</h2>
+                    <p class="main-box">
+                        Az egész zöld-foki szigeteki túránk első számú célpontja Santo Antao szigete volt. Korábban még
+                        csak hasonlót se láttunk, így nagyon vártuk, hogy reggel 7-kor indulhassunk az első hajóval.
+                        Santo Antao Sao Vicente szigetről csak hajóval közelíthető meg, a terepviszonyok miatt nincs
+                        repülőtere. Mivel 2017-ben még nagyon sok szálloda, vagy apartman sem volt a szigeten, így 1
+                        napos túra keretén belül fedeztük fel. Guide-ot Georgette mama intézett nekünk, Ő onnan
+                        származik, valamelyik kuzinját hívta fel ,hogy kalauzoljon végig minket a szigeten és minden
+                        fontos részét mutassa meg nekünk.
+                    </p>
+                    <figure>
+                        <img src="img/santo-antao.jpg" alt="érkezés santo antao szigetére">
+                        <figcaption>Érkezés a szigetre - Santo Antao</figcaption>
+                    </figure>
+                    <p class="main-box">
+                        A túránkhoz egy holland család is csatlakozott, így 6-an indultunk meg felfedezni Santo Antao
+                        szigetét. A szigeten még középiskola sincs, a nagyobb gyerekek minden nap Mindeloba járnak át
+                        suliba. Mivel érdemi tömegközlekedés sincs, így már az több órás sétát jelent, hogy egyáltalán a
+                        kikötőbe eljussanak a falujukból. Itt azért már érződött az igazi Afrika szele.
+                    </p>
+                    <p class="main-box">
+                        A helyiek halászattal, cukornádból szörp és rum készítéssel foglalkoznak leginkább. A túra során
+                        meglátogattunk egy lokál konyhát is, ahol rumot ksézítettek. Összességében az egész napos túra
+                        során az összes lehetséges útvonalat bejártuk a szigeten, a guideunk még Georgette mama
+                        szülőházához is elvitt minket.
+                    </p>
+                    <p class="main-box">
+                        A hajó visszafelé még szürkület előtt indult, Mindelóba már sötétbe érkeztünk vissza. Santo
+                        Antao biztosan örök élmény maradt nekünk, szinte minden utunk után megállapítjuk, hogy szívesen
+                        visszamennénk még egyszer, de ide biztosan vissza fogunk jönni még több napra. Hihetetlen szép
+                        sziget!
+                    </p>
+                    <figure>
+                        <img src="img/santo-montain.jpg"
+                            alt="santo antao hegyvidékén keresztül vezetett a szűk, macskaköves út">
+                        <figcaption>Ilyen utakon haladt a túra - Santo Antao</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/santo-tour.jpg" alt="santo antaoi hegyek között">
+                        <figcaption>Útközben - Santo Antao</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/santo-grogg.jpg" alt="santo antao cukornád ültetvény">
+                        <figcaption>Cukornád ültetvény - Santo Antao</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/santo-house.jpg" alt="santo antao ilyenek voltak régen a helyi lakások">
+                        <figcaption>Georgette Mama szülőháza - Santo Antao</figcaption>
+                    </figure>
+                    <section class="rating">
+                        Santo Antao értékelése:
+                        <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                            class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                            class="fa fa-star" aria-hidden="true"></i> &#160+ <i class="fa fa-star"
+                            aria-hidden="true"></i>
+                    </section>
+                    <p class="main-box">
+                        Ha tetszenek az úti leírásaink vagy csak szeretnéd Te is magad felfedezni a világot, eljutni
+                        olyan helyekre, melyekre a hagyományos utazási irodák nem visznek, esetleg nem tudod hogyan állj
+                        neki a megszerevezésnek vagy csak időd nincs rá, keress minket bátran!
+                    </p>
+                    <p class="main-box">
+                        Te elmondod hova és hogyan, mi pedig megszervezzük álmaid kalandját!
+                    </p>
+                </section>
+            </article>
+        </main>
+
+        <footer class="main-footer" id="contact">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="about" id="footer-left">
+                        <div class="about-left">
+                            <div class="about-img-div"><img class="about-img" src="img/main_pic2.jpg"
+                                    alt="bemutatkozó kép zolnay tours"></div>
+                            <div class="about-text">
+                                <h6>Rólunk</h6>
+                                <p class="text-justify">Fedezd fel velünk a rejtett kincseket, inspirálódj úti
+                                    tippeinkkel és trükkjeinkkel, hogy utazásaid még emlékezetesebbek legyenek! A
+                                    blogunkon interaktív leírások, helyi ízek és autentikus élmények várnak rád.
+                                    Vezetünk téged a kihagyhatatlan látnivalókhoz, és megosztjuk a titkos helyeket,
+                                    amikről mások talán még nem hallottak. Frissítéseinkben szállásajánlatokat,
+                                    költségoptimalizálási taktikákat és útleírásokat találsz, hogy minden utazásod simán
+                                    és örömteli legyen. Legyél részese a mi utazóközösségünknek, ahol tapasztalatokat
+                                    cserélhetsz, és inspirálódhatsz más utazók történeteiből. Zolnay Tours: ahol
+                                    a kalandok kezdődnek, és az emlékek örökké élnek!🗺️🌟
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about" id="footer-right">
+                        <h6>Navigáció</h6>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Kezdőlap</a></li>
+                            <li><a href="contact.html#about-us">Rólunk</a></li>
+                            <li><a href="destinations.html">Uticélok</a></li>
+                            <li><a href="gallery.html">Képek</a></li>
+                            <li><a href="contact.html#contact">Kapcsolat</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="footer-container">
+                <div class="row">
+                    <div class="copy">
+                        <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                            <a href="#">Zolnay Tours</a>.
+                        </p>
+                    </div>
+
+                    <div class="footer-social">
+                        <ul class="social-icons">
+                            <li><a class="facebook" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a class="tiktok" href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

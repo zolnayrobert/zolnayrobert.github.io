@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Zolnay Tours">
+    <meta property="og:type" content="website">
+    <meta property="og:URL" content="https://www.zolnaytours.hu/italy.html">
+    <meta property="og:image" content="img/underwater.jpg">
+    <meta property="og:description"
+        content="Csatlakozzon hozzánk egy utazásra Olaszországba! Az északról délig terjedő gazdag kulturális kavalkádban barangoljon, ahol az ókori római romok, a reneszánsz művészetek és a vidéki olasz vidékek egyaránt elbűvölik. Kóstolja meg az ínycsiklandó olasz ételeket, szórakozzon az animált piacokon, és élvezze a napfényt a festői tengerpartokon. Olaszország vár Önre egy kulináris és történelmi utazásra! ✈️🌍 #Utazás #Képek #Tippek #Kalandok">
+    <meta name="description"
+        content="Fedezze fel Olaszország varázslatos kulturális örökségét és csodálatos tájait egy utazással! Merüljön el a történelemben Rómában, élvezze a borokat Toszkánában, és pihenjen a gyönyörű tengerpartokon. Olaszország várja Önt élményekkel és gasztronómiai kalandokkal! ✈️🌍 #Utazás #Képek #Tippek #Kalandok">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>Fedezd fel a a napsütötte Itáliát | Zolnay Tours</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#05aff0">
+    <meta name="apple-mobile-web-app-title" content="ZolnayTours">
+    <meta name="application-name" content="ZolnayTours">
+    <meta name="msapplication-TileColor" content="#ff0000">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div class="wrapper-blog">
+        <header class="main-head">
+            <img class="header-img" src="img/header.png" alt="travel clipart around the world">
+            <h1><a href="index.html">Zolnay</a></h1>
+            <h2><a href="index.html">Tours</a></h2>
+            <q>TRAVEL LIKE THE LOCALS</q>
+        </header>
+
+        <nav class="main-nav" id="navigation">
+            <div class="social">
+                <a href="#" class="fa-brands fa-facebook-f"></a>
+                <a href="#" class="fa-brands fa-twitter"></a>
+                <a href="#" class="fa-brands fa-youtube"></a>
+                <a href="#" class="fa-brands fa-tiktok"></a>
+            </div>
+            <ul class="mainmenu">
+                <input type='checkbox' id='check'>
+                <span class="menu">
+                    <li class="mainmenu-li"><a href="index.html">KEZDŐLAP</a></li>
+                    <li class="mainmenu-li"><a href="contact.html#about-us">RÓLUNK</a></li>
+                    <li class="mainmenu-li dropdown"><a href="destinations.html">UTICÉLOK <i class="fa fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu-li"><a href="bulgaria.html">BULGÁRIA</a></li>
+                            <li class="submenu-li"><a href="indonesia.html">INDONÉZIA</a></li>
+                            <li class="submenu-li"><a href="italy.html">OLASZORSZÁG</a></li>
+                            <li class="submenu-li"><a href="caboverde.html">ZÖLD-FOKI SZIGETEK</a></li>
+                        </ul>
+                    </li>
+                    <li class="mainmenu-li"><a href="gallery.html">KÉPEK</a></li>
+                    <li class="mainmenu-li"><a href="contact.html#contact">KAPCSOLAT</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+
+        <section class="left-side">
+            <div class="form-container">
+                <!--spinner-->
+                <div id="loading-overlay">
+                    <div class="fas fa-plane"></div>
+                    <div class="loader"></div>
+                </div>
+                <h2>Ajánlatkérés</h2>
+                <form id="offerForm" class="form" name="offerForm"
+                    action="https://formsubmit.co/520a354098799bbb56777753e910654f" method="POST">
+                    <input class="subscribe-input" type="text" id="name" name="name" placeholder="Név" required>
+                    <input class="subscribe-input" type="email" id="email" name="email" placeholder="Email cím"
+                        maxlength="40" required>
+                    <input class="subscribe-input" type="text" id="mobile" name="mobile" placeholder="Telefonszám"
+                        maxlength="12" required>
+
+                    <label class="label" for="_subject">Melyik ország érdekel?</label>
+                    <select class="subscribe-input" id="_subject" name="_subject" required>
+                        <option value="choose">-válassz-</option>
+                        <option value="bulgaria">Bulgária</option>
+                        <option value="indonesia">Indonézia</option>
+                        <option value="italy">Olaszország</option>
+                        <option value="caboverde">Zöld-foki Köztársaság</option>
+                    </select>
+
+                    <p class="label">Milyen típusú utazást szeretsz?</p>
+                    <div class="checkbox">
+                        <input type="checkbox" id="type1" name="type" value="tengerpart">
+                        <label class="label2" for="type1">Tenger part</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="type2" name="type" value="kaland">
+                        <label class="label2" for="type2">Kaland</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="type3" name="type" value="kultura">
+                        <label class="label2" for="type3">Kultúra</label>
+                    </div>
+
+                    <textarea class="subscribe-input" id="message" name="message" cols="20" rows="5"
+                        placeholder="Írj nekünk magadról kicsit részletesebben" maxlength="160"></textarea>
+
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
+                    <input class="subscribe-button" type="submit" onSubmit="return false" value="Küldés">
+                    <div id="form-message-report"></div>
+                </form>
+            </div>
+            <section class="subscribe-container">
+                <h2>Ötletek a<br> postaládádba</h2>
+                <p>Íratkozz fel a hírlevelünkre, ingyenes <br> utazási tippekért és trükkökért.</p>
+                <form id="newsletterForm" class="form" name="newsletterForm"
+                    action="https://formsubmit.co/520a354098799bbb56777753e910654f" method="POST">
+                    <input class="subscribe-input" name="newsletter" id="newsletter" type="email"
+                        placeholder="Email cím" required>
+                    <div class="checkbox">
+                        <input type="checkbox" id="acceptDPR" name="acceptDPR" value="1" required>
+                        <label class="label2" for="acceptDPR">Az adatvédelmi tájékoztatót elolvastam, megértettem, és
+                            hozzájárulok ahhoz, hogy megadott adataimat a szolgáltató,
+                            mint adatkezelő a szabályzatban foglaltaknak megfelelően kezelje.</label>
+                    </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
+                    <button class="subscribe-button" type="submit" onSubmit="return false">Feliratkozom</button>
+                    <div id="form-subscribe-report"></div>
+                    <span>100% garantált tartalom</span>
+                </form>
+            </section>
+        </section>
+
+        <main class="destinations">
+            <div class="pic-wrapper">
+                <img class="blog-img" src="img/sicily_big.jpg" alt="Taormina látkép háttérben az Etna">
+                <div class="pic-overlay">
+                    <div id="overlay-h2" class="overlay-text"></div>
+                    <h3 id="tooltip-text"></h3>
+                </div>
+                <div class="pic-frame">
+                    <div class="icon-holder">
+                        <span
+                            tooltip="Olaszország az UTC+1 időzónában található, ahol a helyi idő egy órával előbbre áll az egyezményes világidőhöz képest."
+                            class="icons fa-stack fa-1x">
+                            <i class="fa-solid fa-plus fa-stack-1x"></i>
+                            <i class="fa-solid fa-0 fa-stack-1x"></i>
+                        </span>
+                        <i tooltip="Olaszország Dél-Európában helyezkedik el, a Földközi-tenger partján, az Alpok déli lejtőin, ahol a gazdag történelem, a kulturális örökség és a csodálatos tájak találkoznak"
+                            class="icons fa-solid fa-earth-europe"></i>
+                        <i tooltip="Repülővel könnyen megközelíthető" class="icons fa-solid fa-plane-circle-check"></i>
+                        <i tooltip="Saját autóval könnyen megközelíthető" class="icons fa-solid fa-car"></i>
+                        <i tooltip="Buszos kirándulások keretében is foglalható utak, amelyek kényelmes és szervezett módja a különleges helyek felfedezésének"
+                            class="icons fa-solid fa-van-shuttle"></i>
+                        <i tooltip="A nap évente majdnem 300 napot süt az égen, amely gyönyörű napsütést és ragyogó időt kínál számunkra."
+                            class="icons fa-regular fa-sun"></i>
+                        <i tooltip="tengerpartokon minden homokszemcse mesél egy történetet a napfényről, a tenger hangjáról és a la dolce vita édes örömeiről, ahol az élet és a tenger találkoznak a tökéletes harmóniában"
+                            class="icons fa-solid fa-umbrella-beach"></i>
+                        <i tooltip="Az olasz kultúra gazdag öröksége minden tájegységben megtalálható"
+                            class="icons fa-solid fa-building-columns"></i>
+                        <i tooltip="Élvezze meg az Olaszországból származó borok eleganciáját és szenvedélyét"
+                            class="icons fa-solid fa-wine-glass"></i>
+                        <i tooltip="Csábító gasztronómiai élvezetei és szenvedélyes életstílusa egyedülálló élményt nyújtanak minden látogatónak"
+                            class="icons fa-solid fa-pizza-slice"></i>
+                    </div>
+                </div>
+            </div>
+            <h2>OLASZORSZÁG</h2>
+            <article>
+                <p class="main-box">
+                    Olaszország Dél-Európa közepén található. Rendkívül híres a rövid
+                    távú utazók és expatok körében. Mindenkinek kínál valamit – hátizsákos utazóknak, pároknak, egyedül
+                    utazóknak, luxusutazóknak, digitális nomádoknak, szabadtéri szerelmeseinek stb.
+                </p>
+                <p class="main-box">
+                    Olaszország gazdag élményekben – lenyűgöző sípályáktól hegyi városokig, tengerparti városoktól
+                    városi
+                    életig –, így biztosan találsz valamit, ami megfelel az igényeidnek és érdeklődésednek.
+                </p>
+                <p class="main-box">
+                    Ha az első utadat tervezed Olaszországba, ez az utazási útmutató választ adhat minden kérdésedre.
+                    Beszélünk az utazási tényekről, az ország legjobb úti céljairól, az utazási költségekről, az utazási
+                    alapvetésekről és arról, hogyan készülj fel az utadra.
+                </p>
+
+                <section class="country-details">
+                    <details>
+                        <summary>Pénznem</summary>
+                        <p class="main-box">Euro (EUR), váltópénze a cent (100 cent egy euro).</p>
+                    </details>
+                    <details>
+                        <summary>Időeltolódás</summary>
+                        <p class="main-box">Magyarországhoz képest nincs</p>
+                    </details>
+                    <details>
+                        <summary>Nyelv</summary>
+                        <p class="main-box">Olasz, az angolt délen és vidéken kevésbé értik</p>
+                    </details>
+                    <details>
+                        <summary>Vízum</summary>
+                        <p class="main-box">EU-s állampolgároknak nincs vízum kötelezettség.</p>
+                    </details>
+                    <details>
+                        <summary>Hol található?</summary>
+                        <iframe id="gmap" class="gmap"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6179798.810125748!2d2.6728722671823375!3d40.861341685806586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d4fe82448dd203%3A0xe22cf55c24635e6f!2sOlaszorsz%C3%A1g!5e0!3m2!1shu!2shu!4v1703062200765!5m2!1shu!2shu"
+                            style="border:0;width:100%;height:380px;margin-bottom:15px;" 
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            onload="onLoader(this)">
+                        </iframe>
+                    </details>
+                </section>
+
+                <h5>Meglátogatott régiók:</h5>
+                <section class="region-container">
+                    <div class="region-pic-container">
+                        <img src="img/region-puglia-hor.jpg" alt="Polignano központja">
+                        <h6><a href="#Puglia">Puglia (2015)</a></h6>
+                    </div>
+                    <div class="region-pic-container">
+                        <img src="img/region-sicily-hor.jpg" alt="Cefalu látképe háttérben a La Roca">
+                        <h6><a href="#Sicily">Szicilia (2023)</a></h6>
+                    </div>
+                    <div class="region-pic-container">
+                        <img src="img/region-toscana-hor.jpg" alt="Toszkána dombvidéke">
+                        <h6><a href="#Toscana">Toszkána (2016,2018)</a></h6>
+                    </div>
+                    <div class="region-pic-container">
+                        <img src="img/region-venetia-hor.jpg" alt="Velence csatornái gondolákkal">
+                        <h6><a href="#Venetia">Velence (2014)</a></h6>
+                    </div>
+                </section>
+
+                <section id="puglia-all">
+                    <h2 id="Puglia">Puglia</h2>
+                    <p class="main-box">
+                        2015-ben látogattuk meg Puglia régiót egy hosszú hétvége alkalmából október második felében.
+                    </p>
+                    <p class="main-box">
+                        Puglia Olaszország délkeleti régiója, aminek alsó része a "csizma sarka". Pugliának kb. 800
+                        kilométer
+                        hosszú
+                        partszakasza van, 10 kék zászlós minősítésű stranddal (Adriai-tenger). Pugliában az UNESCO
+                        világörökségnek három helyszíne van, köztük talán a lehíresebb az Alberobello a trullikkal.
+                    </p>
+                    <h6>Utazás</h6>
+                    <p class="main-box">
+                        A régió központja Bari, mindennap repüli a Wizz és Ryanair is, így viszonylag kedvező áron lehet
+                        eljutni az év minden
+                        szakában.
+                    </p>
+                    <section class="pro-tips-card">
+                        <h3 class="card-title">UTAZÓS TIPP:</h3>
+                        <blockquote class="card-description">Mindig a légitársaság weboldalán keresztülj foglal
+                            repülőjegyet!
+                            Biztosan így lesz a legolcsóbb és ha bármi közbejön, direktbe tudsz a légitársasággal
+                            egyezetetni.
+                        </blockquote>
+                    </section>
+                    <p class="main-box">
+                        Bari reptérről a városközpontban található pályadudvarra (Bari Centrale) érkzik a helyi
+                        "HÉV", az FM2. Innen vonatra szállva indultunk tovább a csodás Polignano a
+                        Mare-be. Eddig 30 filmet forgattak ebben az alig húszezer fős kisvárosban, de mostanában
+                        leggyakrabban a Red Bull sziklaugró versenyében lehet látni a települést.
+                    </p>
+                    <p class="main-box">
+                        Ez a városka 3 dologról híres: 1. Itt született Domenico Modugno, a Volare című nóta
+                        előadója, akinek szobra is van. Emiatt nyilván nem indul meg tömeges zarándoklat
+                        Magyarországról. 2. Van egy nevezetes barlangétterem, ami valóban a sziklák között
+                        található, gyakorlatilag a város alatt. 3. Egy kicsi, de annál nevezetesebb strand található
+                        itt, amelyet előszeretettel fotóznak a fölötte átívelő hídról a turisták. <cite><a
+                                href="https://tizen2.blog.hu/2016/06/17/12_kep_a_pugliai_tengerpartrol#more8815122"
+                                target="_blank">(forrás)</a></cite>
+                    </p>
+                    <figure>
+                        <img src="img/italy-polignano-grotta.jpg" alt="Grotta Palazzese a távolból">
+                        <figcaption>Grotta Palazzese - Polignano a mare, Puglia.</figcaption>
+                    </figure>
+                    <p class="main-box">
+                        Az ősi városközpont szűk, kanyargós utcái hűségesen őrzik az itt élők életmódját, és minden
+                        sarkon
+                        történelmi kincseket rejt. Az idősebb épületek, kőházak, és a Szent János Katedrális lenyűgöző
+                        művészi részletekkel büszkélkedik. Az ilyenkorra már nyugodtabb környezetben a látogatóknak
+                        lehetőségük nyílik mélyebben belemenni a város történelmébe és helyi kultúrájába.
+                    </p>
+                    <p class="main-box">
+                        Októberben az éghajlat még mindig kellemes, a tengerpart pedig lenyűgöző látványosságokat kínál.
+                        Polignano a Mare a helyi gasztronómiai élményekről sem feledkezik meg. Az őszi hónapokban a
+                        helyi
+                        éttermekben ízletes tenger gyümölcsei és a Pugliára jellemző friss alapanyagokból készült ételek
+                        kóstolhatók meg. A kávézók és cukrászdák pedig a hagyományos olasz sütemények és kávék remekeit
+                        kínálják.
+                    </p>
+                    <p class="main-box">
+                        A város nyugodt tempója, az őszi színek kavalkádja és a helyiek vendégszeretete mind olyan
+                        élményeket nyújtanak, melyek felejthetetlenné teszik a Polignano a Mare-i utazást azoknak, akik
+                        késő
+                        őszi időszakban látogatnak el ide.
+                    </p>
+                    <figure>
+                        <img src="img/antico-view.jpg" alt="Kilátás a szoba teraszáról">
+                        <figcaption>Antico Mondo - Polignano a mare, Puglia.</figcaption>
+                    </figure>
+                    <p class="main-box">
+                        Szállást az óvásros szélén a híres Ponte Borbonico su Lama Monachile híd szomszédságában az <a
+                            href="https://www.booking.com/Share-mJ7zaE" target="_blank">Antico Mondo
+                            Rooms & Suites</a> helyen foglaltunk. A szállás tökéletes választásnak bizonyult, gyalog
+                        tökéletesen felfedezhető volt a város minden szeglete. A reggeli kontinentális választékot
+                        kínált édes és sós elemekből, főként a Puglia régió ízeit hangsúlyozva.
+                    </p>
+
+                    <h5>Polignano a Mare főbb látnivalói:</h5>
+                    <section class="ol-list">
+                        <ol>
+                            <li>
+                                <h6>Grotta Palazzese</h6>
+                                <p class="main-box">A Grotta Palazzese egy elképesztő barlangétterem, mely a város
+                                    tengerpartjába mélyed. A sziklafalak között elhelyezkedő étterem a tenger felett
+                                    függő
+                                    terasszal rendelkezik, és lenyűgöző kilátást biztosít a tengerre.</p>
+                            </li>
+                            <li>
+                                <h6>Szent János Katedrális</h6>
+                                <p class="main-box">A városközpont szívében található Szent János Katedrális egyedi
+                                    építészeti
+                                    részleteivel és történelmi jelentőségével kiemelkedik. A katedrális gazdag művészeti
+                                    kincseket őriz, és a középkori hangulat megidézése mellett egy szellemi
+                                    kikapcsolódásra is
+                                    lehetőséget ad.</p>
+                            </li>
+                            <li>
+                                <h6>Polignano a Mare óvárosa</h6>
+                                <p class="main-box">Az óváros csodálatos labirintusa keskeny utcákkal és festői terekkel
+                                    rendelkezik. A középkori hangulatot idéző házak és a helyi kőműves munkák
+                                    elvarázsolják a
+                                    látogatókat.</p>
+                            </li>
+                            <li>
+                                <h6>Tengerpart</h6>
+                                <p class="main-box">Polignano a Mare körülbelül 10 kilométer hosszú tengerparttal
+                                    rendelkezik,
+                                    amely gyönyörű öbleket és sziklás partszakaszokat kínál. Az északi részen a Lama
+                                    Monachile
+                                    nevű öböl található, melynek kristálytiszta vizei és színpompás környezete bámulatos
+                                    látványt nyújtanak.</p>
+                            </li>
+                            <li>
+                                <h6>Piazza Vittorio Emanuele II</h6>
+                                <p class="main-box">A város főterén található Piazza Vittorio Emanuele II a város
+                                    életének
+                                    központja. Itt találhatók a helyi üzletek, kávézók és éttermek, és a tér gyakran
+                                    szolgál
+                                    helyszínként kulturális eseményeknek és rendezvényeknek.</p>
+                            </li>
+                            <li>
+                                <h6>Angelo Mariani Színház</h6>
+                                <p class="main-box">Az Angelo Mariani Színház egy kis, de bájos épület, mely a városi
+                                    kulturális
+                                    élet fontos részét képezi. A helyszín gyakran szolgál színházi előadások és
+                                    kulturális
+                                    rendezvények számára.</p>
+                            </li>
+                            <li>
+                                <h6>Belvedere di Grotta Palazzese</h6>
+                                <p class="main-box"> Festői kilátópont, ahonnan páratlan panoráma nyílik a tengerre. A
+                                    teraszok
+                                    és kilátópontok ideális helyek a várost és a kék vizet megcsodálva, egy pihentető
+                                    pillanat
+                                    eltöltésére.</p>
+                            </li>
+                        </ol>
+                    </section>
+                    <section class="rating">
+                        Polignano a Mare értékelése:
+                        <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                            class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                            class="fa fa-star" aria-hidden="true"></i>
+                    </section>
+                    <div class="break"></div>
+                </section>
+
+                <section id="sicily-all">
+                    <h2 id="Sicily">Szicília</h2>
+                    <p class="main-box">
+                        Szicília Olaszország legdélebbi részén fekvő sziget, az egyedülálló történelmi és kulturális
+                        gazdagságok, lenyűgöző tájak és kiváló konyha otthona. Egy valóságos mediterrán paradicsom, mely
+                        gazdag múltjával és változatos tájával vonzza a világ minden tájáról érkező utazókat.
+                    </p>
+                    <p class="main-box">
+                        Szicília történelmi háttere gazdag és sokszínű. A sziget több ezer éven át volt lakott, és
+                        számos civilizáció hagyta itt nyomát. Görög római romok, arab kertek, normann kastélyok és
+                        barokk stílusú városok mind elmesélnek egy-egy korszakot a sziget gazdag múltjából. A történelmi
+                        régiók, mint például a Valle dei Templi vagy a Szaracénok által épített paloták, Szicília
+                        egyedülálló kulturális élményt kínálnak.
+                    </p>
+                    <p class="main-box">
+                        Ám Szicília nemcsak a történelem és a tájak színtere, hanem egy igazi gasztronómiai élvezetek
+                        paradicsoma is. Az olasz konyha itt éli a csúcsát, ahol a helyi alapanyagok, például a friss
+                        tenger gyümölcsei, a méz, a mandula és a kiváló minőségű olívaolaj alkotják az ízek kavalkádját.
+                        A híres szicíliai ételek, mint a caponata, a cannoli és az arancini valódi gasztronómiai
+                        kalandra csábítanak.
+                    </p>
+                    <h6>Utazás</h6>
+                    <p class="main-box">
+                        Szintén szerencsés, hogy minkettő nagyobb fapados társaság üzemeltet járatokat egész évben
+                        Szicíliába. A WizzAir Cataniába repül, míg a Ryanair Catania és Palermo repterére egyaránt
+                        elvisz. Fontos azonban,
+                        hogy nagyon nagyok a távolságok a sziget két vége között, így a tervezett programhoz érdemes a
+                        a repteret illeszteni, nem fordítva!
+                    </p>
+                    <p class="main-box">
+                        Mi Catania repterére érkeztünk 2023 júniusában, mert az eredeti célunk elsőként Taormina városa
+                        volt. Mivel azonban az utolsó napokban látszott, hogy az időjárás nem lesz kegyes hozzánk, így
+                        last minute módosítottunk a terveinken és elsőnek Cefalu városára módosítottuk terveink.
+                    </p>
+                    <p class="main-box">
+                        A szigeten belüli utazásainkhoz autót béreltünk. Olaszországban - régiótól függetlenül - fontos,
+                        hogy a
+                        legtöbb autóbérlős
+                        cégnél kizárólag hitelkártyát fogadnak el. Némi keresgéléssel lehet találni cégeket, ahol debit
+                        kártyát is elfogadnak, de feltétele, hogy a legmagasabb biztosítást kösd meg, ami minimum
+                        még egyszer akkora összeg, mint az amúgy sem olcsó bérlési díj. Ez 2023-ban kb. 550-600 euró 9
+                        napra. Fontos szempont utazásaink során, hogy bármilyen szolgáltatás igénybevételénél lehetőség
+                        szerint lokál szolgáltatót válasszunk, azon belül is leinformálhatóan jó minőségűt. Több
+                        ajánlatot is kértem, de mindegyik meghalatta a 400 eurós tervezett limitet. Végül a Quattro Rent
+                        Cartól akartunk autót bérelni, mint az egyik
+                        legmegbízhatóbbnak tartott cég, de a 600+ eurós ajánlatukkal az egyik legdrágábbnak is
+                        bizonyultak.
+                    </p>
+                    <p class="main-box">
+                        Majd egy hónap intenzív keresgélés után bukkantam egy külföldi fórumon az <a
+                            href="https://www.easytrapani.com/en/" target="_blank">EasyTrapani</a> nevű cégre, Google
+                        értékelése 4,9/5
+                        pont
+                        100+ vélemény alapján, ez már kellően nagy szám ahhoz, hogy megbízhatónak nyilvánítsam, így
+                        írtam
+                        is nekik. Mint kiderült, ők mára már egy utazás közvetítő cég, autótól, a programokon át sok
+                        mindennel foglalkoznak majdnem egész Olaszországban. Full biztosítással, 0 kaucióval, debit
+                        kártyával, bérléssel együtt is megadták a 400eurós árat a 9 napra korlátlan km használattal és
+                        mivel csak közvetítenek, így végül a szolgáltatást a fentebb írt Quattro Rent Car biztosította.
+                        Szóval Gianni Grillonak köszönhetően sikerült a maximumot kihoznunk az atuóbérlésből és ismét
+                        bebizonyosodott, hogy jó, ha az ember keresi a helyiek kapcsolatát.
+                    </p>
+                    <section class="pro-tips-card">
+                        <h3 class="card-title">UTAZÓS TIPP:</h3>
+                        <blockquote class="card-description">Mindig csekkold a független értékelésket az interneten,
+                            mint google, tripadvisor, booking, stb. Ha legalább 100+ értékelés van és 4.5 (5*-os
+                            értékelés estén) vagy 9 felettiek,
+                            akkor nyugodt lehetsz, hogy nem fogsz csalódni!
+                        </blockquote>
+                    </section>
+                    <h5>Cefalu</h5>
+                    <p class="main-box">
+                        A reptérről autóval az A19-es autópályán kb. 1.5 óra alatt lehet elérni. Az autopálya ingyenes,
+                        viszont sok szakaszon korlátozás van, felújítások miatt. Útközben érdemes megállni Enna
+                        városkájában egy hamisítatlan olasz Espressora a Belvedere Marconi téren. Bízzatok bennünk, nem
+                        bánjátok meg &#128521.
+                    </p>
+                    <p class="main-box">
+                        3 éjszakát töltöttünk Cefalu városában - ahogy fentebb is említettem - last minute módosítás
+                        következtében és nem bántuk meg. Itt is az óváros szélén foglaltunk szállást, <a
+                            href="https://www.booking.com/Share-Ekiybc" target="_blank">Scirocco</a> nevű B&B-be. Csak
+                        helyben derült
+                        ki, hogy az egyik szomszédos országból származik a hölgy, aki üzemeleti a 4 emeletes ház
+                        legfelső emeletén az apartmanokat. Egyetem miatt költözött Cefaluba, majd annyira megszerette a
+                        várost, hogy tanulmányai végeztével ott is alapított családot. Az apartmanok nem túl nagyok,
+                        csak szoba és fürdő. Található egy közös konyha rész is, ahol van hűtő, evőeszköz, minden, amire
+                        csak szükség lehet és lehet tölteni szűrt, iható csapvizet (ez nem általános arrafelé). A
+                        szállás főattrakciója a tetőtéri terasz, ahol a reggeliket szolgálják fel minden nap. Azt hiszem
+                        elmondhatom, hogy az eddigi utazásaink legszebb reggeliző helye címet joggal adtuk ennek a
+                        szállásnak.
+                    </p>
+                    <figure>
+                        <img src="img/cefalu-view.jpg" alt="Scirocco B&B kilátás, Cefalu">
+                        <figcaption>Scirocco B&B kilátás, Cefalu</figcaption>
+                    </figure>
+
+                    <h5>Cefalu TOP 5:</h5>
+                    <section class="ol-list">
+                        <ol>
+                            <li>
+                                <h6>Cefalu Katedrális:</h6>
+                                <p class="main-box">A Cefalu Katedrális a város panorámáját meghatározó ikonikus épület.
+                                    A normann stílusú bazilika nemcsak imponáló külsővel rendelkezik, hanem belül is
+                                    gazdag művészeti kincseket rejt. A katedrális lélegzetelálló mozaikjai és freskói
+                                    különleges ablakot nyitnak a középkor művészetére.</p>
+                            </li>
+                            <li>
+                                <h6>La Rocca</h6>
+                                <p class="main-box">A La Rocca nevű hegy a város felett magasodik, és egy rövid séta
+                                    után elérhető. A csúcsról lenyűgöző kilátás nyílik Cefalùra és a tengerre. A
+                                    felkapaszkodás fárasztó lehet, de a panoráma és a friss tengeri szellő minden
+                                    erőfeszítést megéri.</p>
+                            </li>
+                            <li>
+                                <h6>Cefalu óvárosa</h6>
+                                <p class="main-box">Az óváros szűk utcái és rejtett teraszai szinte időutazásra
+                                    csábítanak. A kis boltok, hangulatos kávézók és tradicionális éttermek kínálják az
+                                    igazi szicíliai életérzést. A sétálóutca, a Corso Ruggero ideális a vásárlásra és az
+                                    elmerülésre a helyi hangulatban.</p>
+                            </li>
+                            <li>
+                                <h6>Spiaggia di Cefalu</h6>
+                                <p class="main-box">A tengerpartok Szicíliában mindig különlegesek, és Cefalù sem
+                                    kivétel. A kristálytiszta víz és a homokos partszakasz tökéletes hely a pihenésre és
+                                    a napozásra. A nyugodt tengerpart ideális a fürdőzéshez, és a környéken található
+                                    kávézók és bárok kiválók egy könnyed napozás utáni pihenéshez.</p>
+                            </li>
+                            <li>
+                                <h6>Mandralisca Múzeum</h6>
+                                <p class="main-box">Ha érdeklődik a művészet és a kultúra iránt, ne hagyja ki a
+                                    Mandralisca Múzeumot. Itt kiváló festményeket, szobrokat és régészeti leleteket
+                                    tekinthet meg. A múzeum különlegessége a "Vélázquez Ismeretlen Embere" néven ismert
+                                    festmény, mely rejtélyes eredetű és még mindig megfejtésre váró történettel bír.</p>
+                            </li>
+                        </ol>
+                    </section>
+                    <section class="rating">
+                        Cefalu értékelése:
+                        <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                            class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                            class="fa fa-star" aria-hidden="true"></i>
+                    </section>
+
+                    <h5>Taormina</h5>
+                    <p class="main-box">
+                        Utunk következő állomása Taormina, Szicília ékköve volt. Sietnünk kellett, mert a siesta miatt
+                        délben minden bezár. Parkolni nem lehet a vároon belül, de léteznek parkolóházak, melyekben
+                        biztonsággal be tudod rakni az autód. Szállásadónk ajánlására egy ilyen parkolóházba foglaltunk
+                        mi is helyet magunknak, kb. 3 percre a szállástól a közparkkal szemben. 20 euró / nap a díja, ha
+                        szükséged lenne megbízható, központi elhelyezkedésű, zárt(!) parkolóra, akkor itt éred el őket:
+                        <a href="https://maps.app.goo.gl/ghAiZuaw9JNagFeX9" target="_blank">California Srl
+                        </a>.
+                    </p>
+                    <figure>
+                        <img src="img/taormina2-view.jpg" alt="Villa Comunale di Taormina">
+                        <figcaption>Taorminába még a parkolók is ilyen szép helyen találhatóak &#128525</figcaption>
+                    </figure>
+                    <p class="main-box">
+                        Szóval Taormina... A város magas hegyek ölelésében
+                        fekszik, fantasztikus kilátással az Ion-tengerre és a lenyűgöző Etna vulkánra. Taormina varázsa
+                        abban rejlik, hogy egyesíti a történelmi helyszínek, a szűk utcák, a festői terek és a modern
+                        kényelem érzetét. Európán belül mindneképpen ez a legszebb hely, ahol eddig jártunk!
+                    </p>
+                    <h5>Ezeket a helyeket <b>NE</b> hagyd ki, ha Taorminába jársz:</h5>
+                    <section class="ol-list">
+                        <ol>
+                            <li>
+                                <h6>Görög-római Amfiteátrum:</h6>
+                                <p class="main-box">Taormina ikonikus látnivalója a görög-római amfiteátrum, mely egy
+                                    domboldalon magasodik a tenger felett. A városka ebből a történelmi helyszínből
+                                    gyönyörködik a lenyűgöző panorámában. Az amfiteátrum üléseiről kilátás nyílik az
+                                    Etna vulkánra és az egész városra. Az itt megrendezett koncertek és előadások még
+                                    mélyebb élményt nyújtanak.</p>
+                            </li>
+                            <li>
+                                <h6>Corso Umberto</h6>
+                                <p class="main-box">A város szívében található Corso Umberto I, Taormina főutcája, mely
+                                    tele van érdekes boltokkal, butikokkal és hangulatos kávézókkal. A séta a Corso-n
+                                    keresztül önmagában is élmény, mivel a város életének pezsgése és a helyi kultúra
+                                    mindenhol érezhető. Az utcában található üzletek kiváló lehetőséget nyújtanak a
+                                    szicíliai kézműves termékek és szuvenírek beszerzésére.</p>
+                            </li>
+                            <li>
+                                <h6>Villa Comunale di Taormina (Közpark)</h6>
+                                <p class="main-box">A Villa Comunale di Taormina egy varázslatos közpark Taormina
+                                    központjában,
+                                    ahol az utazók pihenhetnek és élvezhetik a gyönyörű növényeket és szökőkutakat. A
+                                    park teraszáról szintén gyönyörű kilátás nyílik az Etna vulkánra és a tengerre. A
+                                    zöldellő környezet ideális hely a felfrissülésre és a városi nyüzsgés kicsit való
+                                    elkerülésére.</p>
+                            </li>
+                            <li>
+                                <h6>Isola Bella</h6>
+                                <p class="main-box">Taormina közelében található Isola Bella egy kis sziget, melyet a
+                                    "Szépség Szigetének" is neveznek. A tengerparti rezervátum kristálytiszta vizű
+                                    öblökkel és természetes szépséggel rendelkezik. A tengerbe vezető sétányok és a
+                                    környező sziklák ideálisak a kikapcsolódásra és az egyszerű élvezetre.</p>
+                            </li>
+                            <li>
+                                <h6>Etna túra</h6>
+                                <p class="main-box">Az Etna vulkán, Európa legmagasabb aktív tűzhányója, lenyűgöző és
+                                    kihagyhatatlan látnivaló Szicíliában. Az Etna megmászása izgalmas kalandot ígér,
+                                    ahol a túrázók eljuthatnak a tűzhányó krátereinek peremére, és élvezhetik
+                                    3000m magasból a lenyűgöző panorámát az alattuk elterülő tájra és az Ion-tengerre.
+                                    Az érdeklődők
+                                    választhatnak könnyebb gyalogtúrákat vagy akár terepjárós kalandokat is, amelyek
+                                    során felfedezhetik a vulkán különböző arcát és geológiai csodáit. Egy Etna-túra
+                                    kihagyhatatlan élmény, ahol a természet erejével találkozva a szicíliai táj
+                                    szépségeit fedezhetjük fel.</p>
+                            </li>
+                        </ol>
+                    </section>
+                    <figure>
+                        <img src="img/taormina-view.jpg" alt="Teatro Antico di Taormina">
+                        <figcaption>Teatro Antico di Taormina - Taormina, Szicília</figcaption>
+                    </figure>
+                    <section class="rating">
+                        Taormina értékelése:
+                        <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                            class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                            class="fa fa-star" aria-hidden="true"></i> &#160+ <i class="fa fa-star"
+                            aria-hidden="true"></i>
+                    </section>
+
+                    <h5>San Vito Lo Capo</h5>
+                    <p class="main-box">
+                        9 napos utunk legutolsó állomása a sziget egyik legnyugatibb csücske, San Vito Lo Capo volt.
+                        Taorminából Agrigento érintésével érkeztünk, nagyjából egész napos túra út volt kocsival. Azt
+                        mondják, hogy Palermotól nyugatra egész má arcát mutatja Szicília, mintha nem is Európábna
+                        lennél... és hát igazuk is van. Afrikai hangulat, fehér köpenyes, afrikai arab emberek az út
+                        szélén nyomkodják a telefonjukat, össze sem lehet hasonlítani a többi,
+                        meglátogatott várossal. Pont ezért is választottuk utolsó célpotunknak.
+                    </p>
+                    <figure>
+                        <img src="img/capo-night-view.jpg" alt="San Vito Lo Capo éjszaka">
+                        <figcaption>San Vito Lo Capo - mintha Észak-Afrikában lennénk</figcaption>
+                    </figure>
+                    <p class="main-box">
+                        Capo, ahogy a helyiek becézik egy szicíliai üdülőfalu. Nincs osk látnivalója, mindentől kellő
+                        távolságbna van, 2 dologban erős nagyon, ezek pedig a tengerpart és a pihenés. Itt szállásnak
+                        utolsó pillanatban sikerült foglalnunk egy helyi párnál, összesen 2-3 apartmant adhatnak ki.
+                        Mindegyik csak 1 szoba és egy fürdő. Semmi több, de átlag utazónak ez is elég, itt a lényeg a
+                        tűrkizkék strandon van, mindneki egész nap úgy is ott heverészik.
+                    </p>
+                    <p class="main-box">
+                        Mivel az elmúlt napokban - részben az időjárás miatt is - több, mint 1000 km-t autóztunk, így
+                        számunkra tökéletes programnak ígérkezett a hátralevő 2 napra. Sajnos a szállásadónk nem beszélt
+                        angolul és a kézzel-lábbal, magyaros olasz nyelven való próbálkozásainkra se nagyon volt
+                        kapható, így viszonylag keveset tudtunk meg a környékről. Sebaj, magunk is körbejártuk amennyire
+                        csak lehetett.
+                    </p>
+                    <p class="main-box">
+                        Napi programunk nem volt túl komplikált: reggeli, majd irány a helyi SPAR, bevásárlás a
+                        strandra, egész nap chillezés, naplemente után vissza a szállásra,
+                        elkészülés, este vacsora + 1 koktél vagy raki, hangulat függő.
+                    </p>
+                    <figure>
+                        <img src="img/capo-beach-view.jpg" alt="San Vito Lo Capo strandja">
+                        <figcaption>San Vito Lo Capo - itt tényleg jól el lehet lenni egész nap</figcaption>
+                    </figure>
+                    <section class="rating">
+                        San Vito Lo Capo értékelése:
+                        <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                            class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+                    </section>
+                    <p class="main-box">
+                        Ha tetszenek az úti leírásaink vagy csak szeretnéd Te is magad felfedezni a világot, eljutni
+                        olyan helyekre, melyekre a hagyományos utazási irodák nem visznek, esetleg nem tudod hogyan állj
+                        neki a megszerevezésnek vagy csak időd nincs rá, keress minket bátran!
+                    </p>
+                    <p class="main-box">
+                        Te elmondod hova és hogyan, mi pedig megszervezzük álmaid kalandját!
+                    </p>
+                </section>
+            </article>
+        </main>
+
+        <footer class="main-footer" id="contact">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="about" id="footer-left">
+                        <div class="about-left">
+                            <div class="about-img-div"><img class="about-img" src="img/main_pic2.jpg"
+                                    alt="bemutatkozó kép zolnay tours"></div>
+                            <div class="about-text">
+                                <h6>Rólunk</h6>
+                                <p class="text-justify">Fedezd fel velünk a rejtett kincseket, inspirálódj úti
+                                    tippeinkkel és trükkjeinkkel, hogy utazásaid még emlékezetesebbek legyenek! A
+                                    blogunkon interaktív leírások, helyi ízek és autentikus élmények várnak rád.
+                                    Vezetünk téged a kihagyhatatlan látnivalókhoz, és megosztjuk a titkos helyeket,
+                                    amikről mások talán még nem hallottak. Frissítéseinkben szállásajánlatokat,
+                                    költségoptimalizálási taktikákat és útleírásokat találsz, hogy minden utazásod simán
+                                    és örömteli legyen. Legyél részese a mi utazóközösségünknek, ahol tapasztalatokat
+                                    cserélhetsz, és inspirálódhatsz más utazók történeteiből. Zolnay Tours: ahol
+                                    a kalandok kezdődnek, és az emlékek örökké élnek!🗺️🌟
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about" id="footer-right">
+                        <h6>Navigáció</h6>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Kezdőlap</a></li>
+                            <li><a href="contact.html#about-us">Rólunk</a></li>
+                            <li><a href="destinations.html">Uticélok</a></li>
+                            <li><a href="gallery.html">Képek</a></li>
+                            <li><a href="contact.html#contact">Kapcsolat</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="footer-container">
+                <div class="row">
+                    <div class="copy">
+                        <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                            <a href="#">Zolnay Tours</a>.
+                        </p>
+                    </div>
+
+                    <div class="footer-social">
+                        <ul class="social-icons">
+                            <li><a class="facebook" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a class="tiktok" href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
