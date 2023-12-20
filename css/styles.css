@@ -64,7 +64,6 @@ main{
     width: 400px;
     height: 300px;
     margin: 15px;
-    float: left;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -144,10 +143,20 @@ main{
 /*BREAKPOINTS*/
 
 @media (max-width: 1024px){
+    main{
+        margin: 5px 5px 5px 5px;
+    }
+
     .container{
         clear: both;
         top: 50%;
-        margin: 0 auto;
+        margin: 25px 25px 25px 25px;
+    }
+
+    .container .box{
+        width: 250px;
+        height: 200px;
+        margin: 5px auto;
     }
     
 }
