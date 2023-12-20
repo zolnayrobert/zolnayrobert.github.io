@@ -203,3 +203,10 @@ iframe {
     }
 
 }
+
+@media (max-width:500px) {
+    .about-text{
+        text-align:left;
+    }
+
+}
