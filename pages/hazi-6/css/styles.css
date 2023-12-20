@@ -49,6 +49,22 @@ h6 {
     margin: 8px 0 5px 0;
 }
 
+.emphasized{
+    font-size: 1.8em;
+    line-height: 1.2em;
+    font-weight: 700;
+    color: #313131;
+    font-family: 'Lora', serif;
+    text-align: center;
+}
+
+.quotes{
+    color:#D3B683;
+    quotes: "„" "”" "‚" "’";
+    margin: 3px;
+    font-size: 1.5em;   
+}
+
 /*Nagyobb szünetet tartson a szekciók között*/
 .break{
     height: 1px;
