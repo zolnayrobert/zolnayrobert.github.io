@@ -186,18 +186,15 @@ a.popup-img img:hover {
     }
 
     .dest-pic-container .popup-img .content{
-      top:-400%;
+      top:-290%;
       display:block;
       opacity: 70%;
+      padding: 0; 
     }
 
     .dest-pic-container .popup-img article{
       background-color: whitesmoke;
       width: 100%;
-    }
-
-    .dest-pic-container .popup-img .content{
-      padding: 0; 
     }
 }
 

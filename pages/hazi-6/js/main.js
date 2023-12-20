@@ -1,8 +1,7 @@
 $(document).ready(function()
 { 
 
-console.log("v.1883");    //verzió szám
-console.log(document.title); //oldal neve
+console.log("v.1884");    //verzió szám
 
     //Spinner elrejtése
     document.getElementById("loading-overlay").style.display = "none";
@@ -61,6 +60,10 @@ console.log(document.title); //oldal neve
         } else {
             $("#tooltip-text").text(''); //különben töröljük, ha volt benne szöveg
         }
+    });
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('DOMContentLoaded esemény kiváltódott');
     });
 });
 
@@ -165,23 +168,21 @@ function eMsg()
     }, 5000);
 }
 
+//loader mutatása amíg betöltenek a nagyobb méretű elemek
 function onLoader(e)
 {
     //Spinner mutatása válaszig
     document.getElementById("loading-overlay").style.display = "flex"; 
-console.log($(this));  
-console.log(e);  
-console.log(e.id);  
 
+    //megvizsgálja, hogy adott elem betöltött-e? e=elem ami töltődik
     let observer = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(function(entry) {
-console.log(entry);            
+        entries.forEach(function(entry) {     
             if (entry.isIntersecting) {
 
-                // Az elem kijutott a látható tartományba, itt végrehajthatod a szükséges műveleteket
+                // Az elem kijutott a látható tartományba, itt végrehajtható a műveleteket
                 document.getElementById("loading-overlay").style.display = "none";
 
-                // Ne felejtsd el leállítani az observer-t, ha már nem szükséges
+                // leállítani, ha már nem szükséges
                 observer.disconnect();
             }
         });
