@@ -170,7 +170,7 @@ nav ul li a:hover,
 }
 
 nav {
-    grid-column: 2 / 10;
+    grid-column: 2 / 11;
     grid-row: 2 / 3;
     height: 100px;
 }
@@ -881,9 +881,10 @@ div.row {
 }
 /*FORM MESSAGE END*/
 
-@media (max-width:1320px) {
+@media (max-width:1320px)
+{
     nav {
-        grid-column: 1 / 13;
+            grid-column: 1 / 11;
     }
 
     .left-side {
@@ -922,6 +923,10 @@ div.row {
 }
 
 @media (max-width:1050px){
+    nav {
+        grid-column: 1 / 13;
+    }
+
     header h1 {
         top: 8%;
         left: 42%;
