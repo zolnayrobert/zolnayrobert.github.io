@@ -129,7 +129,7 @@
     color: rgb(36, 36, 36);
     font-size: 3.4em;
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -140,7 +140,7 @@
 #tooltip-text{
     position: absolute;
     font-size: 1.2em !important;
-    top: 50%;
+    top: 60%;
     left: 50% !important;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -408,7 +408,7 @@ figcaption{
     }
 
     #tooltip-text{
-        top: 40%;  
+        top: 54%;  
     }
 
     .region-container {
