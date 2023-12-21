@@ -159,9 +159,8 @@ div.social {
 }
 
 /*YT ikon elcsúszik*/
-.fa-brands .fa-youtube {
+.fa-brands .fa-youtube a{
     margin-left: 4px;
-    margin-right: 25px;
 }
 
 nav ul li a:hover,
