@@ -35,8 +35,8 @@
     <div class="wrapper">
         <header class="main-head">
             <img class="header-img" src="img/header.png" alt="travel clipart around the world">
-            <h1><a href="#navigation">Zolnay</a></h1>
-            <h2><a href="#navigation">Tours</a></h2>
+            <h1><a href="index.html">Zolnay</a></h1>
+            <h2><a href="index.html">Tours</a></h2>
             <q>TRAVEL LIKE THE LOCALS</q>
         </header>
 
@@ -50,9 +50,10 @@
             <ul class="mainmenu">
                 <input type='checkbox' id='check'>
                 <span class="menu">
-                    <li class="mainmenu-li"><a href="#navigation">KEZDŐLAP</a></li>
+                    <li class="mainmenu-li"><a href="index.html">KEZDŐLAP</a></li>
                     <li class="mainmenu-li"><a href="contact.html#about-us">RÓLUNK</a></li>
-                    <li class="mainmenu-li dropdown"><a href="destinations.html">UTICÉLOK <i class="fa fa-caret-down"></i></a>
+                    <li class="mainmenu-li dropdown"><a href="destinations.html">UTICÉLOK <i
+                                class="fa fa-caret-down"></i></a>
                         <ul class="submenu">
                             <li class="submenu-li"><a href="bulgaria.html">BULGÁRIA</a></li>
                             <li class="submenu-li"><a href="indonesia.html">INDONÉZIA</a></li>
@@ -70,67 +71,71 @@
         </nav>
 
         <section class="left-side">
-            <div class="form-container">             
+            <div class="form-container">
                 <!--spinner-->
                 <div id="loading-overlay">
                     <div class="fas fa-plane"></div>
                     <div class="loader"></div>
                 </div>
                 <h2>Ajánlatkérés</h2>
-                <form id="offerForm" class= "form" name="offerForm" action="https://formsubmit.co/520a354098799bbb56777753e910654f" method="POST">
-                <input class="subscribe-input" type="text" id="name" name="name" placeholder="Név" required>
-                <input class="subscribe-input" type="email" id="email" name="email" placeholder="Email cím"
-                    maxlength="40" required>
-                <input class="subscribe-input" type="text" id="mobile" name="mobile" placeholder="Telefonszám"
-                    maxlength="12" required>
+                <form id="offerForm" class="form" name="offerForm"
+                    action="https://formsubmit.co/520a354098799bbb56777753e910654f" method="POST">
+                    <input class="subscribe-input" type="text" id="name" name="name" placeholder="Név" required>
+                    <input class="subscribe-input" type="email" id="email" name="email" placeholder="Email cím"
+                        maxlength="40" required>
+                    <input class="subscribe-input" type="text" id="mobile" name="mobile" placeholder="Telefonszám"
+                        maxlength="12" required>
 
-                <label class="label" for="_subject">Melyik ország érdekel?</label>
-                <select class="subscribe-input" id="_subject" name="_subject" required>
-                    <option value="choose">-válassz-</option>
-                    <option value="bulgaria">Bulgária</option>
-                    <option value="indonesia">Indonézia</option>
-                    <option value="italy">Olaszország</option>
-                    <option value="caboverde">Zöld-foki Köztársaság</option>
-                </select>
+                    <label class="label" for="_subject">Melyik ország érdekel?</label>
+                    <select class="subscribe-input" id="_subject" name="_subject" required>
+                        <option value="choose">-válassz-</option>
+                        <option value="bulgaria">Bulgária</option>
+                        <option value="indonesia">Indonézia</option>
+                        <option value="italy">Olaszország</option>
+                        <option value="caboverde">Zöld-foki Köztársaság</option>
+                    </select>
 
-                <p class="label">Milyen típusú utazást szeretsz?</p>
-                <div class="checkbox">
-                    <input type="checkbox" id="type1" name="type" value="tengerpart">
-                    <label class="label2" for="type1">Tenger part</label>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" id="type2" name="type" value="kaland">
-                    <label class="label2" for="type2">Kaland</label>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" id="type3" name="type" value="kultura">
-                    <label class="label2" for="type3">Kultúra</label>
-                </div>
+                    <p class="label">Milyen típusú utazást szeretsz?</p>
+                    <div class="checkbox">
+                        <input type="checkbox" id="type1" name="type" value="tengerpart">
+                        <label class="label2" for="type1">Tenger part</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="type2" name="type" value="kaland">
+                        <label class="label2" for="type2">Kaland</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="type3" name="type" value="kultura">
+                        <label class="label2" for="type3">Kultúra</label>
+                    </div>
 
-                <textarea class="subscribe-input" id="message" name="message" cols="20" rows="5"
-                    placeholder="Írj nekünk magadról kicsit részletesebben" maxlength="160"></textarea>
+                    <textarea class="subscribe-input" id="message" name="message" cols="20" rows="5"
+                        placeholder="Írj nekünk magadról kicsit részletesebben" maxlength="160"></textarea>
 
-                <input type="hidden" name="_captcha" value="false">
-                <input type="text" name="_honey" style="display:none">
-                <input class="subscribe-button" type="submit" onSubmit="return false" value="Küldés">
-                <div id="form-message-report"></div>    
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
+                    <input class="subscribe-button" type="submit" onSubmit="return false" value="Küldés">
+                    <div id="form-message-report"></div>
                 </form>
             </div>
             <section class="subscribe-container">
                 <h2>Ötletek a<br> postaládádba</h2>
                 <p>Íratkozz fel a hírlevelünkre, ingyenes <br> utazási tippekért és trükkökért.</p>
-                <form id="newsletterForm" class= "form" name="newsletterForm" action="https://formsubmit.co/520a354098799bbb56777753e910654f" method="POST">
-                    <input class="subscribe-input" name="newsletter" id="newsletter" type="email" placeholder="Email cím" required>
+                <form id="newsletterForm" class="form" name="newsletterForm"
+                    action="https://formsubmit.co/520a354098799bbb56777753e910654f" method="POST">
+                    <input class="subscribe-input" name="newsletter" id="newsletter" type="email"
+                        placeholder="Email cím" required>
                     <div class="checkbox">
                         <input type="checkbox" id="acceptDPR" name="acceptDPR" value="1" required>
-                        <label class="label2" for="acceptDPR">Az adatvédelmi tájékoztatót elolvastam, megértettem, és hozzájárulok ahhoz, hogy megadott adataimat a szolgáltató,
+                        <label class="label2" for="acceptDPR">Az adatvédelmi tájékoztatót elolvastam, megértettem, és
+                            hozzájárulok ahhoz, hogy megadott adataimat a szolgáltató,
                             mint adatkezelő a szabályzatban foglaltaknak megfelelően kezelje.</label>
-                    </div>              
+                    </div>
                     <input type="hidden" name="_captcha" value="false">
                     <input type="text" name="_honey" style="display:none">
                     <button class="subscribe-button" type="submit" onSubmit="return false">Feliratkozom</button>
                     <div id="form-subscribe-report"></div>
-                <span>100% garantált tartalom</span>
+                    <span>100% garantált tartalom</span>
                 </form>
             </section>
         </section>
@@ -139,31 +144,31 @@
             <h2>Legfrissebb blogok</h2>
             <article>
                 <a class="main-box-link link-right" href="indonesia.html#Gili">
-                <img class="blog-img" src="img/underwater.jpg" alt="underwater">
-                <h3 class="side-date">2019 Szeptember 12.</h3>
-                <!--                <span class="side-title">BALI</span>                    -->
-                <h3 class="side-h3">Fedezd fel Bali tengeralatti világát</h3>
-                <p>A sziget körül számos kiváló búvár- és snorkelhely található, ahol lenyűgöző korallzátonyok,
-                    színpompás halak és egyedi tengeri élőlények várnak felfedezésre. A kristálytiszta víz és a meleg
-                    tengeri áramlatok ideálisak a vízalatti kalandokhoz. Bali tengeralatti világa valóban lenyűgöző, és
-                    azoknak ajánlom,
-                    akik az óceán mélyének varázslatos világát szeretnék felfedezni.
-                </p>
+                    <img class="blog-img" src="img/underwater.jpg" alt="underwater">
+                    <h3 class="side-date">2019 Szeptember 12.</h3>
+                    <h3 class="side-h3">Fedezd fel Bali tengeralatti világát</h3>
+                    <p>A sziget körül számos kiváló búvár- és snorkelhely található, ahol lenyűgöző korallzátonyok,
+                        színpompás halak és egyedi tengeri élőlények várnak felfedezésre. A kristálytiszta víz és a
+                        meleg
+                        tengeri áramlatok ideálisak a vízalatti kalandokhoz. Bali tengeralatti világa valóban lenyűgöző,
+                        és
+                        azoknak ajánlom,
+                        akik az óceán mélyének varázslatos világát szeretnék felfedezni.
+                    </p>
                 </a>
             </article>
 
             <article>
                 <a class="main-box-link link-right" href="caboverde.html#BoaVista">
-                <img class="blog-img" src="img/desert.jpg" alt="underwater">
-                <h3 class="side-date">2017 December 10.</h3>
-                <!--            <span class="side-title">BOA VISTA</span>               -->
-                <h3 class="side-h3">Quadozz Boa Vista homokdűnéi között</h3>
-                <p> Boa Vista homokdűnéi különleges élményt nyújtanak minden utazónak. Az itteni
-                    dűnék lenyűgöző méretükkel és formáikkal azonnal magukba szippantják az embert. A homokdűnék
-                    közötti sivatagi táj varázslatos és kihagyhatatlan fotózási lehetőségeket kínál. Emellett a
-                    naplemente és napkelte itt különösen lenyűgöző, így egy romantikus környezetet is biztosít azok
-                    számára, akik itt látogatást tesznek.
-                </p>
+                    <img class="blog-img" src="img/desert.jpg" alt="underwater">
+                    <h3 class="side-date">2017 December 10.</h3>
+                    <h3 class="side-h3">Quadozz Boa Vista homokdűnéi között</h3>
+                    <p> Boa Vista homokdűnéi különleges élményt nyújtanak minden utazónak. Az itteni
+                        dűnék lenyűgöző méretükkel és formáikkal azonnal magukba szippantják az embert. A homokdűnék
+                        közötti sivatagi táj varázslatos és kihagyhatatlan fotózási lehetőségeket kínál. Emellett a
+                        naplemente és napkelte itt különösen lenyűgöző, így egy romantikus környezetet is biztosít azok
+                        számára, akik itt látogatást tesznek.
+                    </p>
                 </a>
             </article>
         </aside>
@@ -171,10 +176,10 @@
         <main class="content">
             <h1>A Világ felfedezése csak Rád vár!</h1>
             <p class="main-intro">
-                Tengerparti utazás, városlátogatás, netán egzotikus utazás?! Legyen szó bármilyen
-                jellegű utazásról nálunk évszaktól és típustól függetlenül könnyedén megtalálhatod. Tekintsd át a
-                legnépszerűbb úti céljainkból összeállított rövid útikalauzokat, majd válaszd ki a számodra
-                legmegfelelőbb ajánlatot! Rajtunk keresztül könnyedén tervezheted meg és foglalhatod le életed utazását,
+                Tengerparti utazás, városlátogatás, netán egzotikus utazást tervezel?! Nem tudod hogyan kezdj bele? Vagy
+                csak insprirálódnál? Legyen szó bármilyen
+                jellegű utazásról, nálunk évszaktól és típustól függetlenül könnyedén megtalálhatod. Tekintsd át gondosan
+                összeállított rövid útikalauzainkat! Rajtunk keresztül könnyedén tervezheted meg életed utazását,
                 hogy a világ minden szegletét felfedezhesd. Ne habozz, válaszd ki álmaid úti célját és indulj el a
                 kalandra!
             </p>
@@ -217,8 +222,7 @@
                             várják vagy látogasson el Szicília és Toszkána varázslatos vidékeire.
                         </p>
                         <p class="main-box-img-cont">
-                            <img class="main-box-img" src="img/sicily.jpg"
-                                alt="Taormina látkép háttérben az Etna">
+                            <img class="main-box-img" src="img/sicily.jpg" alt="Taormina látkép háttérben az Etna">
                         </p>
                     </a>
                 </section>

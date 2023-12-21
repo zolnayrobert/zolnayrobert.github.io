@@ -256,7 +256,8 @@
 .card-title {
 	margin: 0 0 5px 0;
 	letter-spacing: 1px;
-    color: #05aff0;
+    color: #05aff0 !important;
+    padding: 5px !important;
 
 }
 
