@@ -6,7 +6,7 @@ $(document).ready(function()
     //kép előtöltés
     preloadImages();
 
-    //szöveg színállítás - nem működik (még)
+    //szöveg színállítás
     $('.popup-img').hover(function(){   
         let bgColor = $(this).css("background-color");
         pickTextColorBasedOnBgColorSimple(bgColor); //háttérből szövegszín számítás
@@ -53,13 +53,19 @@ function closeModal() {
 }
 
 //aktuális kép betöltése
-function currentSlide(n) { 
+function currentSlide(n)
+{ 
+    //Spinner mutatása válaszig
+    document.getElementById("loading-overlay").style.display = "flex"; 
+   
     //kép betöltés
-//  $('.img-popup').attr('src', n[0].childNodes[1].src);
     $('.img-popup').attr('src', $(n[0].childNodes[1]).attr('data-large'));
     $('.img-popup').attr('alt', n[0].childNodes[1].alt); 
     $('.img-popup').attr('id', n[0].childNodes[1].id);
-    
+       
+    //Spinner elrejtése
+    document.getElementById("loading-overlay").style.display = "none"; 
+
     //kép cím betöltés
     let h3 = n[0].childNodes[3].children[0].innerText;   
     let h3HTML = document.getElementById('h3-popup');
@@ -71,10 +77,15 @@ function currentSlide(n) {
     let pHTML = document.getElementById('p-popup');
     let pNode = document.createTextNode(p);
     pHTML.appendChild(pNode);
+
 }
 
 //lapozás a galériában
-function plusSlides(n) {    
+function plusSlides(n)
+{
+    //Spinner mutatása válaszig
+    document.getElementById("loading-overlay").style.display = "flex"; 
+    
     //lekérjük az aktuáis kép ID-t  
     let imageId = $('.img-popup').attr('id');
     
@@ -104,4 +115,7 @@ function plusSlides(n) {
     let p = article.getElementsByTagName("p")[0].innerText;   
     let pHTML = document.getElementById('p-popup');
     pHTML.textContent = p;
+    
+    //Spinner elrejtése
+    document.getElementById("loading-overlay").style.display = "none"; 
 }

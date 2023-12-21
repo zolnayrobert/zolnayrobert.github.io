@@ -1,7 +1,7 @@
 $(document).ready(function()
 { 
 
-console.log("v.1891");    //verzió szám
+console.log("v.1892");    //verzió szám
 
     //Spinner elrejtése
     document.getElementById("loading-overlay").style.display = "none";
