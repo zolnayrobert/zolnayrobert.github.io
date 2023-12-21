@@ -1,7 +1,7 @@
 $(document).ready(function()
 { 
 
-console.log("v.1895");    //verzió szám
+console.log("v.1898");    //verzió szám
 
     //Spinner elrejtése
     document.getElementById("loading-overlay").style.display = "none";
@@ -25,9 +25,16 @@ console.log("v.1895");    //verzió szám
     //Ajánlatkérés
     $('#offerForm').submit(function (e)
     {
-        const frm = $('#offerForm');
-        e.preventDefault();  
-        sendMessage(frm);
+        //validálás
+        if($('#_subject').val() == "choose"){
+            alert('Kérlek válassz országot!');
+            return false;           
+        } else {
+            //ha minden, szükséges adat megvan, akkor indul a küldés
+            const frm = $('#offerForm');
+            e.preventDefault();  
+            sendMessage(frm);
+        }
     });
 
     //Képre húzva megjelenítjük az ország nevét
