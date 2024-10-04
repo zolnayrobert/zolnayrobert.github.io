@@ -1,6 +1,6 @@
-import {Book} from './Book';
-import {ILibrary} from '../interface/ILibrary';
-import {BorrowedBooks} from '../interface/BorrowedBooks';
+import {Book} from './Book.js';
+import {ILibrary} from '../interface/ILibrary.js';
+import {BorrowedBooks} from '../interface/BorrowedBooks.js';
 
 export class Library implements ILibrary
 {
@@ -19,7 +19,7 @@ export class Library implements ILibrary
         {
             this._books.forEach(book => {
                 // itt listázhatjuk ki a könyveket
-                console.log(`${book.id}. - ${book.title} by ${book.author} for ${book.price} is available!`);
+                console.log(`${book.id}. ${book.title} könyv ${book.author} szerzőtől ${book.price}$-ért elérhető!`);
             });
         } else
             throw console.error('Oops, Something wrong!');
@@ -38,15 +38,15 @@ export class Library implements ILibrary
     // Könyvek hozzáadása, csak a Book osztálynak megfelelő könyv lehetséges
     addBook(book: Book, userId: number): void
     {          
-        // Kikölcsönzöttekből eltávolítom
-        const borrowIndex = this._borrows.findIndex(borrowed => borrowed.id === book.id);
-        const [removedBorrowed] = this._borrows.splice(borrowIndex, 1);
-console.log(removedBorrowed);        
-        if(removedBorrowed)
-        {
-            this._books.push(book);
-            console.log(`A ${book.title} című könyv sikeresen bekerült a könyvtárba!`);
+        if(userId>0){
+            // Kikölcsönzöttekből eltávolítom
+            const borrowIndex = this._borrows.findIndex(borrowed => borrowed.id === book.id);
+            const [removedBorrowed] = this._borrows.splice(borrowIndex, 1);
+console.log(removedBorrowed);
         }
+        // Berakom a könyvtárba
+        this._books.push(book);
+        console.log(`A ${book.title} című könyv sikeresen bekerült a könyvtárba!`);
     }
 
     // Könyv törlése ID alapján
@@ -83,5 +83,16 @@ console.log(removedBorrowed);
         };
 
         return borrowedbook;
+    }
+
+    listAllBorrows(): void
+    {
+        if(this._borrows.length > 0)
+        {
+            this._borrows.forEach(borrow => {
+                console.log(`${borrow.borrowedDate}. - ${borrow.title} by ${borrow.userId} kikölcsönözve!`);
+            });
+        } else
+            throw console.log('Jelenleg nincs könyv kikölcsönözve!');
     }
 }

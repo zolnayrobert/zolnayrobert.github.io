@@ -2,7 +2,7 @@ import {Library} from './Library.js';
 
 export class User
 {
-    private _userId: number;     // felhasználó azonosító
+    private _userId: number;// felhasználó azonosító
     private _name: string;  // felhasználó neve
     private _email: string; // felhasználó email
 
