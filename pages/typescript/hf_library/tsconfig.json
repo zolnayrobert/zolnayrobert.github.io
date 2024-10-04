@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "target": "ES6",              // A cél JavaScript verzió (ES6 vagy újabb)
+      "module": "ESNext",            // Milyen modultípust használjon
+      "outDir": "./dist",            // A lefordított fájlok kimeneti mappája
+      "rootDir": "./src",            // A forrásfájlok gyökérkönyvtára
+      "strict": true                 // Szigorú típusellenőrzés
+    },
+    "include": ["src/**/*.ts"],       // Fordítandó fájlok (a 'src' mappában lévő összes .ts fájl)
+    "exclude": ["node_modules"]       // Kizárt mappák
+  }
