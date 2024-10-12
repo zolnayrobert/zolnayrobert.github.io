@@ -1,4 +1,4 @@
-import {Book} from '../classes/Book';
+import {Book} from '../classes/Book.js';
 
 export interface ILibrary {
     listAllBooks(): void

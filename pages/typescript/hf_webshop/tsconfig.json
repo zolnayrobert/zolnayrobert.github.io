@@ -1,7 +1,8 @@
 {
     "compilerOptions": {
-      "target": "ES6",               // A cél JavaScript verzió (ES6 vagy újabb) //es2016
-      "module": "CommonJS",          // Milyen modultípust használjon //ESNext
+      "target": "ES2016",              // A cél JavaScript verzió (ES6 vagy újabb)
+      "module": "commonjs",            // Milyen modultípust használjon
+      "esModuleInterop": true, 
       "outDir": "./dist",            // A lefordított fájlok kimeneti mappája
       "rootDir": "./src",            // A forrásfájlok gyökérkönyvtára
       "strict": true                 // Szigorú típusellenőrzés
