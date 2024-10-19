@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+console.log('ToDo app.ts betöltve');
+const todoList_1 = require("./services/todoList");
+const todoItem_1 = require("./models/todoItem");
+const todoList = new todoList_1.TodoService.TodoList();
+const todo1 = new todoItem_1.TodoModel.TodoItem(1, 'Bevásárlás');
+const todo2 = new todoItem_1.TodoModel.TodoItem(2, { message: 'Futás a parkban', dueDate: new Date() });
+console.log('---------- Teendők hozzáadása ----------');
+todoList.addTodoItem(todo1);
+todoList.addTodoItem(todo2);
+console.log('---------- Teendők listázása ----------');
+todoList.listTodos();
+console.log('---------- Teendő eltávolítása ----------');
+todoList.removeTodoItem(1);
+console.log('---------- Teendők listázása ----------');
+todoList.listTodos();
